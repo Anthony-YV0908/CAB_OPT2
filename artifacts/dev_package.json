@@ -1,0 +1,51 @@
+{
+	"id": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"createdAt": "2024-11-25T08:42:14.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/Anthony-YV0908/CAB_OPT2.git"
+	},
+	"name": "CAB_OTP2",
+	"description": null,
+	"ver": "24.11.25.1646",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "131ae450-7363-4c7c-9ff5-5d5111e21fbe",
+			"application": "daily_otp",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
+		}
+	],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}
