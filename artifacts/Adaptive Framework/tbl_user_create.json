@@ -1,0 +1,433 @@
+{
+	"id": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
+	"createdAt": "2024-11-03T13:41:00.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"iconButtonClose": "sap-icon://fa-regular/times-circle",
+				"textButtonClose": "",
+				"typeButtonClose": "Reject",
+				"iconButtonSave": "sap-icon://save",
+				"textButtonSave": "",
+				"textToastSave": "Saved",
+				"typeButtonSave": "Accept",
+				"iconButtonDelete": "",
+				"textButtonDelete": "Delete",
+				"textToastDelete": "Deleted",
+				"typeButtonDelete": "Reject",
+				"iconButtonAttachment": "",
+				"textButtonAttachment": "Add Attachment",
+				"typeButtonAttachment": "Transparent",
+				"tab0Text": "General",
+				"tabAText": "Attachment",
+				"tab1Text": "Tab 1",
+				"tab2Text": "Tab 2",
+				"tab3Text": "Tab 3",
+				"tab4Text": "Tab 4",
+				"tab5Text": "Tab 5",
+				"enableClose": true,
+				"enableSave": true,
+				"enableDelete": false,
+				"enableAttachment": false,
+				"enableTab1": false,
+				"enableTab2": false,
+				"enableTab3": false,
+				"enableTab4": false,
+				"enableTab5": false,
+				"enableUppercase": false,
+				"enablePadding": true,
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete ",
+				"requiredFieldsToast": "Please fill in all the required fields",
+				"title": "User Create",
+				"subTitle": "User Creation",
+				"avatarIcon": "sap-icon://user-edit",
+				"iconButtonDraft": "",
+				"textButtonDraft": "Save as draft",
+				"textToastDraft": "Saved as draft",
+				"typeButtonDraft": "Attention",
+				"tabFText": "FORM",
+				"enableDraft": false,
+				"enableTabF": false,
+				"textUnique": "",
+				"tab1Icon": "sap-icon://fa-brands/500px",
+				"_tab1Nav": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
+					"keyField": []
+				}
+			},
+			"form": {
+				"enableCompact": true,
+				"enableCentered": false,
+				"columnsL": "",
+				"labelSpanL": "",
+				"columnsM": "",
+				"formLayout": "ResponsiveGridLayout",
+				"labelSpanM": "",
+				"field1ReadOnly": "",
+				"field2ReadOnly": "",
+				"operator1ReadOnly": "",
+				"sysvar1ReadOnly": ""
+			},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "AirlineCode",
+				"label": "Airline Code",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ContactNumber",
+				"label": "Contact Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CreationTime",
+				"label": "Creation Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CreationUserId",
+				"label": "Creation User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeleterUserId",
+				"label": "Deleter User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeletionTime",
+				"label": "Deletion Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EmailAddress",
+				"label": "Email Address",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "FirstName",
+				"label": "First Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsActive",
+				"label": "Is Active",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsDeleted",
+				"label": "Is Deleted",
+				"type": "Smallint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsLockedOut",
+				"label": "Is Locked Out",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsNewUser",
+				"label": "Is New User",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastModificationTime",
+				"label": "Last Modification Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastModifierUserId",
+				"label": "Last Modifier User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastName",
+				"label": "Last Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MiddleName",
+				"label": "Middle Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOAirportCode",
+				"label": "PRAO Airport Code",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOBatch",
+				"label": "PRAO Batch",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOEndDate",
+				"label": "PRAO End Date",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAORemarks",
+				"label": "PRAO Remarks",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOStartDate",
+				"label": "PRAO Start Date",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "Password",
+				"label": "Password",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ReqToChangePassword",
+				"label": "Req To Change Password",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "Suffix",
+				"label": "Suffix",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserId",
+				"label": "USER ID",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserGender",
+				"label": "User Gender",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserName",
+				"label": "User Name ",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserRole",
+				"label": "User Role",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "FirstName",
+				"text": "First Name",
+				"fieldPos": 1,
+				"inputType": "",
+				"required": true,
+				"type": "Input",
+				"mask": ""
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "MiddleName",
+				"text": "Middle Name",
+				"fieldPos": 2,
+				"required": false
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "LastName",
+				"text": "Last Name",
+				"fieldPos": 3,
+				"required": true
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "Suffix",
+				"text": "Suffix",
+				"fieldPos": 4,
+				"type": "SingleSelectScript",
+				"_navigation": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Default"
+				},
+				"inputType": "",
+				"mask": "",
+				"scriptSelect": "43f35c15-d47d-4ef1-8f3d-882983fa1732"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "ContactNumber",
+				"text": "Contact Number",
+				"fieldPos": 5,
+				"inputType": "Number",
+				"required": true,
+				"mask": "+63 999 999 9999"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "EmailAddress",
+				"text": "Email Address",
+				"fieldPos": 6,
+				"inputType": "Email",
+				"required": true,
+				"mask": ""
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "UserRole",
+				"text": "User Role",
+				"fieldPos": 7,
+				"required": true,
+				"type": "SingleSelectScript",
+				"scriptSelect": "e67136f9-e7e7-493f-9df5-7c32bf876174"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "UserGender",
+				"text": "User Gender",
+				"fieldPos": 8,
+				"type": "SingleSelectScript",
+				"scriptSelect": "709ddcc0-f35e-4523-ae7a-fadfc10cc234",
+				"required": true
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PRAOAirportCode",
+				"text": "PRAO Airport Code",
+				"fieldPos": 9,
+				"required": false
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PRAOStartDate",
+				"text": "PRAO Start Date",
+				"fieldPos": 10,
+				"type": "DatePicker",
+				"required": false
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PRAOEndDate",
+				"text": "PRAO End Date",
+				"fieldPos": 11,
+				"type": "DatePicker",
+				"required": false
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "PRAOBatch",
+				"text": "PRAO Batch",
+				"fieldPos": 12,
+				"required": false,
+				"inputType": "Number",
+				"mask": "999999"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "UserName",
+				"text": "User Name",
+				"fieldPos": 13,
+				"required": true,
+				"unique": true
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "Password",
+				"text": "Password",
+				"fieldPos": 14,
+				"required": true,
+				"mask": "",
+				"inputType": "Password"
+			}
+		],
+		"fieldsRun": [],
+		"defaultVariant": {
+			"id": "836f285e-5adb-4b24-fd59-e3110bba37d1",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "tbl_user_create",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.11.26.1049",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_edit",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

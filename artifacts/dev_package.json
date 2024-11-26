@@ -20,6 +20,24 @@
 			}
 		},
 		{
+			"id": "9ad709ae-da44-4e37-b383-1dd28288c54f",
+			"application": "admindashboard",
+			"title": "Admin Dashboard",
+			"description": "",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
+		},
+		{
+			"id": "84534a0e-68b2-4692-92b2-36b23bfaab94",
+			"application": "planet9_custom_login",
+			"title": "CAB Login",
+			"description": "CustomLogin",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
+		},
+		{
 			"id": "131ae450-7363-4c7c-9ff5-5d5111e21fbe",
 			"application": "daily_otp",
 			"title": "",
@@ -35,11 +53,22 @@
 			"name": "CABServerside",
 			"description": null,
 			"apiGroup": null
+		},
+		{
+			"id": "616011a4-3a5a-4920-a3e9-40c128143432",
+			"name": "userEndpoint",
+			"description": null,
+			"apiGroup": null
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
+		{
+			"id": "c196ee77-e289-4acf-aa78-a7636768ae91",
+			"name": "tbl_users",
+			"description": null
+		},
 		{
 			"id": "1d8eeb51-5f38-41b0-96e3-8040a4f3d692",
 			"name": "daily_otp_archive",
@@ -88,7 +117,26 @@
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
-	"reports": [],
+	"reports": [
+		{
+			"id": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
+			"name": "tbl_user_create",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "688a7405-3500-4fb4-9198-db1af31c5845",
+			"name": "tbl_user_edit",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "44bc6823-8c3d-47e9-ad33-6c147b5a6e64",
+			"name": "tbl_users_list",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		}
+	],
 	"api_authentication": [],
 	"api_group": [],
 	"tile": [],
@@ -102,7 +150,13 @@
 	"department": [],
 	"script_scheduler": [],
 	"wf_definition": [],
-	"connector": [],
+	"connector": [
+		{
+			"id": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+			"name": "tbl_users_connector_script",
+			"description": null
+		}
+	],
 	"events": [],
 	"code_snippets": [],
 	"wf_determination": [],

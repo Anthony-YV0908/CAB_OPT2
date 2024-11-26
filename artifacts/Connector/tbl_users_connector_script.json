@@ -1,0 +1,23 @@
+{
+	"id": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+	"createdAt": "2024-11-05T06:42:00.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"previewable": false,
+		"scriptSel": "45049ba1-ca59-48d0-9cea-33fdcbd10c78",
+		"scriptRun": "9ffec8e9-6d98-4a9d-b08a-4e6270e30025",
+		"hasDocumentation": false,
+		"startParam": "",
+		"overriddenFieldCatalog": false
+	},
+	"documentation": {
+		"content": ""
+	},
+	"name": "tbl_users_connector_script",
+	"description": null,
+	"group": null,
+	"type": "S",
+	"ver": "24.11.26.1046",
+	"disabled": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

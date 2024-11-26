@@ -1,0 +1,381 @@
+{
+	"id": "44bc6823-8c3d-47e9-ad33-6c147b5a6e64",
+	"createdAt": "2024-10-28T07:48:12.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Refresh",
+				"typeButtonRun": "Emphasized",
+				"enableRun": true,
+				"enableCreate": true,
+				"enableClose": false,
+				"enableDelete": true,
+				"enableExport": false,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"_navigationCreate": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
+					"keyField": [],
+					"dialogTitle": "Edit Mode",
+					"dialogIcon": "sap-icon://fa-solid/edit",
+					"dialogHeight": "500",
+					"dialogWidth": "1024"
+				},
+				"title": "List",
+				"subTitle": "User List",
+				"avatarIcon": "sap-icon://fa-regular/user-circle",
+				"avatarBackgroundColor": "Accent8",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "688a7405-3500-4fb4-9198-db1af31c5845",
+					"keyField": []
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": false,
+				"paginationShowSelection": false,
+				"paginationRows": 25,
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": false,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent"
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "UserId",
+				"label": "USER ID",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "FirstName",
+				"label": "First Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "MiddleName",
+				"label": "Middle Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastName",
+				"label": "Last Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "Suffix",
+				"label": "Suffix",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserName",
+				"label": "User Name ",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ContactNumber",
+				"label": "Contact Number",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "EmailAddress",
+				"label": "Email Address",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserRole",
+				"label": "User Role",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CreationUserId",
+				"label": "Creation User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "CreationTime",
+				"label": "Creation Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastModifierUserId",
+				"label": "Last Modifier User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "LastModificationTime",
+				"label": "Last Modification Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeleterUserId",
+				"label": "Deleter User Id",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeletionTime",
+				"label": "Deletion Time",
+				"type": "Timestamp With Time Zone",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsDeleted",
+				"label": "Is Deleted",
+				"type": "Smallint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "Password",
+				"label": "Password",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "UserGender",
+				"label": "User Gender",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsNewUser",
+				"label": "Is New User",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ReqToChangePassword",
+				"label": "Req To Change Password",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsLockedOut",
+				"label": "Is Locked Out",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsActive",
+				"label": "Is Active",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOAirportCode",
+				"label": "PRAO Airport Code",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOStartDate",
+				"label": "PRAO Start Date",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOEndDate",
+				"label": "PRAO End Date",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAOBatch",
+				"label": "PRAO Batch",
+				"type": "Bigint",
+				"usage": "BOTH"
+			},
+			{
+				"name": "PRAORemarks",
+				"label": "PRAO Remarks",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "AirlineCode",
+				"label": "Airline Code",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": false,
+				"visible": false,
+				"name": "UserId",
+				"text": "USER ID",
+				"fieldPos": 1
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "FirstName",
+				"text": "First Name",
+				"fieldPos": 2
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "MiddleName",
+				"text": "Middle Name",
+				"fieldPos": 3
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "LastName",
+				"text": "Last Name",
+				"fieldPos": 4
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "Suffix",
+				"text": "Suffix",
+				"fieldPos": 5
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "UserName",
+				"text": "User Name ",
+				"fieldPos": 6
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "ContactNumber",
+				"text": "Contact Number",
+				"fieldPos": 7
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "EmailAddress",
+				"text": "Email Address",
+				"fieldPos": 8
+			}
+		],
+		"defaultVariant": {
+			"id": "88d9d9d9-8dbb-43ce-f07f-87d22b7eae38",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "tbl_users_list",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.11.26.1049",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}
