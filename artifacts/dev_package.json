@@ -196,11 +196,6 @@
 			"id": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
 			"name": "user_connectors_scripts",
 			"description": null
-		},
-		{
-			"id": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
-			"name": "tbl_users_connector_script",
-			"description": null
 		}
 	],
 	"events": [],
