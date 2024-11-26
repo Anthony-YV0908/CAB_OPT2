@@ -141,7 +141,13 @@
 	"api_group": [],
 	"tile": [],
 	"category": [],
-	"launchpad": [],
+	"launchpad": [
+		{
+			"id": "c6c3012c-8423-4b38-b438-b8895f292f6e",
+			"name": "cab_otp",
+			"description": null
+		}
+	],
 	"certificates": [],
 	"role": [],
 	"systems": [],
