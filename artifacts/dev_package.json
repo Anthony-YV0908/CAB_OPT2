@@ -7,9 +7,18 @@
 	},
 	"name": "CAB_OTP2",
 	"description": null,
-	"ver": "24.11.25.1646",
+	"ver": "24.11.26.1011",
 	"enableCICD": true,
 	"apps": [
+		{
+			"id": "e59192fe-ea25-47b8-9eb7-37cb0c067da3",
+			"application": "cablist",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
+		},
 		{
 			"id": "131ae450-7363-4c7c-9ff5-5d5111e21fbe",
 			"application": "daily_otp",
