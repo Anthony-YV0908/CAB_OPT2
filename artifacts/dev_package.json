@@ -7,7 +7,7 @@
 	},
 	"name": "CAB_OTP2",
 	"description": null,
-	"ver": "24.11.26.1011",
+	"ver": "24.11.26.1032",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -39,7 +39,18 @@
 	],
 	"odataSource": [],
 	"odataMock": [],
-	"dictionary": [],
+	"dictionary": [
+		{
+			"id": "1d8eeb51-5f38-41b0-96e3-8040a4f3d692",
+			"name": "daily_otp_archive",
+			"description": "Daily OTP CAB"
+		},
+		{
+			"id": "0e8f8aa9-a322-441a-9a7c-c933b51362e2",
+			"name": "daily_otp",
+			"description": "Daily OTP CAB"
+		}
+	],
 	"jsclass": [
 		{
 			"id": "fb7b294e-966d-4f90-8dce-0693988d5b43",
