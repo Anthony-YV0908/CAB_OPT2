@@ -29,12 +29,51 @@
 			}
 		}
 	],
-	"api": [],
+	"api": [
+		{
+			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
+			"name": "CABServerside",
+			"description": null,
+			"apiGroup": null
+		}
+	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [],
-	"jsclass": [],
-	"jsscript_group": [],
+	"jsclass": [
+		{
+			"id": "fb7b294e-966d-4f90-8dce-0693988d5b43",
+			"name": "monthly_otp",
+			"description": null
+		},
+		{
+			"id": "c60ea49a-3bc3-40f8-bfc0-2553e224e68b",
+			"name": "daily_otp",
+			"description": null
+		},
+		{
+			"id": "b33acbf4-695f-4f90-9eb1-db3a1f37d79d",
+			"name": "airportcode",
+			"description": null
+		},
+		{
+			"id": "9fb0013d-050f-43ff-948d-8444d9e97f28",
+			"name": "airport_ph",
+			"description": null
+		},
+		{
+			"id": "424a9744-3fbd-4605-a2e5-29df4c20a5cc",
+			"name": "daily_otp_archive",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "2de22d32-a86c-4e1f-ae61-13f6a1b49072",
+			"name": "Axios",
+			"description": ""
+		}
+	],
 	"theme": [],
 	"pdf": [],
 	"rulesengine": [],
