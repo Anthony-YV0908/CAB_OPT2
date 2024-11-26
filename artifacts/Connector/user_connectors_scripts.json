@@ -1,0 +1,19 @@
+{
+	"id": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
+	"createdAt": "2024-11-26T04:56:28.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"scriptSel": "d2b616ad-83f3-4fee-841a-cc023a548356",
+		"scriptRun": "0c5d2acb-f6e6-44a9-8faf-71d02d536027",
+		"hasDocumentation": false,
+		"overriddenFieldCatalog": false
+	},
+	"documentation": {},
+	"name": "user_connectors_scripts",
+	"description": null,
+	"group": null,
+	"type": "S",
+	"ver": "24.11.26.1359",
+	"disabled": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

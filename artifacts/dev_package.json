@@ -36,6 +36,15 @@
 			"package": {
 				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
 			}
+		},
+		{
+			"id": "131ae450-7363-4c7c-9ff5-5d5111e21fbe",
+			"application": "daily_otp",
+			"title": "",
+			"description": "",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
 		}
 	],
 	"api": [
@@ -183,6 +192,11 @@
 	"script_scheduler": [],
 	"wf_definition": [],
 	"connector": [
+		{
+			"id": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
+			"name": "user_connectors_scripts",
+			"description": null
+		},
 		{
 			"id": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
 			"name": "tbl_users_connector_script",
