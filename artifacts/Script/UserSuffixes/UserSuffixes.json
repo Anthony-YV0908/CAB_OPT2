@@ -1,0 +1,21 @@
+{
+	"id": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7",
+	"createdAt": "2024-11-26T05:08:43.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "UserSuffixes",
+	"ver": "24.11.26.1309",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

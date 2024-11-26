@@ -1,0 +1,260 @@
+{
+	"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
+	"createdAt": "2024-11-03T15:11:53.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "3d3b9073-61d5-4a12-cdec-04d083d4c280",
+			"fieldName": "UserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "USER ID",
+			"default": "50",
+			"isNullable": true
+		},
+		{
+			"id": "995aabc9-3c48-4884-9c10-af580043e65b",
+			"fieldName": "FirstName",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "50",
+			"description": "First Name",
+			"isNullable": true
+		},
+		{
+			"id": "b144429b-e2cd-4a3c-af5b-03316fbc06e4",
+			"fieldName": "MiddleName",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "50",
+			"description": "Middle Name",
+			"isNullable": true
+		},
+		{
+			"id": "b2464307-1003-4a72-d8ea-5175cfa08ab6",
+			"fieldName": "LastName",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "50",
+			"description": "Last Name",
+			"isNullable": true
+		},
+		{
+			"id": "bf168e2b-5011-433f-ca74-1c0612ecef52",
+			"fieldName": "Suffix",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "10",
+			"description": "Suffix",
+			"isNullable": true
+		},
+		{
+			"id": "b922b84c-ff71-4482-93a5-242a205e8f47",
+			"fieldName": "UserName",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "100",
+			"description": "User Name",
+			"isNullable": true
+		},
+		{
+			"id": "9c3a7547-d95a-4265-b163-0e7793272da2",
+			"fieldName": "ContactNumber",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "100",
+			"description": "Contact Number",
+			"isNullable": true
+		},
+		{
+			"id": "dcbd5928-e89b-4bee-947f-a262af652e36",
+			"fieldName": "EmailAddress",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "100",
+			"description": "Email Address",
+			"isNullable": true
+		},
+		{
+			"id": "3d09ed00-98d3-49d3-d43c-ce0bab21ba44",
+			"fieldName": "UserRole",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "50",
+			"description": "User Role",
+			"isNullable": true
+		},
+		{
+			"id": "a34c176c-bcb0-4ccd-a702-76570c7bbeab",
+			"fieldName": "CreatorUserId",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Creation User Id"
+		},
+		{
+			"id": "8e4c50e1-db4c-4adb-8c9c-45448f26e67d",
+			"fieldName": "CreationTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Creation Time"
+		},
+		{
+			"id": "9bf677ee-eb42-4118-d6c9-0cb2f11ea593",
+			"fieldName": "LastModifierUserId",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Last Modifier User Id"
+		},
+		{
+			"id": "4c141c55-58c5-4e8b-f426-9ca08d146340",
+			"fieldName": "LastModificationTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Last Modification Time"
+		},
+		{
+			"id": "16fd678a-1ac0-4c82-f5a7-d55ccf466020",
+			"fieldName": "DeleterUserId",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Deleter User Id"
+		},
+		{
+			"id": "3b48e745-275e-4033-a63b-e33e1c13b2b3",
+			"fieldName": "DeletionTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Deletion Time"
+		},
+		{
+			"id": "252babd8-90b8-4ad8-8da9-791622fde0ab",
+			"fieldName": "IsDeleted",
+			"fieldType": "smallint",
+			"isUnique": false,
+			"default": "0",
+			"description": "Is Deleted",
+			"isNullable": true
+		},
+		{
+			"id": "225726b5-228e-4823-f31c-57e0f0e8d01d",
+			"fieldName": "Password",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "20",
+			"description": "IsDeleted",
+			"isNullable": true
+		},
+		{
+			"id": "711351e4-334a-42e2-a2cd-dc01a6ba74b1",
+			"fieldName": "UserGender",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "User Gender",
+			"isNullable": true
+		},
+		{
+			"id": "776f63a7-384b-4cb7-ede1-d493cd090ee9",
+			"fieldName": "IsNewUser",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Is New User"
+		},
+		{
+			"id": "bc240d69-9d98-4e24-cda2-af544dbe25ea",
+			"fieldName": "ReqToChangePassword",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Req To Change Password"
+		},
+		{
+			"id": "ccd6c0e5-758e-4b65-c452-c1bf2f88a9ff",
+			"fieldName": "IsLockedOut",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Is Locked Out"
+		},
+		{
+			"id": "c51dd52e-0fca-474c-a3ba-a4a48c8d58a1",
+			"fieldName": "IsActive",
+			"fieldType": "bigint",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Is Active"
+		},
+		{
+			"id": "63066bc1-c94f-4ad8-ea8e-e0ee33765259",
+			"fieldName": "PRAOAirportCode",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "PRAO Airport Code",
+			"isNullable": true
+		},
+		{
+			"id": "2bcd8e60-2790-44ef-fb8b-92b9bdf2f11c",
+			"fieldName": "PRAOStartDate",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "PRAO Start Date",
+			"isNullable": true
+		},
+		{
+			"id": "620d7a43-7da9-4f1a-cf26-ca08c7f8f5ae",
+			"fieldName": "PRAOEndDate",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "PRAO End Date",
+			"isNullable": true
+		},
+		{
+			"id": "d0b03216-6708-47a5-9c0a-2f4522c88762",
+			"fieldName": "PRAOBatch",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "PRAO Batch",
+			"isNullable": true
+		},
+		{
+			"id": "d3d33bdc-5805-4c8a-d205-03e20b2dc3aa",
+			"fieldName": "PRAORemarks",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "PRAO Remarks",
+			"isNullable": true
+		},
+		{
+			"id": "b77148cf-050f-4945-fb66-37a975f03ddf",
+			"fieldName": "AirlineCode",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Airline Code",
+			"isNullable": true
+		},
+		{
+			"id": "4d4ea9ea-b50f-438b-f1dd-b9e0eadabafe",
+			"fieldName": "OTP",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "OTP",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "tbl_user",
+	"description": null,
+	"ver": "24.11.26.1337",
+	"enableAudit": true,
+	"includeDataInPackage": true,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"rolesRead": [],
+	"rolesWrite": []
+}

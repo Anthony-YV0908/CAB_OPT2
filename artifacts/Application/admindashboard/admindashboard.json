@@ -117,7 +117,7 @@
 							"data": [
 								{
 									"fieldNo": "7",
-									"fieldName": "oNavigationListItem1",
+									"fieldName": "oAdminDashboard",
 									"fieldParent": "6",
 									"fieldType": "sap.tnt.NavigationListItem",
 									"script": "",
@@ -142,8 +142,44 @@
 										{
 											"attribute": "select",
 											"grouping": "Events",
-											"value": "oApp.to(oPageHome);",
+											"value": "Anonymous Function",
 											"script": "oApp.to(oPageHome);",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "0e48a539-4fc2-4695-d5e7-c6fc053854ee",
+									"fieldName": "oDailyOTPNav",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Daily OTP",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/plane",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.tnt.NavigationListItem/oDailyOTPNav/select.js",
+											"language": "javascript",
 											"translation": []
 										}
 									],
@@ -151,7 +187,7 @@
 								},
 								{
 									"fieldNo": "11",
-									"fieldName": "oNavigationListItem2",
+									"fieldName": "oNavigationListItem",
 									"fieldParent": "6",
 									"fieldType": "sap.tnt.NavigationListItem",
 									"script": "",
@@ -177,14 +213,14 @@
 											"attribute": "select",
 											"grouping": "Events",
 											"value": "Anonymous Function",
-											"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem2/select.script",
+											"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem/select.script",
 											"translation": []
 										}
 									],
 									"data": [
 										{
 											"fieldNo": "12",
-											"fieldName": "oNavigationListItem3",
+											"fieldName": "oUserCrudNav",
 											"fieldParent": "11",
 											"fieldType": "sap.tnt.NavigationListItem",
 											"script": "",
@@ -210,7 +246,7 @@
 													"attribute": "select",
 													"grouping": "Events",
 													"value": "Anonymous Function",
-													"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem3/select.js",
+													"script": "file://event/sap.tnt.NavigationListItem/oUserCrudNav/select.js",
 													"language": "javascript",
 													"translation": []
 												}
@@ -313,7 +349,34 @@
 						},
 						{
 							"fieldNo": "15",
-							"fieldName": "oPageBlock",
+							"fieldName": "oUserCrud",
+							"fieldParent": "14",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showFooter",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "28b582c1-0718-45cc-eddd-b47675641133",
+							"fieldName": "oDailyOtp",
 							"fieldParent": "14",
 							"fieldType": "sap.m.Page",
 							"script": "",
@@ -352,7 +415,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.26.1048",
+	"ver": "24.11.26.1323",
 	"application": "admindashboard",
 	"title": "Admin Dashboard",
 	"description": "",

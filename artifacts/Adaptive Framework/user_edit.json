@@ -1,19 +1,19 @@
 {
-	"id": "688a7405-3500-4fb4-9198-db1af31c5845",
-	"createdAt": "2024-11-03T13:20:40.000Z",
+	"id": "07acd98c-1783-42ec-afb2-b6fd1ebd3ce0",
+	"createdAt": "2024-11-26T05:12:26.000Z",
 	"createdBy": "admin",
 	"settings": {
 		"properties": {
 			"report": {
 				"showIcon": true,
 				"actionButtonLeft": false,
-				"iconButtonClose": "sap-icon://fa-regular/times-circle",
-				"textButtonClose": "",
-				"typeButtonClose": "Reject",
-				"iconButtonSave": "sap-icon://save",
-				"textButtonSave": "",
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
 				"textToastSave": "Saved",
-				"typeButtonSave": "Accept",
+				"typeButtonSave": "Emphasized",
 				"iconButtonDelete": "",
 				"textButtonDelete": "Delete",
 				"textToastDelete": "Deleted",
@@ -43,18 +43,12 @@
 				"titleConfirmDelete": "Delete ",
 				"requiredFieldsToast": "Please fill in all the required fields",
 				"title": "User Edit",
-				"subTitle": "Edit User",
-				"avatarIcon": "sap-icon://user-edit",
-				"avatarBackgroundColor": "Accent8",
-				"dynamicTitle": ""
+				"subTitle": "Edit User Data",
+				"avatarBackgroundColor": "Accent7"
 			},
 			"form": {
 				"enableCompact": false,
-				"enableCentered": false,
-				"formLayout": "ResponsiveGridLayout",
-				"columnsL": "",
-				"columnsM": "",
-				"labelSpanL": ""
+				"enableCentered": true
 			},
 			"table": {}
 		},
@@ -156,6 +150,12 @@
 				"usage": "BOTH"
 			},
 			{
+				"name": "OTP",
+				"label": "OTP",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
 				"name": "PRAOAirportCode",
 				"label": "PRAO Airport Code",
 				"type": "text",
@@ -231,7 +231,7 @@
 		"fieldsSel": [
 			{
 				"inputFormatter": "",
-				"editable": false,
+				"editable": true,
 				"visible": false,
 				"name": "UserId",
 				"text": "USER ID",
@@ -242,18 +242,16 @@
 				"editable": false,
 				"visible": true,
 				"name": "UserName",
-				"text": "UserName",
-				"fieldPos": 2,
-				"required": false
+				"text": "User Name ",
+				"fieldPos": 2
 			},
 			{
 				"inputFormatter": "",
 				"editable": true,
 				"visible": true,
 				"name": "FirstName",
-				"text": "FirstName",
+				"text": "First Name",
 				"fieldPos": 3,
-				"type": "Input",
 				"required": true
 			},
 			{
@@ -261,16 +259,15 @@
 				"editable": true,
 				"visible": true,
 				"name": "MiddleName",
-				"text": "MiddleName",
-				"fieldPos": 4,
-				"required": false
+				"text": "Middle Name",
+				"fieldPos": 4
 			},
 			{
 				"inputFormatter": "",
 				"editable": true,
 				"visible": true,
 				"name": "LastName",
-				"text": "LastName",
+				"text": "Last Name",
 				"fieldPos": 5,
 				"required": true
 			},
@@ -282,40 +279,17 @@
 				"text": "Suffix",
 				"fieldPos": 6,
 				"type": "SingleSelectScript",
-				"scriptSelect": "43f35c15-d47d-4ef1-8f3d-882983fa1732"
-			},
-			{
-				"inputFormatter": "",
-				"editable": true,
-				"visible": true,
-				"name": "EmailAddress",
-				"text": "EmailAddress",
-				"fieldPos": 7,
-				"inputType": "Email",
-				"required": true
+				"scriptSelect": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7"
 			},
 			{
 				"inputFormatter": "",
 				"editable": true,
 				"visible": true,
 				"name": "ContactNumber",
-				"text": "ContactNumber",
-				"fieldPos": 8,
+				"text": "Contact Number",
+				"fieldPos": 7,
 				"inputType": "Number",
-				"mask": "+63 999 999 9999",
-				"required": true
-			},
-			{
-				"inputFormatter": "",
-				"editable": true,
-				"visible": true,
-				"name": "UserRole",
-				"text": "UserRole",
-				"fieldPos": 9,
-				"required": true,
-				"enableNewForm": false,
-				"type": "SingleSelectScript",
-				"scriptSelect": "e67136f9-e7e7-493f-9df5-7c32bf876174"
+				"mask": "+63 999 999 9999"
 			},
 			{
 				"inputFormatter": "",
@@ -323,9 +297,29 @@
 				"visible": true,
 				"name": "UserGender",
 				"text": "User Gender",
+				"fieldPos": 8,
+				"required": true,
+				"type": "SingleSelectScript",
+				"scriptSelect": "86f66d2d-b15b-4bce-a40c-291502ab16ac"
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "EmailAddress",
+				"text": "Email Address",
+				"fieldPos": 9,
+				"required": true
+			},
+			{
+				"inputFormatter": "",
+				"editable": true,
+				"visible": true,
+				"name": "UserRole",
+				"text": "User Role",
 				"fieldPos": 10,
 				"type": "SingleSelectScript",
-				"scriptSelect": "709ddcc0-f35e-4523-ae7a-fadfc10cc234",
+				"scriptSelect": "5811f8a8-4edf-4d24-ae6e-79bafe14a14b",
 				"required": true
 			},
 			{
@@ -334,8 +328,7 @@
 				"visible": true,
 				"name": "PRAOAirportCode",
 				"text": "PRAO Airport Code",
-				"fieldPos": 11,
-				"type": "DatePicker"
+				"fieldPos": 11
 			},
 			{
 				"inputFormatter": "",
@@ -362,12 +355,13 @@
 				"name": "PRAOBatch",
 				"text": "PRAO Batch",
 				"fieldPos": 14,
-				"type": "DatePicker"
+				"inputType": "Number",
+				"mask": "99999"
 			}
 		],
 		"fieldsRun": [],
 		"defaultVariant": {
-			"id": "a7542e02-da3d-4bfa-acb4-e4b4102f4f8c",
+			"id": "b15099ae-feee-45f7-b9b0-65749fbe87a2",
 			"colOrder": "key_a_to_z",
 			"rowOrder": "key_a_to_z",
 			"row": [],
@@ -377,15 +371,15 @@
 			"exclusions": {}
 		}
 	},
-	"name": "tbl_user_edit",
+	"name": "user_edit",
 	"description": "",
 	"group": "",
 	"type": "C",
-	"connectorid": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+	"connectorid": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.11.26.1049",
+	"ver": "24.11.26.1340",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_edit",

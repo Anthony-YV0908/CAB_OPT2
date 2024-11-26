@@ -1,0 +1,49 @@
+{
+	"id": "0c5d2acb-f6e6-44a9-8faf-71d02d536027",
+	"createdAt": "2024-11-26T04:20:26.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
+			"name": "tbl_user",
+			"contextname": "tbl_user"
+		}
+	],
+	"apis": [
+		{
+			"id": "ac1bab8e-05ce-4ddb-c79c-e36264bc76e1",
+			"parent": "616011a4-3a5a-4920-a3e9-40c128143432",
+			"name": "/Delete",
+			"contextname": "Delete",
+			"method": "POST"
+		},
+		{
+			"id": "5e9a925b-8246-495c-b39f-18cc06cafbd5",
+			"parent": "616011a4-3a5a-4920-a3e9-40c128143432",
+			"name": "/Get",
+			"contextname": "Get",
+			"method": "POST"
+		},
+		{
+			"id": "6f61ab72-d763-45f2-dae1-9a2184b2d3ee",
+			"parent": "616011a4-3a5a-4920-a3e9-40c128143432",
+			"name": "/Save",
+			"contextname": "Save",
+			"method": "POST"
+		}
+	],
+	"name": "UserCrudScript",
+	"ver": "24.11.26.1331",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

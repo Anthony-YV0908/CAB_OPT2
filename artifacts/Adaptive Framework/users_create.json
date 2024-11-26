@@ -1,19 +1,19 @@
 {
-	"id": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
-	"createdAt": "2024-11-03T13:41:00.000Z",
+	"id": "4e75b415-4da9-484d-bf4c-009e9f1761b5",
+	"createdAt": "2024-11-26T05:06:27.000Z",
 	"createdBy": "admin",
 	"settings": {
 		"properties": {
 			"report": {
 				"showIcon": true,
 				"actionButtonLeft": false,
-				"iconButtonClose": "sap-icon://fa-regular/times-circle",
-				"textButtonClose": "",
-				"typeButtonClose": "Reject",
-				"iconButtonSave": "sap-icon://save",
-				"textButtonSave": "",
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonSave": "",
+				"textButtonSave": "Save",
 				"textToastSave": "Saved",
-				"typeButtonSave": "Accept",
+				"typeButtonSave": "Emphasized",
 				"iconButtonDelete": "",
 				"textButtonDelete": "Delete",
 				"textToastDelete": "Deleted",
@@ -42,38 +42,13 @@
 				"textConfirmDelete": "Do you want to delete this entry ? ",
 				"titleConfirmDelete": "Delete ",
 				"requiredFieldsToast": "Please fill in all the required fields",
-				"title": "User Create",
-				"subTitle": "User Creation",
-				"avatarIcon": "sap-icon://user-edit",
-				"iconButtonDraft": "",
-				"textButtonDraft": "Save as draft",
-				"textToastDraft": "Saved as draft",
-				"typeButtonDraft": "Attention",
-				"tabFText": "FORM",
-				"enableDraft": false,
-				"enableTabF": false,
-				"textUnique": "",
-				"tab1Icon": "sap-icon://fa-brands/500px",
-				"_tab1Nav": {
-					"destinationType": "F",
-					"openAs": "P",
-					"butType": "Accept",
-					"destinationTargetF": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
-					"keyField": []
-				}
+				"title": "User Creation",
+				"subTitle": "Create a user",
+				"avatarBackgroundColor": "Accent7"
 			},
 			"form": {
 				"enableCompact": true,
-				"enableCentered": false,
-				"columnsL": "",
-				"labelSpanL": "",
-				"columnsM": "",
-				"formLayout": "ResponsiveGridLayout",
-				"labelSpanM": "",
-				"field1ReadOnly": "",
-				"field2ReadOnly": "",
-				"operator1ReadOnly": "",
-				"sysvar1ReadOnly": ""
+				"enableCentered": false
 			},
 			"table": {}
 		},
@@ -175,6 +150,12 @@
 				"usage": "BOTH"
 			},
 			{
+				"name": "OTP",
+				"label": "OTP",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
 				"name": "PRAOAirportCode",
 				"label": "PRAO Airport Code",
 				"type": "text",
@@ -255,10 +236,7 @@
 				"name": "FirstName",
 				"text": "First Name",
 				"fieldPos": 1,
-				"inputType": "",
-				"required": true,
-				"type": "Input",
-				"mask": ""
+				"required": true
 			},
 			{
 				"inputFormatter": "",
@@ -266,8 +244,7 @@
 				"visible": true,
 				"name": "MiddleName",
 				"text": "Middle Name",
-				"fieldPos": 2,
-				"required": false
+				"fieldPos": 2
 			},
 			{
 				"inputFormatter": "",
@@ -286,14 +263,7 @@
 				"text": "Suffix",
 				"fieldPos": 4,
 				"type": "SingleSelectScript",
-				"_navigation": {
-					"destinationType": "F",
-					"openAs": "P",
-					"butType": "Default"
-				},
-				"inputType": "",
-				"mask": "",
-				"scriptSelect": "43f35c15-d47d-4ef1-8f3d-882983fa1732"
+				"scriptSelect": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7"
 			},
 			{
 				"inputFormatter": "",
@@ -303,8 +273,8 @@
 				"text": "Contact Number",
 				"fieldPos": 5,
 				"inputType": "Number",
-				"required": true,
-				"mask": "+63 999 999 9999"
+				"mask": "+63 999 999 9999",
+				"required": true
 			},
 			{
 				"inputFormatter": "",
@@ -313,9 +283,7 @@
 				"name": "EmailAddress",
 				"text": "Email Address",
 				"fieldPos": 6,
-				"inputType": "Email",
-				"required": true,
-				"mask": ""
+				"required": true
 			},
 			{
 				"inputFormatter": "",
@@ -326,7 +294,7 @@
 				"fieldPos": 7,
 				"required": true,
 				"type": "SingleSelectScript",
-				"scriptSelect": "e67136f9-e7e7-493f-9df5-7c32bf876174"
+				"scriptSelect": "5811f8a8-4edf-4d24-ae6e-79bafe14a14b"
 			},
 			{
 				"inputFormatter": "",
@@ -336,7 +304,7 @@
 				"text": "User Gender",
 				"fieldPos": 8,
 				"type": "SingleSelectScript",
-				"scriptSelect": "709ddcc0-f35e-4523-ae7a-fadfc10cc234",
+				"scriptSelect": "86f66d2d-b15b-4bce-a40c-291502ab16ac",
 				"required": true
 			},
 			{
@@ -345,8 +313,7 @@
 				"visible": true,
 				"name": "PRAOAirportCode",
 				"text": "PRAO Airport Code",
-				"fieldPos": 9,
-				"required": false
+				"fieldPos": 9
 			},
 			{
 				"inputFormatter": "",
@@ -355,8 +322,7 @@
 				"name": "PRAOStartDate",
 				"text": "PRAO Start Date",
 				"fieldPos": 10,
-				"type": "DatePicker",
-				"required": false
+				"type": "DatePicker"
 			},
 			{
 				"inputFormatter": "",
@@ -365,8 +331,7 @@
 				"name": "PRAOEndDate",
 				"text": "PRAO End Date",
 				"fieldPos": 11,
-				"type": "DatePicker",
-				"required": false
+				"type": "DatePicker"
 			},
 			{
 				"inputFormatter": "",
@@ -375,19 +340,17 @@
 				"name": "PRAOBatch",
 				"text": "PRAO Batch",
 				"fieldPos": 12,
-				"required": false,
 				"inputType": "Number",
-				"mask": "999999"
+				"mask": "99999"
 			},
 			{
 				"inputFormatter": "",
 				"editable": true,
 				"visible": true,
 				"name": "UserName",
-				"text": "User Name",
+				"text": "User Name ",
 				"fieldPos": 13,
-				"required": true,
-				"unique": true
+				"required": true
 			},
 			{
 				"inputFormatter": "",
@@ -397,13 +360,12 @@
 				"text": "Password",
 				"fieldPos": 14,
 				"required": true,
-				"mask": "",
 				"inputType": "Password"
 			}
 		],
 		"fieldsRun": [],
 		"defaultVariant": {
-			"id": "836f285e-5adb-4b24-fd59-e3110bba37d1",
+			"id": "9772f6f2-6d1b-45a1-f33e-95f36781a74a",
 			"colOrder": "key_a_to_z",
 			"rowOrder": "key_a_to_z",
 			"row": [],
@@ -413,15 +375,15 @@
 			"exclusions": {}
 		}
 	},
-	"name": "tbl_user_create",
+	"name": "users_create",
 	"description": "",
 	"group": "",
 	"type": "C",
-	"connectorid": "23e27cdf-2e07-487f-96ad-780bb244a9c0",
+	"connectorid": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.11.26.1049",
+	"ver": "24.11.26.1340",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_edit",

@@ -46,27 +46,20 @@
 			"apiGroup": null
 		},
 		{
-			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
-			"name": "daily_archive",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
-		},
-		{
 			"id": "616011a4-3a5a-4920-a3e9-40c128143432",
 			"name": "userEndpoint",
 			"description": null,
 			"apiGroup": null
-		},
-		{
-			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
-			"name": "daily_otp",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
+		{
+			"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
+			"name": "tbl_user",
+			"description": null
+		},
 		{
 			"id": "1d8eeb51-5f38-41b0-96e3-8040a4f3d692",
 			"name": "daily_otp_archive",
@@ -85,6 +78,16 @@
 			"description": null
 		},
 		{
+			"id": "f06a6112-2602-4f8a-a704-fe815114d791",
+			"name": "Auth",
+			"description": null
+		},
+		{
+			"id": "d2b616ad-83f3-4fee-841a-cc023a548356",
+			"name": "UserSetup",
+			"description": null
+		},
+		{
 			"id": "c60ea49a-3bc3-40f8-bfc0-2553e224e68b",
 			"name": "daily_otp",
 			"description": null
@@ -100,12 +103,37 @@
 			"description": null
 		},
 		{
+			"id": "86f66d2d-b15b-4bce-a40c-291502ab16ac",
+			"name": "UserGender",
+			"description": null
+		},
+		{
+			"id": "5811f8a8-4edf-4d24-ae6e-79bafe14a14b",
+			"name": "UserRoles",
+			"description": null
+		},
+		{
 			"id": "424a9744-3fbd-4605-a2e5-29df4c20a5cc",
 			"name": "daily_otp_archive",
+			"description": null
+		},
+		{
+			"id": "0c5d2acb-f6e6-44a9-8faf-71d02d536027",
+			"name": "UserCrudScript",
+			"description": null
+		},
+		{
+			"id": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7",
+			"name": "UserSuffixes",
 			"description": null
 		}
 	],
 	"jsscript_group": [
+		{
+			"id": "54188af2-e71b-4723-b530-2188ceaffa22",
+			"name": "UserServices",
+			"description": ""
+		},
 		{
 			"id": "2de22d32-a86c-4e1f-ae61-13f6a1b49072",
 			"name": "Axios",
@@ -117,20 +145,20 @@
 	"rulesengine": [],
 	"reports": [
 		{
-			"id": "c865bef7-a15e-4034-bea4-bd1ab82ec71d",
-			"name": "tbl_user_create",
+			"id": "4e75b415-4da9-484d-bf4c-009e9f1761b5",
+			"name": "users_create",
 			"description": "",
 			"application": "planet9_adaptive_edit"
 		},
 		{
-			"id": "688a7405-3500-4fb4-9198-db1af31c5845",
-			"name": "tbl_user_edit",
+			"id": "07acd98c-1783-42ec-afb2-b6fd1ebd3ce0",
+			"name": "user_edit",
 			"description": "",
 			"application": "planet9_adaptive_edit"
 		},
 		{
-			"id": "44bc6823-8c3d-47e9-ad33-6c147b5a6e64",
-			"name": "tbl_users_list",
+			"id": "04d4f58c-b1df-40b9-8691-3d60038025c0",
+			"name": "user_lookup",
 			"description": "",
 			"application": "planet9_adaptive_list"
 		}
