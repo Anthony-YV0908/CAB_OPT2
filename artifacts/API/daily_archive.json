@@ -1,0 +1,533 @@
+{
+	"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
+	"createdAt": "2024-11-06T08:49:56.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "9feaac4f-e36e-4865-86a8-752a29c98350",
+			"path": "/daily_otp_archive",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "daily_otp_archive"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "74a74846-8b3e-4687-b388-eab6f71113f0",
+			"path": "/daily_otp_archive",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "daily_otp_archive"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "daily_otp_archive"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "d7de1e2a-da12-4df6-9531-3210fef5445a",
+			"path": "/daily_otp_archive",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "daily_otp_archive"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "daily_otp_archive"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ccd99e72-d23d-4d7d-927e-3f23f6b4957b",
+			"path": "/daily_otp_archive",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "daily_otp_archive"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "9b1a4e3a-ea06-4d97-8142-0d9e9156d9bf",
+			"path": "/daily_otp_archive/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "ad109ccc-2e15-4db7-b208-ebf6cefe6d66",
+			"name": "daily_otp_archive",
+			"properties": [
+				{
+					"id": "d0693b57-f88b-40aa-b6b5-81b461572846",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "9c9d9d15-f4b1-4c7f-b2cd-8910ccb7f04e",
+					"parent": "",
+					"name": "OTPid",
+					"objectType": "integer"
+				},
+				{
+					"id": "6ca223e0-861b-41f3-814a-f92ad9de9cd0",
+					"parent": "",
+					"name": "DateIssued",
+					"objectType": "string"
+				},
+				{
+					"id": "79f3d048-ccb1-4488-a235-a3e419b395af",
+					"parent": "",
+					"name": "Airport",
+					"objectType": "string"
+				},
+				{
+					"id": "69c62031-7372-4951-be54-8e5f38f07cc0",
+					"parent": "",
+					"name": "FlightId",
+					"objectType": "integer"
+				},
+				{
+					"id": "ce2813b3-5f14-48fa-9713-57106f9c34af",
+					"parent": "",
+					"name": "AOC",
+					"objectType": "string"
+				},
+				{
+					"id": "8a9f90de-75fa-49c6-9b0d-7d85b48a7b27",
+					"parent": "",
+					"name": "FlightNumber",
+					"objectType": "integer"
+				},
+				{
+					"id": "bbf2b634-9481-4f5a-9d2c-9c65da164d41",
+					"parent": "",
+					"name": "FlightDate",
+					"objectType": "string"
+				},
+				{
+					"id": "ad1a162a-03fe-4739-b373-cf5c1ceab4ef",
+					"parent": "",
+					"name": "Origin",
+					"objectType": "string"
+				},
+				{
+					"id": "4cece46e-762c-4e23-be18-67ca91e51d9e",
+					"parent": "",
+					"name": "Destination",
+					"objectType": "string"
+				},
+				{
+					"id": "8c27b088-50c4-4fb9-94d3-5a56195e9745",
+					"parent": "",
+					"name": "STD",
+					"objectType": "string"
+				},
+				{
+					"id": "97a5249e-15f1-41db-b15f-316529c9171a",
+					"parent": "",
+					"name": "EstimatedTimeDeparture",
+					"objectType": "string"
+				},
+				{
+					"id": "b303f0ae-b958-483e-8b6d-4b06d006876b",
+					"parent": "",
+					"name": "ActualTimeDeParture",
+					"objectType": "string"
+				},
+				{
+					"id": "ec0101f1-2d56-4304-baad-85d2d700adb2",
+					"parent": "",
+					"name": "STA",
+					"objectType": "string"
+				},
+				{
+					"id": "c6e9bd3f-f082-4c32-8e9e-aa8f566f5e30",
+					"parent": "",
+					"name": "EstimatedTimeofArrival",
+					"objectType": "string"
+				},
+				{
+					"id": "ff890a75-d49d-49f4-9fa0-ff06b789d37e",
+					"parent": "",
+					"name": "ActualTimeofArrival",
+					"objectType": "string"
+				},
+				{
+					"id": "568fe887-a0ff-4d57-ac8d-4b2b4e342d95",
+					"parent": "",
+					"name": "AdultPax",
+					"objectType": "integer"
+				},
+				{
+					"id": "c177f026-bfe6-400f-a590-cc295b19e9c6",
+					"parent": "",
+					"name": "InfantPax",
+					"objectType": "integer"
+				},
+				{
+					"id": "22fe7b20-3f08-4391-ac87-ad3de2eb93e4",
+					"parent": "",
+					"name": "TotalPax",
+					"objectType": "integer"
+				},
+				{
+					"id": "811eb2af-7e57-487d-8e43-a28ae8d6c63e",
+					"parent": "",
+					"name": "Remarks",
+					"objectType": "string"
+				},
+				{
+					"id": "ff372f6e-54cb-4718-84eb-8717fbc81127",
+					"parent": "",
+					"name": "IsDelayedArrival",
+					"objectType": "integer"
+				},
+				{
+					"id": "8c1d7d57-7bde-4dd6-9551-f4641e7236ae",
+					"parent": "",
+					"name": "IsCancelledDeparture",
+					"objectType": "integer"
+				},
+				{
+					"id": "401e39d0-71a3-4794-b196-81cc6817e4e1",
+					"parent": "",
+					"name": "IsCancelledArrival",
+					"objectType": "integer"
+				},
+				{
+					"id": "2799181e-9472-46f7-8d18-11f92fc34749",
+					"parent": "",
+					"name": "IsOTPDeparture",
+					"objectType": "integer"
+				},
+				{
+					"id": "9fa03c83-43de-465a-895d-2c2ada151ccb",
+					"parent": "",
+					"name": "OTPDeparture",
+					"objectType": "integer"
+				},
+				{
+					"id": "b725a615-c2f5-4ecb-aed0-f0acdd57c020",
+					"parent": "",
+					"name": "IsOTPArrival",
+					"objectType": "integer"
+				},
+				{
+					"id": "e8ecf8ba-7059-4095-a96c-2ed1f884b13d",
+					"parent": "",
+					"name": "OTPArrival",
+					"objectType": "integer"
+				},
+				{
+					"id": "7a0ec54a-f881-4af4-b985-24bba306701a",
+					"parent": "",
+					"name": "RecordedInFlightCancel",
+					"objectType": "integer"
+				},
+				{
+					"id": "59d84b93-ea36-4442-9b6b-f28da50084a7",
+					"parent": "",
+					"name": "RecordedInFlightDelay",
+					"objectType": "integer"
+				},
+				{
+					"id": "88c90dca-5258-4d09-91cb-e6b266e78b00",
+					"parent": "",
+					"name": "DateCreated",
+					"objectType": "string"
+				},
+				{
+					"id": "a02955d9-e4eb-4d4b-8eb4-9dca1e181f6e",
+					"parent": "",
+					"name": "DateUpdated",
+					"objectType": "string"
+				},
+				{
+					"id": "9a71747e-0798-4f58-9bee-f320c4883af3",
+					"parent": "",
+					"name": "Created",
+					"objectType": "integer"
+				},
+				{
+					"id": "a4c668f1-7c13-442d-a1d8-bac03542cf71",
+					"parent": "",
+					"name": "Updated",
+					"objectType": "integer"
+				},
+				{
+					"id": "e9337e07-f7d0-44f7-8706-8186d01ea96b",
+					"parent": "",
+					"name": "DateDeleted",
+					"objectType": "string"
+				},
+				{
+					"id": "329d9387-2af5-423c-a3d5-e9bc56ff9dfe",
+					"parent": "",
+					"name": "DeletedBy",
+					"objectType": "integer"
+				},
+				{
+					"id": "4d833a80-4a4b-4fb7-92ec-be1f6622caba",
+					"parent": "",
+					"name": "isDeleted",
+					"objectType": "integer"
+				},
+				{
+					"id": "fe50792f-0994-4676-aea7-0b923e2fdb92",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "94fede45-06f5-4099-b3bb-145007bd026f",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "ba41812d-625d-4863-8dcd-461f80bdacf1",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "ddaa60cd-74d0-4894-b3d0-1da1f4da2238",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "d17b04fe-169e-43aa-aae8-1c37dbff9bc0",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "c1eec918-c6fd-4830-8a6d-922ba4db9ebe",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "e11e66a7-3c2d-41f8-8aa4-549bbaf27376",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "111f5058-0ea9-44db-86d3-5e407d80744d",
+			"name": "count",
+			"properties": [
+				{
+					"id": "9a31feb7-b1cf-4a48-9f64-411ffaa51723",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "daily_archive",
+	"endpoint": "/api/entity",
+	"ver": "24.11.26.1117",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f",
+	"apiFormat": 0,
+	"roles": []
+}

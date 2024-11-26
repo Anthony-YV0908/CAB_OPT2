@@ -36,15 +36,6 @@
 			"package": {
 				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
 			}
-		},
-		{
-			"id": "131ae450-7363-4c7c-9ff5-5d5111e21fbe",
-			"application": "daily_otp",
-			"title": "",
-			"description": "",
-			"package": {
-				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
-			}
 		}
 	],
 	"api": [
@@ -55,20 +46,27 @@
 			"apiGroup": null
 		},
 		{
+			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
+			"name": "daily_archive",
+			"description": null,
+			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
+		},
+		{
 			"id": "616011a4-3a5a-4920-a3e9-40c128143432",
 			"name": "userEndpoint",
 			"description": null,
 			"apiGroup": null
+		},
+		{
+			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
+			"name": "daily_otp",
+			"description": null,
+			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
-		{
-			"id": "c196ee77-e289-4acf-aa78-a7636768ae91",
-			"name": "tbl_users",
-			"description": null
-		},
 		{
 			"id": "1d8eeb51-5f38-41b0-96e3-8040a4f3d692",
 			"name": "daily_otp_archive",

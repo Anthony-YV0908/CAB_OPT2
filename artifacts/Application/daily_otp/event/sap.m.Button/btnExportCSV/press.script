@@ -1,2 +1,0 @@
-tableName = TextTableName.getText();
-exportToCSV(`#${tableName}`);
