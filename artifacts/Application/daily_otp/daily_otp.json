@@ -562,7 +562,7 @@
 						},
 						{
 							"fieldNo": "774dec63-7c8e-4219-fe91-1d9d18a630fc",
-							"fieldName": "DailyOTPTable",
+							"fieldName": "Table",
 							"fieldParent": "f3e4bcbd-7cb9-466a-c101-a68acaffc7cf",
 							"fieldType": "sap.m.Table",
 							"script": "",
@@ -2123,7 +2123,7 @@
 												{
 													"attribute": "type",
 													"grouping": "Properties",
-													"value": "Unstyled",
+													"value": "Accept",
 													"script": "",
 													"translation": []
 												},
@@ -2171,18 +2171,6 @@
 							"response": [],
 							"attributes": [],
 							"data": [
-								{
-									"fieldNo": "fc7eac77-6134-4980-b388-197ca58af894",
-									"fieldName": "ComboBox",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
-									"fieldType": "sap.m.ComboBox",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": []
-								},
 								{
 									"fieldNo": "294a778d-bbdc-4e3b-a84e-e85e54ca42fd",
 									"fieldName": "lblSimpleFormDateIssued",
@@ -2324,12 +2312,80 @@
 									"data": []
 								},
 								{
+									"fieldNo": "fc7eac77-6134-4980-b388-197ca58af894",
+									"fieldName": "inSimpleFormAOC",
+									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airportcode>airportcode",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+									"bindingPathID": "df883712-7887-4ad1-8f85-476a847b2436",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "setInitLoad",
+											"grouping": "Model",
+											"value": "cache",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "9c05b287-673c-4d48-9d17-630139b7e28a",
+											"fieldName": "ListItem",
+											"fieldParent": "fc7eac77-6134-4980-b388-197ca58af894",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "529fb602-a5f2-42ef-9b17-960ff7cecbc8",
 									"fieldName": "inSimpleFormAOC",
 									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -2436,12 +2492,80 @@
 									"data": []
 								},
 								{
+									"fieldNo": "a3069972-8e62-4913-cb18-d5c93cdc58ae",
+									"fieldName": "inSimpleFormOrigin",
+									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airport_ph>airport_ph",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "setInitLoad",
+											"grouping": "Model",
+											"value": "cache",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "3b9061dd-ed5b-489e-c5f7-2e3ac9f32f54",
+											"fieldName": "ListItem2",
+											"fieldParent": "a3069972-8e62-4913-cb18-d5c93cdc58ae",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "2164f4df-b761-49f7-f1f1-356507745562",
 									"fieldName": "inSimpleFormOrigin",
 									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -2476,12 +2600,80 @@
 									"data": []
 								},
 								{
+									"fieldNo": "6f189244-2c94-45e3-9fc5-3c8da4728a29",
+									"fieldName": "inSimpleFormDestination",
+									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airport_ph>airport_ph",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "setInitLoad",
+											"grouping": "Model",
+											"value": "cache",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "26362b38-b884-4c7c-b4fd-25f5f0d670ec",
+											"fieldName": "ListItem1",
+											"fieldParent": "6f189244-2c94-45e3-9fc5-3c8da4728a29",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "b18008da-0c24-4d50-a162-7d604bf44c0c",
 									"fieldName": "inSimpleFormDestination",
 									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -4360,12 +4552,73 @@
 									"data": []
 								},
 								{
+									"fieldNo": "d22d706d-a90b-4cf6-df02-0f772c48343f",
+									"fieldName": "inEditSimpleFormAOC",
+									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airport_ph>airport_ph",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "e1f924ca-df82-470d-e9b4-4c2dc883599c",
+											"fieldName": "ListItem5",
+											"fieldParent": "d22d706d-a90b-4cf6-df02-0f772c48343f",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "e43808fd-8032-4455-b0be-9fb7e2f80379",
 									"fieldName": "inEditSimpleFormAOC",
 									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -4480,12 +4733,73 @@
 									"data": []
 								},
 								{
+									"fieldNo": "e228316c-5ae9-49c7-f98e-0127e24f8c4c",
+									"fieldName": "inEditSimpleFormOrigin",
+									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airport_ph>airport_ph",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "2424cfdc-0e09-4e14-9ff2-63a39677238a",
+											"fieldName": "ListItem3",
+											"fieldParent": "e228316c-5ae9-49c7-f98e-0127e24f8c4c",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "75ccaf2a-f1c2-4c74-f268-e2a2daa6b71d",
 									"fieldName": "inEditSimpleFormOrigin",
 									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -4520,12 +4834,73 @@
 									"data": []
 								},
 								{
+									"fieldNo": "613ef53d-aaeb-4636-92b8-ac1ed0b194da",
+									"fieldName": "inEditSimpleFormDestination",
+									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
+									"fieldType": "sap.m.ComboBox",
+									"script": "",
+									"customComponent": false,
+									"bindingValue": "airport_ph>airport_ph",
+									"bindingType": "h",
+									"bindingSource": "API",
+									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "selectedKey",
+											"grouping": "Properties",
+											"value": "{Code}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "selectedItemId",
+											"grouping": "Properties",
+											"value": "{id}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "8da265b0-aa88-4439-b936-802421d3c6a5",
+											"fieldName": "ListItem4",
+											"fieldParent": "613ef53d-aaeb-4636-92b8-ac1ed0b194da",
+											"fieldType": "sap.ui.core.ListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Code}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "key",
+													"grouping": "Properties",
+													"value": "{id}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "9ec0a18c-a60b-4642-e2da-61d065679a7a",
 									"fieldName": "inEditSimpleFormDestination",
 									"fieldParent": "af211f40-e79a-45ae-e832-ca9eb01656ac",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
+									"disabled": true,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -5488,6 +5863,7 @@
 							"fieldType": "sap.ui.table.Table",
 							"script": "",
 							"customComponent": false,
+							"disabled": true,
 							"bindingValue": "CABServerside>daily",
 							"bindingType": "h",
 							"bindingSource": "API",
@@ -5505,6 +5881,188 @@
 		{
 			"fieldNo": 99999,
 			"data": [
+				{
+					"fieldNo": "498fc55f-2c58-4a03-f647-0a6ab1eb4c80",
+					"fieldName": "EditAirportPHDestination",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"modelFieldNo": "613ef53d-aaeb-4636-92b8-ac1ed0b194da"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "53e8eac3-3593-4544-95fc-13e3f6136c71",
+					"fieldName": "EditAirportPHOrigin",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"modelFieldNo": "e228316c-5ae9-49c7-f98e-0127e24f8c4c"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "f0982e59-477a-4ac6-f964-e75ae1fb8e58",
+					"fieldName": "EditAirportCode",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+					"restOperation": "de6134b9-eb47-48e9-99da-0302f5b0774c",
+					"request": [
+						{
+							"name": "where",
+							"value": "{\"Country\":\"P\"}",
+							"parent": "RequestParameter",
+							"expression": ""
+						}
+					],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "df883712-7887-4ad1-8f85-476a847b2436",
+							"modelFieldNo": "d22d706d-a90b-4cf6-df02-0f772c48343f"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "80744d5f-7e6e-40ae-988c-9d25cfbef062",
+					"fieldName": "AirportPHDestination",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"modelFieldNo": "6f189244-2c94-45e3-9fc5-3c8da4728a29"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "0d736759-4b6a-44b3-c65b-fcfa3cb595ea",
+					"fieldName": "AirportPHOrigin",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"modelFieldNo": "a3069972-8e62-4913-cb18-d5c93cdc58ae"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "b55ed789-a22c-4f72-cead-6f18c794765f",
+					"fieldName": "AirportCode",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+					"restOperation": "de6134b9-eb47-48e9-99da-0302f5b0774c",
+					"request": [
+						{
+							"name": "where",
+							"value": "{\"Country\":\"P\"}",
+							"parent": "RequestParameter",
+							"expression": ""
+						}
+					],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "df883712-7887-4ad1-8f85-476a847b2436",
+							"modelFieldNo": "fc7eac77-6134-4980-b388-197ca58af894"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
 				{
 					"fieldNo": "67a28e25-66d1-4d2a-ad73-ad9589d7957c",
 					"fieldName": "DailyGenerate",
@@ -5645,11 +6203,39 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "f3e6ac07-230a-4694-87ca-3a6b4e3a47fa",
-					"restOperation": "1df5e843-fdbf-4271-924c-d12fca18e8e7",
-					"request": [],
-					"response": [],
-					"attributes": [],
+					"restSource": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+					"restOperation": "de6134b9-eb47-48e9-99da-0302f5b0774c",
+					"request": [
+						{
+							"name": "where",
+							"value": "{\"Country\":\"P\"}",
+							"parent": "RequestParameter",
+							"expression": ""
+						}
+					],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "df883712-7887-4ad1-8f85-476a847b2436",
+							"modelFieldNo": "fc7eac77-6134-4980-b388-197ca58af894"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "setInitLoad",
+							"grouping": "Model",
+							"value": "online",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "setAutoRefresh",
+							"grouping": "Model",
+							"value": "true",
+							"script": "",
+							"translation": []
+						}
+					],
 					"data": []
 				},
 				{
@@ -5829,7 +6415,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.27.0954",
+	"ver": "24.11.27.1635",
 	"application": "daily_otp",
 	"title": "",
 	"description": "",
@@ -5844,7 +6430,7 @@
 	"appType": "A",
 	"ui5_m": true,
 	"ui5_f": false,
-	"ui5_table": true,
+	"ui5_table": false,
 	"ui5_tnt": false,
 	"ui5_uxap": false,
 	"ui5_chart": false,
@@ -5871,6 +6457,16 @@
 	"generateVersionOnActivation": false,
 	"activationHistoryCount": 0,
 	"apis": [
+		{
+			"id": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+			"name": "airportcode",
+			"ver": "24.11.27.1329"
+		},
+		{
+			"id": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
+			"name": "airport_ph",
+			"ver": "24.11.27.1320"
+		},
 		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",

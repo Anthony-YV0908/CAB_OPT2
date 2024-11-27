@@ -1,4 +1,4 @@
-var tableName;
+var tableName 
 
 // PDF format
 function exportToPDF(tableName) {
@@ -286,11 +286,13 @@ else
             return response.json();
         })
         .then(data=>{
-            console.log('Success',data)
+            // console.log('Success',data)
+             sap.m.MessageToast.show("Flight created")
         })
     
     }catch(e){
-        console.error('Error',error)
+        // console.error('Error',error)
+         sap.m.MessageToast.show("Flight error creation")
         
     }
 }
