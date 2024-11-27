@@ -5829,7 +5829,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.26.1346",
+	"ver": "24.11.27.0954",
 	"application": "daily_otp",
 	"title": "",
 	"description": "",
@@ -5875,6 +5875,11 @@
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
 			"ver": "24.11.26.1030"
+		},
+		{
+			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
+			"name": "daily_archive",
+			"ver": "24.11.26.1117"
 		}
 	],
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f"

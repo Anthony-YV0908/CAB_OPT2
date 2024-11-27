@@ -415,29 +415,25 @@ function MonthlyOTP() {
 
 
 
-
-function DailyOTP() 
-{ 
-    // Assuming you have a sap.m.DatePicker element with id "myDatePicker"
-const datePicker = sap.ui.getCore().byId("DatePicker");
-const selectedDate = datePicker.getDateValue();
-
-const formattedDate = selectedDate.toLocaleDateString("en-US", {
-    year: "2-digit",
-    month: "2-digit",
-    day: "2-digit",
-  });
-
-var options = { 
-    data:{"monthly" :formattedDate}
-}
-
-
-apiDailyOTP(options);
-
-console.log(formattedDate); // Output: the selected date as a JavaScript Date object
-
-}
+function DailyOTP() {
+     // Get the selected date as a string
+     const selectedDate = DatePicker.getValue();
+     // Parse the date (assuming MM/DD/YYYY format)
+     const [month, day, year] = selectedDate.split("/").map(Number);
+     // Create a Date object
+     const dateObj = new Date(year, month - 1, day);
+     // Format the date as MM/DD/YY
+     const formattedDate = dateObj.toLocaleDateString("en-US", {
+         year: "2-digit",
+         month: "2-digit",
+         day: "2-digit",
+     });
+     // Options and call the API
+     const options = { data: { "monthly": formattedDate } };
+     apiDailyOTP(options);
+     // Log the formatted date
+     console.log(formattedDate);
+ }
 // var fromdate = DateRangeSelection.getFrom()
 
 
