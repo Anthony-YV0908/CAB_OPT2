@@ -1,11 +1,11 @@
 <style>
-    :root {
+    /* :root {
         --backgroundImage: url(public/images/background.svg)
-    }
+    } */
 
     .nepNavigationPage {
         background: inherit;
-        background-image: var(--backgroundImage);
+        /* background-image: var(--backgroundImage); */
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: cover, contain, contain;
         background-position: center bottom, left top, right bottom;

@@ -1,0 +1,57 @@
+{
+	"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
+	"createdAt": "2024-11-27T01:29:17.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "3082e3c0-55d1-4ca1-a0d8-97b6c57adab7",
+			"fieldName": "Name",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Role Name",
+			"isNullable": true
+		},
+		{
+			"id": "3b07a3b5-2600-4be5-e438-d8f5a0336c20",
+			"fieldName": "Description",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Role Description",
+			"isNullable": true
+		},
+		{
+			"id": "4d9ef7e9-4346-4675-da02-469ab4622caf",
+			"fieldName": "DeleterUserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Deleter User Id",
+			"isNullable": true
+		},
+		{
+			"id": "e100b9ac-94dc-4a94-c07c-1797933efe4e",
+			"fieldName": "DeletionTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Deletion Time",
+			"isNullable": true
+		},
+		{
+			"id": "4f09b8a4-d739-4cff-d7f8-548799c4e8ca",
+			"fieldName": "IsDeleted",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Is Deleted",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "userroles",
+	"description": null,
+	"ver": "24.11.27.1249",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"rolesRead": [],
+	"rolesWrite": []
+}

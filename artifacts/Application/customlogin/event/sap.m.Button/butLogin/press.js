@@ -65,3 +65,26 @@ switch (logonType.type) {
         break;
 
 }
+
+if (sap.n) {
+    sap.n.Planet9.function({
+        id: "AuditLog",
+        method: "Save",
+        data: {
+            dateStart: Date.now(),
+            dateEnd: Date.now(),
+            changedBy: "System",
+            content: JSON.stringify({ name: "customlogin" }),
+            objectKey: "f10b0336-fd6a-44ba-a26b-e71f3c6aeffe",
+            objectName: "butLogin",
+            objectType: "sap.m.Button",
+            action: "Interaction"
+        },
+        success: function(data) {
+            // Handle success
+        },
+        error: function(data) {
+            // Handle error
+        }
+    });
+};

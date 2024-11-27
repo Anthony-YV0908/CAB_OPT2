@@ -228,23 +228,35 @@ let logonScreen = {
         });
     },
 
-    forgotPassword: function () {
-        $.ajax({
-            type: 'POST',
-            contentType: 'application/json',
-            url: '/user/forgot/generate',
-            data: JSON.stringify({
-                username: inForgotUsername.getValue().toLowerCase()
-            }),
-            success: function (data) {
-                sap.m.MessageToast.show('A password reset link has been sent to the email address connected with the account');
-                setTimeout(function () {
-                    formLogin.setVisible(true);
-                    formForgot.setVisible(false);
-                }, 300);
-            }
-        });
-    },    
+forgotPassword: function () {
+  // Set the button as busy after submitting the data
+  oApp.setBusy(true);
+
+  $.ajax({
+    type: 'POST',
+    contentType: 'application/json',
+    url: '/user/forgot/generate?launchpad=cab_otp',
+    data: JSON.stringify({
+      username: inForgotUsername.getValue().toLowerCase()
+    }),
+    success: function (data) {
+      // Show the message toast
+      sap.m.MessageToast.show('A password reset link has been sent to the email address connected with the account');
+
+      setTimeout(function () {
+        // Disable the busy state of the button
+        oApp.setBusy(false);
+
+        // Show/hide the necessary forms
+        formLogin.setVisible(true);
+        formForgot.setVisible(false);
+      }, 300);
+    }
+  });
+},
+
+
+
 
     resetSapPassword: function ({detail, path}) {
         if (inNewPassword.getValue() !== inNewPassword2.getValue()) {
@@ -301,16 +313,8 @@ let logonScreen = {
 
         if (inNewPassword.getValue() !== inNewPassword2.getValue()) {
             sap.m.MessageToast.show('Passwords doesn\'t match!');
-        // } else if (!inNewPassword.getValue() && !inNewPassword2.getValue()){
-            inNewPassword.setValueState('Error');
-            // inNewPassword2.setValueState('Error');
-            sap.m.MessageToast.show('Please provide a password');
         } else if (!inNewPassword.getValue()) {
-            inNewPassword.setValueState('Error');
             sap.m.MessageToast.show('Please provide a password');
-        // } else if (!inNewPassword2.getValue()) {
-        //     inNewPassword2.setValueState('Error');
-        //     sap.m.MessageToast.show('Please provide a password');
         } else {
             oApp.setBusy(true);
             $.ajax({

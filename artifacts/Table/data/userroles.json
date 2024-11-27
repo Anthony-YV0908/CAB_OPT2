@@ -1,0 +1,62 @@
+[
+	{
+		"id": "767a33ac-8c9f-4320-8f7c-141ca1e84f6a",
+		"createdAt": "1732671349745",
+		"updatedAt": "1732671349745",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"Name": "Airline",
+		"Description": "Airline",
+		"DeleterUserId": null,
+		"DeletionTime": null,
+		"IsDeleted": null
+	},
+	{
+		"id": "7457fb77-e13f-4eb2-b7e7-54d0363d2e45",
+		"createdAt": "1732671349745",
+		"updatedAt": "1732671349745",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"Name": "User",
+		"Description": "User",
+		"DeleterUserId": null,
+		"DeletionTime": null,
+		"IsDeleted": null
+	},
+	{
+		"id": "60c31093-765a-4947-a60e-d12bd0d13d48",
+		"createdAt": "1732671349745",
+		"updatedAt": "1732671349745",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"Name": "PRAO",
+		"Description": "PRAO",
+		"DeleterUserId": null,
+		"DeletionTime": null,
+		"IsDeleted": null
+	},
+	{
+		"id": "38dc6095-4541-46fa-83c1-261a7fa2019b",
+		"createdAt": "1732671349745",
+		"updatedAt": "1732671349745",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"Name": "CAB",
+		"Description": "CAB",
+		"DeleterUserId": null,
+		"DeletionTime": null,
+		"IsDeleted": null
+	},
+	{
+		"id": "16e03863-de97-4d9e-b221-46815c2dc03d",
+		"createdAt": "1732671349745",
+		"updatedAt": "1732671349745",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"Name": "Admin",
+		"Description": "Admin",
+		"DeleterUserId": null,
+		"DeletionTime": null,
+		"IsDeleted": null
+	}
+]

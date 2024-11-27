@@ -24,7 +24,9 @@
 			"",
 			"        };"
 		],
-		"hideTopHeader": false
+		"hideTopHeader": false,
+		"hideLoginLocal": true,
+		"hideLoginSelection": false
 	},
 	"enhancement": [
 		{
@@ -66,7 +68,7 @@
 	"customTheme": null,
 	"isExternal": null,
 	"emailPattern": null,
-	"loginApp": "planet9_custom_login",
+	"loginApp": "customlogin",
 	"enableNotifications": false,
 	"firebaseProjectId": null,
 	"firebaseAppId": null,
@@ -84,7 +86,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "24.11.26.1055",
+	"ver": "24.11.27.1219",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,
@@ -92,7 +94,7 @@
 	"pwa_displayMode": null,
 	"pwa_themeColor": "rgb(255,255,255)",
 	"pwa_backgroundColor": "rgb(255,255,255)",
-	"passwordResetEmail": "f56d0b19-4a01-4351-a3d6-c159fe7260ff",
+	"passwordResetEmail": "cf3d0db3-8fe2-43ea-8bd6-b5d3e5055b42",
 	"activationCodeEmail": null,
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
 	"cat": []

@@ -1,6 +1,6 @@
 {
-	"id": "84534a0e-68b2-4692-92b2-36b23bfaab94",
-	"createdAt": "2022-02-04T15:52:03.853Z",
+	"id": "4308e0f4-02f2-46d8-cc6a-6254aeda44f1",
+	"createdAt": "2024-11-27T02:08:19.000Z",
 	"createdBy": "luuk.wosten@neptune-software.com",
 	"objects": [
 		{
@@ -811,7 +811,8 @@
 																									"attribute": "press",
 																									"grouping": "Events",
 																									"value": "Anonymous Function",
-																									"script": "file://event/sap.m.Button/butLogin/press.script",
+																									"script": "file://event/sap.m.Button/butLogin/press.js",
+																									"language": "javascript",
 																									"translation": []
 																								}
 																							],
@@ -1173,7 +1174,7 @@
 																								{
 																									"attribute": "text",
 																									"grouping": "Properties",
-																									"value": "Enter your email to recover your account",
+																									"value": "Enter your username to recover your account",
 																									"script": "",
 																									"translation": []
 																								}
@@ -1254,14 +1255,7 @@
 																						{
 																							"attribute": "styleClassMargin",
 																							"grouping": "Properties",
-																							"value": "sapUiMediumMarginTopBottom",
-																							"script": "",
-																							"translation": []
-																						},
-																						{
-																							"attribute": "justifyContent",
-																							"grouping": "Properties",
-																							"value": "Inherit",
+																							"value": "sapUiMediumMarginTop",
 																							"script": "",
 																							"translation": []
 																						}
@@ -2399,8 +2393,8 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.26.1048",
-	"application": "planet9_custom_login",
+	"ver": "24.11.27.1217",
+	"application": "customlogin",
 	"title": "CAB Login",
 	"description": "CustomLogin",
 	"enableFileStorage": false,
@@ -2427,7 +2421,7 @@
 	"compiledCss": null,
 	"header": "file:///header.html",
 	"manifest": "",
-	"globalScript": "",
+	"globalScript": null,
 	"deleted": false,
 	"libHighchart": false,
 	"libHighmap": false,

@@ -44,7 +44,14 @@
 				"requiredFieldsToast": "Please fill in all the required fields",
 				"title": "User Creation",
 				"subTitle": "Create a user",
-				"avatarBackgroundColor": "Accent7"
+				"avatarBackgroundColor": "Accent7",
+				"_tab1Nav": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Accept",
+					"destinationTargetF": "57f66cc1-94e4-404c-a430-4125dca22b2e",
+					"keyField": []
+				}
 			},
 			"form": {
 				"enableCompact": true,
@@ -383,7 +390,7 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.11.26.1340",
+	"ver": "24.11.26.1701",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_edit",

@@ -1,0 +1,160 @@
+{
+	"id": "84510a0b-3683-40bb-82cf-76932b18e146",
+	"createdAt": "2024-11-27T01:13:14.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "e3b85d1f-dfac-4dc4-fcd6-f0b316346a20",
+			"fieldName": "UserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "User Id"
+		},
+		{
+			"id": "00d6c779-c645-4b0c-a00e-51f0702706d0",
+			"fieldName": "Reference1_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Airports",
+			"isNullable": true
+		},
+		{
+			"id": "945a82dd-d354-481d-d515-f21ac1d93a9e",
+			"fieldName": "Reference2_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Airlines",
+			"isNullable": true
+		},
+		{
+			"id": "de9bd3a6-57e5-4130-a9cf-4f534c17b67e",
+			"fieldName": "Reference3_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Global Region",
+			"isNullable": true
+		},
+		{
+			"id": "cc14397e-8796-4afb-9474-36ac9ebfdd4c",
+			"fieldName": "Reference4_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Country",
+			"isNullable": true
+		},
+		{
+			"id": "93f59042-f584-48ce-ef21-f97de65b7d22",
+			"fieldName": "Reference5_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "City",
+			"isNullable": true
+		},
+		{
+			"id": "fe923bb0-d9a0-4196-a6f4-da2d22b92903",
+			"fieldName": "Reference6_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "State",
+			"isNullable": true
+		},
+		{
+			"id": "94a3a53a-5efb-449d-9fd9-989cbd7d1804",
+			"fieldName": "Reference7_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Region",
+			"isNullable": true
+		},
+		{
+			"id": "ac2eec4f-61d2-44bb-81e7-8564e4342da0",
+			"fieldName": "Reference8_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Province",
+			"isNullable": true
+		},
+		{
+			"id": "81bd9c1d-2ff7-4284-c0bc-e869ef3c912a",
+			"fieldName": "Reference9_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Cancelled Flight Reasons",
+			"isNullable": true
+		},
+		{
+			"id": "eeaf320e-9372-4a48-bba6-3c0f43b9cf15",
+			"fieldName": "Utility1_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Users",
+			"isNullable": true
+		},
+		{
+			"id": "5aada444-d924-484c-d509-53d42cc11693",
+			"fieldName": "Utility2_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Users Access",
+			"isNullable": true
+		},
+		{
+			"id": "a8ce8863-c54f-4246-ff28-b759f192a5e9",
+			"fieldName": "Utility3_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Flight Summary (from system)",
+			"isNullable": true
+		},
+		{
+			"id": "a965fd5f-88ef-413f-9836-3cbf8bb762c4",
+			"fieldName": "Utility4_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Flight Summary (from airlines)",
+			"isNullable": true
+		},
+		{
+			"id": "6bd86a7b-51c6-4861-888f-66682e0816c0",
+			"fieldName": "Utility5_Access",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Audit Trail",
+			"isNullable": true
+		},
+		{
+			"id": "27a846bb-48bc-4e3d-cbeb-9e8edf89414f",
+			"fieldName": "DeleterUserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Deleter User Id",
+			"isNullable": true
+		},
+		{
+			"id": "96a57548-dcbf-44d6-fd32-4471af7d9e55",
+			"fieldName": "DeletionTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Deletion Time",
+			"isNullable": true
+		},
+		{
+			"id": "87e5142a-2e4b-419c-f554-40ce132e9303",
+			"fieldName": "IsDeleted",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Is Deleted",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "userpermission",
+	"description": null,
+	"ver": "24.11.27.1249",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"rolesRead": [],
+	"rolesWrite": []
+}

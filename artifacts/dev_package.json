@@ -29,8 +29,8 @@
 			}
 		},
 		{
-			"id": "84534a0e-68b2-4692-92b2-36b23bfaab94",
-			"application": "planet9_custom_login",
+			"id": "4308e0f4-02f2-46d8-cc6a-6254aeda44f1",
+			"application": "customlogin",
 			"title": "CAB Login",
 			"description": "CustomLogin",
 			"package": {
@@ -55,27 +55,25 @@
 			"apiGroup": null
 		},
 		{
-			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
-			"name": "daily_archive",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
-		},
-		{
 			"id": "616011a4-3a5a-4920-a3e9-40c128143432",
 			"name": "userEndpoint",
 			"description": null,
 			"apiGroup": null
-		},
-		{
-			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
-			"name": "daily_otp",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
+		{
+			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
+			"name": "userroles",
+			"description": null
+		},
+		{
+			"id": "84510a0b-3683-40bb-82cf-76932b18e146",
+			"name": "userpermission",
+			"description": null
+		},
 		{
 			"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
 			"name": "tbl_user",
@@ -186,34 +184,12 @@
 	],
 	"api_authentication": [],
 	"api_group": [],
-	"tile": [
-		{
-			"id": "bd93fd39-144e-457c-8c35-8b8a60229f47",
-			"description": null,
-			"name": "daily"
-		}
-	],
-	"category": [
-		{
-			"id": "abd76049-fb90-4c45-8d91-395280eb9fb2",
-			"description": null,
-			"name": "daily_otp"
-		}
-	],
+	"tile": [],
+	"category": [],
 	"launchpad": [
 		{
 			"id": "c6c3012c-8423-4b38-b438-b8895f292f6e",
 			"name": "cab_otp",
-			"description": null
-		},
-		{
-			"id": "7b0c574e-868f-485c-b254-85e82a7fbe7a",
-			"name": "try_appdesigner",
-			"description": null
-		},
-		{
-			"id": "30c21e99-3273-4167-8d4f-93b1a7250af2",
-			"name": "try_appdesigner - Copy",
 			"description": null
 		}
 	],
@@ -221,7 +197,13 @@
 	"role": [],
 	"systems": [],
 	"doc": [],
-	"wf_notifications": [],
+	"wf_notifications": [
+		{
+			"id": "cf3d0db3-8fe2-43ea-8bd6-b5d3e5055b42",
+			"name": "resetEmailPassword",
+			"description": null
+		}
+	],
 	"department": [],
 	"script_scheduler": [],
 	"wf_definition": [],
