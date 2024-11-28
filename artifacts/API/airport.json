@@ -1,0 +1,407 @@
+{
+	"id": "b0449d0f-b803-463d-b3d5-b6823ea25972",
+	"createdAt": "2024-11-28T01:47:49.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "6f5360fd-1bae-421d-85ad-6baf4e3a8ee7",
+			"path": "/airport",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "airport"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "d41754e4-ffd5-4bb8-b562-f97adb83b748",
+			"path": "/airport",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "airport"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "airport"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "415744df-32dd-40d8-ae09-d8588b0250ff",
+			"path": "/airport",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "airport"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "airport"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "4aedd59e-c3e1-4fae-b3ef-b43e01a09a0c",
+			"path": "/airport",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "airport"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "c3d6b05a-3caa-4308-9030-5d6e2fed3aab",
+			"path": "/airport/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "8e3c12a0-cc2c-427d-b373-ffc52ee2c771",
+			"name": "airport",
+			"properties": [
+				{
+					"id": "6806c9f3-f8c9-4f4f-9403-fb8a2ec7d426",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "0064628f-89ae-40ef-acd3-dbf1a46e2571",
+					"parent": "",
+					"name": "Code",
+					"objectType": "string"
+				},
+				{
+					"id": "c0f1aaa8-7925-43ba-aacc-d040eabf4107",
+					"parent": "",
+					"name": "IATA_Metro",
+					"objectType": "string"
+				},
+				{
+					"id": "436d38ee-5b98-414c-9799-1efc7e209624",
+					"parent": "",
+					"name": "Name",
+					"objectType": "string"
+				},
+				{
+					"id": "cba43fdd-9890-4000-82b4-2e09ab12137c",
+					"parent": "",
+					"name": "City",
+					"objectType": "string"
+				},
+				{
+					"id": "d5d11048-a195-4c8f-9943-9e4038650d6b",
+					"parent": "",
+					"name": "State",
+					"objectType": "string"
+				},
+				{
+					"id": "8bdd756c-e90e-4814-adf8-71b6619c7e1c",
+					"parent": "",
+					"name": "State_Name",
+					"objectType": "string"
+				},
+				{
+					"id": "91be99fd-d1d5-4f4a-be80-f5c0649693a2",
+					"parent": "",
+					"name": "Latitude",
+					"objectType": "number"
+				},
+				{
+					"id": "9cf740a7-8a8b-468f-b6d2-ea0a705183ef",
+					"parent": "",
+					"name": "Longitude",
+					"objectType": "number"
+				},
+				{
+					"id": "aa719526-4615-40d9-90bb-631ead79728e",
+					"parent": "",
+					"name": "Country",
+					"objectType": "string"
+				},
+				{
+					"id": "adaa1243-41b7-4ad1-8e0f-8522c749f18e",
+					"parent": "",
+					"name": "Country_Name",
+					"objectType": "string"
+				},
+				{
+					"id": "46ba6806-c29a-4cf6-a044-9f17c91b1678",
+					"parent": "",
+					"name": "Global_Region",
+					"objectType": "string"
+				},
+				{
+					"id": "de19273f-a358-4e29-aa28-7b1a671a6a26",
+					"parent": "",
+					"name": "WAC",
+					"objectType": "number"
+				},
+				{
+					"id": "aef47fb3-d6bb-4892-b1cb-e45da6aa3bc2",
+					"parent": "",
+					"name": "Notes",
+					"objectType": "string"
+				},
+				{
+					"id": "76ebaee7-3e34-4cfd-852c-80adc05ab549",
+					"parent": "",
+					"name": "Map",
+					"objectType": "string"
+				},
+				{
+					"id": "c53fe9a4-6c90-4707-adff-fa5a5411173d",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "c5bc774e-3a1f-4979-812e-b6141de12843",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string"
+				},
+				{
+					"id": "9722f2ef-c705-4ae1-a87b-e0981ec5df0c",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "2809396f-5267-482d-9d10-fac2b0d74109",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "07d432a6-703b-44be-8265-e88289c30096",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "c1252eb6-98bb-4684-b114-d17874c09a6c",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "76233f90-9d75-498e-a760-913208cee304",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "61cdb3a8-05ac-4b95-81df-9035c6c2326e",
+			"name": "count",
+			"properties": [
+				{
+					"id": "e63380d3-1400-4375-affa-2ecd1a517cf7",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "airport",
+	"endpoint": "/api/entity",
+	"ver": "24.11.28.0947",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

@@ -73,6 +73,18 @@
 			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		},
 		{
+			"id": "b0449d0f-b803-463d-b3d5-b6823ea25972",
+			"name": "airport",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+			"name": "airport",
+			"description": null,
+			"apiGroup": null
+		},
+		{
 			"id": "616011a4-3a5a-4920-a3e9-40c128143432",
 			"name": "userEndpoint",
 			"description": null,
@@ -91,6 +103,11 @@
 		{
 			"id": "b8724737-9734-4c3e-ac3e-7e118e1dc124",
 			"name": "airportcode",
+			"description": null
+		},
+		{
+			"id": "9d25a706-b00e-457a-abaa-05d64fabfa64",
+			"name": "airport",
 			"description": null
 		},
 		{
