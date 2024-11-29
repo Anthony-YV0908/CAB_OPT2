@@ -50,14 +50,18 @@
 			"fieldName": "Latitude",
 			"fieldType": "decimal",
 			"isUnique": false,
-			"isNullable": true
+			"isNullable": true,
+			"precision": "3",
+			"scale": "10"
 		},
 		{
 			"id": "335074d5-56da-4d27-fa8d-62f9015e86e6",
 			"fieldName": "Longitude",
 			"fieldType": "decimal",
 			"isUnique": false,
-			"isNullable": true
+			"isNullable": true,
+			"precision": "3",
+			"scale": "10"
 		},
 		{
 			"id": "76ced65d-8180-4dee-ea19-2980bd97c58f",
@@ -85,7 +89,9 @@
 			"fieldName": "WAC",
 			"fieldType": "decimal",
 			"isUnique": false,
-			"isNullable": true
+			"isNullable": true,
+			"precision": "3",
+			"scale": "0"
 		},
 		{
 			"id": "d4538083-4d1c-4ac9-d3cc-fc6cc417f0aa",
@@ -106,7 +112,7 @@
 	"foreignKeys": [],
 	"name": "airport",
 	"description": null,
-	"ver": "24.11.28.0942",
+	"ver": "24.11.28.1108",
 	"enableAudit": true,
 	"includeDataInPackage": true,
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f",

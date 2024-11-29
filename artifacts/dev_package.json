@@ -55,12 +55,6 @@
 			"apiGroup": null
 		},
 		{
-			"id": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-			"name": "airport_ph",
-			"description": null,
-			"apiGroup": null
-		},
-		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
 			"description": null,
@@ -71,12 +65,6 @@
 			"name": "daily_archive",
 			"description": null,
 			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
-		},
-		{
-			"id": "b0449d0f-b803-463d-b3d5-b6823ea25972",
-			"name": "airport",
-			"description": null,
-			"apiGroup": null
 		},
 		{
 			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",

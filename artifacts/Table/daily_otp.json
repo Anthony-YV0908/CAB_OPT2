@@ -32,6 +32,13 @@
 			"isNullable": true
 		},
 		{
+			"id": "a23af6ca-f11b-4374-a83d-1978aafc39da",
+			"fieldName": "Carrier",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
 			"id": "e3f957e6-8ed2-4193-e215-987643caa2db",
 			"fieldName": "FlightNumber",
 			"fieldType": "integer",
@@ -246,7 +253,7 @@
 	"foreignKeys": [],
 	"name": "daily_otp",
 	"description": "Daily OTP CAB",
-	"ver": "24.11.26.1034",
+	"ver": "24.11.28.1346",
 	"enableAudit": true,
 	"includeDataInPackage": true,
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
