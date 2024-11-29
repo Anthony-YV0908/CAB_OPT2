@@ -283,23 +283,30 @@ async function processSave(id){
     if (!emailRegex.test(email)) {
     throw new Error('Invalid email format');
     }
-    const nameRegex = /^[A-Za-z]+$/;
-    if (!nameRegex.test(firstName)) {
-    throw new Error('First name should only contain letters');
+    // Regex to allow only letters and spaces (including empty values)
+    const nameRegex = /^[A-Za-z\s]*$/;
+    // Check if firstName, middleName, or lastName are valid (allowing spaces and empty values)
+    if (firstName && !nameRegex.test(firstName)) {
+        throw new Error('First name should only contain letters and spaces');
     }
-    if (!nameRegex.test(middleName)) {
-    throw new Error('Middle name should only contain letters');
+
+    if (middleName && !nameRegex.test(middleName)) {
+        throw new Error('Middle name should only contain letters and spaces');
     }
-    if (!nameRegex.test(lastName)) {
-    throw new Error('Last name should only contain letters');
+
+    if (lastName && !nameRegex.test(lastName)) {
+        throw new Error('Last name should only contain letters and spaces');
     }
+
   
 
-  const userId = req.body.UserId; // Replace USER_ID with the ID of the user you want to update or create
+  const userId = req.body.UserId;
+  const userName = req.body.UserName; // Replace USER_ID with the ID of the user you want to update or create
   // Check if the user already exists
 const getUserOpts = {
   body: {
-    id: userId
+    id: userId,
+    username:userName
   }
 };
 
@@ -311,7 +318,7 @@ try {
     userExists = true;
   }
 } catch (error) {
-  console.error("Error checking if user exists:", error);
+  throw new Error('Username Already Exist');
   // Handle the error
 }
 
@@ -322,7 +329,7 @@ const saveUserOpts = {
         id: userId,
         // Add the properties you want to update or create for the user
         idpSource: "local",
-        name: req.body.FirstName + " " + req.body.MiddleName + " " + req.body.LastName,
+        name: req.body.FirstName + " " + (req.body.MiddleName || "") + " " + req.body.LastName,
         mobile: req.body.ContactNumber,
         phone: req.body.ContactNumber,
         requirePasswordReset: true,
@@ -351,7 +358,7 @@ try {
   }
   // Handle the response or perform any additional actions
 } catch (error) {
-  console.error("Error updating or creating user:", error);
+  throw new Error('Username Already Exist');
   // Handle the error
 }
     return {

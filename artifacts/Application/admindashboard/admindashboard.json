@@ -210,6 +210,13 @@
 											"translation": []
 										},
 										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
 											"attribute": "select",
 											"grouping": "Events",
 											"value": "Anonymous Function",
@@ -247,6 +254,83 @@
 													"grouping": "Events",
 													"value": "Anonymous Function",
 													"script": "file://event/sap.tnt.NavigationListItem/oUserCrudNav/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+									"fieldName": "oNavigationListItem1",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "User Maintenance",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://fa-solid/users-cog",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem1/select.script",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "e67f1b72-d213-4763-bd61-b93663e88629",
+											"fieldName": "oNavUserAccess",
+											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Users Access",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://fa-solid/users",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavUserAccess/select.js",
 													"language": "javascript",
 													"translation": []
 												}
@@ -370,6 +454,13 @@
 									"value": "false",
 									"script": "",
 									"translation": []
+								},
+								{
+									"attribute": "enableScrolling",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
 								}
 							],
 							"data": []
@@ -400,6 +491,40 @@
 								}
 							],
 							"data": []
+						},
+						{
+							"fieldNo": "7842919a-2d5a-48dc-ffcf-6806eaeb94ff",
+							"fieldName": "oUserAccess",
+							"fieldParent": "14",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showFooter",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "enableScrolling",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
 						}
 					]
 				}
@@ -415,7 +540,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.26.1345",
+	"ver": "24.11.29.1335",
 	"application": "admindashboard",
 	"title": "Admin Dashboard",
 	"description": "",
@@ -437,7 +562,7 @@
 	"ui5_theme": "sap_horizon",
 	"ui5_version": "customCDN",
 	"ui5_language": null,
-	"ui5_url": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
+	"ui5_url": "https://sdk.openui5.org/1.130.0/resources/sap-ui-core.js",
 	"cus_theme": "",
 	"css": "",
 	"compiledCss": null,

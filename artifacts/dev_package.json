@@ -11,6 +11,15 @@
 	"enableCICD": true,
 	"apps": [
 		{
+			"id": "fa987c6d-b3d9-40a8-a5bb-61e61254af44",
+			"application": "userpermission",
+			"title": "userPermission",
+			"description": "",
+			"package": {
+				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
+			}
+		},
+		{
 			"id": "e59192fe-ea25-47b8-9eb7-37cb0c067da3",
 			"application": "cablist",
 			"title": "",
@@ -49,26 +58,8 @@
 	],
 	"api": [
 		{
-			"id": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
-			"name": "airportcode",
-			"description": null,
-			"apiGroup": null
-		},
-		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
-			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
-			"name": "daily_archive",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
-		},
-		{
-			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
-			"name": "airport",
 			"description": null,
 			"apiGroup": null
 		},
@@ -77,27 +68,11 @@
 			"name": "userEndpoint",
 			"description": null,
 			"apiGroup": null
-		},
-		{
-			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
-			"name": "daily_otp",
-			"description": null,
-			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
-		{
-			"id": "b8724737-9734-4c3e-ac3e-7e118e1dc124",
-			"name": "airportcode",
-			"description": null
-		},
-		{
-			"id": "9d25a706-b00e-457a-abaa-05d64fabfa64",
-			"name": "airport",
-			"description": null
-		},
 		{
 			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
 			"name": "userroles",
@@ -235,7 +210,7 @@
 		{
 			"id": "cf3d0db3-8fe2-43ea-8bd6-b5d3e5055b42",
 			"name": "resetEmailPassword",
-			"description": null
+			"description": "Reset Password"
 		}
 	],
 	"department": [],

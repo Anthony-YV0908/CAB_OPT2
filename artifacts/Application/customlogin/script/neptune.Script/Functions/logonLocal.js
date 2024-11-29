@@ -6,7 +6,10 @@ function logonLocal(rec) {
         data: JSON.stringify(rec),
         success: function (data, xhr) {
             if (data.status === "UpdatePassword") {
-                const url = new URL(data.link, location.href);
+                // const url = new URL(data.link, location.href);
+                const url = new URL(
+                data.link.replace("/user/forgot/", location.pathname + "?token="),
+                location.href);
                 url.searchParams.append('reason', data.reason || 'other');
                 location.replace(url.toString());
             } else {

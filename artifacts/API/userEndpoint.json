@@ -43,7 +43,7 @@
 				{
 					"objectType": "object",
 					"items": [],
-					"name": "Get"
+					"name": "id"
 				}
 			],
 			"auth": [],
@@ -434,12 +434,38 @@
 					"children": []
 				}
 			]
+		},
+		{
+			"id": "44a1903f-6794-4783-e58d-86f7aefd270f",
+			"name": "username",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "26b746e3-a85c-4ddf-e991-801b1534c161",
+					"name": "username",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
 		}
 	],
 	"documentation": [],
 	"name": "userEndpoint",
 	"endpoint": "http://localhost:8080/api/functions/User",
-	"ver": "24.11.26.1045",
+	"ver": "24.11.28.1328",
 	"version": null,
 	"description": null,
 	"mediaType": null,

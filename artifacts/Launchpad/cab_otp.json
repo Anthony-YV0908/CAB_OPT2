@@ -8,22 +8,7 @@
 	"layout": [],
 	"config": {
 		"showAccessibilityFocusIndicator": true,
-		"enhancement": [
-			"==OBJECT STRING==",
-			"sap.n.Enhancement.BeforeStartup = function () {",
-			"            console.log('Trigger Enhancement BeforeStartup');",
-			"            neptune.customizeLaunchpad(function() {\r",
-			"  // Create the burger menu icon element\r",
-			"  var burgerMenuIcon = document.createElement('div');\r",
-			"  burgerMenuIcon.classList.add('burger-menu-icon');\r",
-			"\r",
-			"  // Add the icon beside the Neptune logo\r",
-			"  var logo = document.querySelector('.neptune-logo');\r",
-			"  logo.parentNode.insertBefore(burgerMenuIcon, logo.nextSibling);\r",
-			"});\r",
-			"",
-			"        };"
-		],
+		"enhancement": "",
 		"hideTopHeader": false,
 		"hideLoginLocal": true,
 		"hideLoginSelection": false
@@ -49,7 +34,7 @@
 				"});\r",
 				""
 			],
-			"active": true,
+			"active": false,
 			"disabled": false
 		}
 	],
@@ -62,7 +47,7 @@
 	"launchpadApp": "planet9_launchpad_standard",
 	"hideSidemenu": false,
 	"ui5Version": "customCDN",
-	"ui5Url": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
+	"ui5Url": "https://sdk.openui5.org/1.130.0/resources/sap-ui-core.js",
 	"ui5Theme": "sap_horizon",
 	"header": "",
 	"customTheme": null,
@@ -86,7 +71,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "24.11.27.1219",
+	"ver": "24.11.29.1126",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,

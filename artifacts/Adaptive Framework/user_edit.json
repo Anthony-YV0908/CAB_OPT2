@@ -32,7 +32,7 @@
 				"enableSave": true,
 				"enableDelete": false,
 				"enableAttachment": false,
-				"enableTab1": false,
+				"enableTab1": true,
 				"enableTab2": false,
 				"enableTab3": false,
 				"enableTab4": false,
@@ -44,7 +44,20 @@
 				"requiredFieldsToast": "Please fill in all the required fields",
 				"title": "User Edit",
 				"subTitle": "Edit User Data",
-				"avatarBackgroundColor": "Accent7"
+				"avatarBackgroundColor": "Accent7",
+				"_tab1Nav": {
+					"destinationType": "F",
+					"openAs": "S",
+					"butType": "Accept",
+					"destinationTargetF": "8960a67e-530c-4dd5-bc8f-7898633f397a",
+					"keyField": [
+						{
+							"fieldName": "UserId",
+							"key": "UserId",
+							"value": ""
+						}
+					]
+				}
 			},
 			"form": {
 				"enableCompact": false,
@@ -359,7 +372,13 @@
 				"mask": "99999"
 			}
 		],
-		"fieldsRun": [],
+		"fieldsRun": [
+			{
+				"name": "UserId",
+				"text": "USER ID",
+				"fieldPos": 15
+			}
+		],
 		"defaultVariant": {
 			"id": "b15099ae-feee-45f7-b9b0-65749fbe87a2",
 			"colOrder": "key_a_to_z",
@@ -379,7 +398,7 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.11.26.1522",
+	"ver": "24.11.27.1337",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_edit",

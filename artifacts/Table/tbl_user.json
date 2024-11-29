@@ -9,7 +9,7 @@
 			"fieldType": "text",
 			"isUnique": false,
 			"description": "USER ID",
-			"default": "50",
+			"default": "",
 			"isNullable": true
 		},
 		{
@@ -17,7 +17,7 @@
 			"fieldName": "FirstName",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "50",
+			"default": "",
 			"description": "First Name",
 			"isNullable": true
 		},
@@ -26,7 +26,7 @@
 			"fieldName": "MiddleName",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "50",
+			"default": "",
 			"description": "Middle Name",
 			"isNullable": true
 		},
@@ -35,7 +35,7 @@
 			"fieldName": "LastName",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "50",
+			"default": "",
 			"description": "Last Name",
 			"isNullable": true
 		},
@@ -44,7 +44,7 @@
 			"fieldName": "Suffix",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "10",
+			"default": "",
 			"description": "Suffix",
 			"isNullable": true
 		},
@@ -53,7 +53,7 @@
 			"fieldName": "UserName",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "100",
+			"default": "",
 			"description": "User Name",
 			"isNullable": true
 		},
@@ -62,7 +62,7 @@
 			"fieldName": "ContactNumber",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "100",
+			"default": "",
 			"description": "Contact Number",
 			"isNullable": true
 		},
@@ -71,7 +71,7 @@
 			"fieldName": "EmailAddress",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "100",
+			"default": "",
 			"description": "Email Address",
 			"isNullable": true
 		},
@@ -80,7 +80,7 @@
 			"fieldName": "UserRole",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "50",
+			"default": "",
 			"description": "User Role",
 			"isNullable": true
 		},
@@ -146,8 +146,8 @@
 			"fieldName": "Password",
 			"fieldType": "text",
 			"isUnique": false,
-			"default": "20",
-			"description": "IsDeleted",
+			"default": "",
+			"description": "Password",
 			"isNullable": true
 		},
 		{
@@ -251,7 +251,7 @@
 	"foreignKeys": [],
 	"name": "tbl_user",
 	"description": null,
-	"ver": "24.11.26.1337",
+	"ver": "24.11.28.1016",
 	"enableAudit": true,
 	"includeDataInPackage": true,
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f",

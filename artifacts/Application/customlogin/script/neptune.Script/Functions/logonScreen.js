@@ -228,10 +228,13 @@ let logonScreen = {
         });
     },
 
-forgotPassword: function () {
-  // Set the button as busy after submitting the data
-  oApp.setBusy(true);
 
+forgotPassword: function () {
+    // Set the busy indicator size to "Auto"
+    oApp.setBusyIndicatorDelay(0);
+    oApp.setBusy(true);
+
+  // Step 2: Send the request to trigger password reset
   $.ajax({
     type: 'POST',
     contentType: 'application/json',
@@ -240,20 +243,35 @@ forgotPassword: function () {
       username: inForgotUsername.getValue().toLowerCase()
     }),
     success: function (data) {
-      // Show the message toast
-      sap.m.MessageToast.show('A password reset link has been sent to the email address connected with the account');
+      // Step 3: Show the success message once the password reset request is processed
+      
 
+      // Step 4: After 300ms, disable the busy state of the app and re-enable the form
       setTimeout(function () {
-        // Disable the busy state of the button
+        // Disable the busy state of the app
+        oApp.setBusyIndicatorDelay(0);
         oApp.setBusy(false);
 
-        // Show/hide the necessary forms
+        // Show the login form and hide the forgot password form
         formLogin.setVisible(true);
         formForgot.setVisible(false);
+        sap.m.MessageToast.show('A password reset link has been sent to the email address connected with the account');
       }, 300);
+    },
+    error: function (xhr, status, error) {
+      // Step 5: Handle error scenario (e.g., invalid username, server error, etc.)
+      console.error('Error during password reset request:', error);
+      sap.m.MessageToast.show('Error processing the password reset request');
+
+      // Step 6: Clear the busy state and re-enable the button in case of error
+      oApp.setBusy(false);
+      inForgotUsername.setEnabled(true);  // Re-enable the username input field
+
+      // Optionally, show an error message or log the user out, etc.
     }
   });
 },
+
 
 
 
