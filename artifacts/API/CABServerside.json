@@ -226,11 +226,29 @@
 					"name": "AOC",
 					"parent": "",
 					"description": "",
-					"objectType": "object",
+					"objectType": "string",
 					"objectName": "AOC",
-					"isParent": true,
+					"isParent": false,
 					"enableValueHelp": false,
-					"canAddSubNode": true,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a937f3d4-c066-4f08-9418-131133f0a902",
+					"name": "Carrier",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
 					"enabled": true,
 					"showNameField": true,
 					"children": []
@@ -1191,6 +1209,24 @@
 					"enabled": true,
 					"showNameField": true,
 					"children": []
+				},
+				{
+					"id": "f94242f2-1969-4e74-a235-7475e5449525",
+					"name": "carrier",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
 				}
 			]
 		},
@@ -1733,6 +1769,24 @@
 					"enabled": true,
 					"showNameField": true,
 					"children": []
+				},
+				{
+					"id": "1ce22181-c1ed-4d3f-b3e0-ebf92039266d",
+					"name": "carrier",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
 				}
 			]
 		}
@@ -1740,7 +1794,7 @@
 	"documentation": [],
 	"name": "CABServerside",
 	"endpoint": "/api/serverscript/cabserverside",
-	"ver": "24.11.26.1030",
+	"ver": "24.11.28.1343",
 	"version": null,
 	"description": null,
 	"mediaType": null,

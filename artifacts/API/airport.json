@@ -1,12 +1,12 @@
 {
-	"id": "b0449d0f-b803-463d-b3d5-b6823ea25972",
-	"createdAt": "2024-11-28T01:47:49.000Z",
+	"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+	"createdAt": "2024-11-28T01:40:53.000Z",
 	"createdBy": "admin",
 	"auth": [],
 	"endpoints": [],
 	"paths": [
 		{
-			"id": "6f5360fd-1bae-421d-85ad-6baf4e3a8ee7",
+			"id": "4f7f2fbb-885e-4383-89da-8ef5be61a7fd",
 			"path": "/airport",
 			"method": "GET",
 			"headers": [],
@@ -62,7 +62,7 @@
 			]
 		},
 		{
-			"id": "d41754e4-ffd5-4bb8-b562-f97adb83b748",
+			"id": "953a79d4-d455-4f9e-b077-1fca516283a0",
 			"path": "/airport",
 			"method": "PUT",
 			"headers": [],
@@ -97,7 +97,7 @@
 			]
 		},
 		{
-			"id": "415744df-32dd-40d8-ae09-d8588b0250ff",
+			"id": "70286d57-da57-4059-a414-51fa2ac85c58",
 			"path": "/airport",
 			"method": "POST",
 			"headers": [],
@@ -142,7 +142,7 @@
 			]
 		},
 		{
-			"id": "4aedd59e-c3e1-4fae-b3ef-b43e01a09a0c",
+			"id": "c29f09cc-108f-4316-874e-5ba46ef80f4f",
 			"path": "/airport",
 			"method": "DELETE",
 			"headers": [],
@@ -182,7 +182,7 @@
 			]
 		},
 		{
-			"id": "c3d6b05a-3caa-4308-9030-5d6e2fed3aab",
+			"id": "2bf51110-d14f-465f-8ffc-d795b1252fca",
 			"path": "/airport/count",
 			"method": "GET",
 			"headers": [],
@@ -224,123 +224,123 @@
 	],
 	"definitions": [
 		{
-			"id": "8e3c12a0-cc2c-427d-b373-ffc52ee2c771",
+			"id": "85e843a6-0bfe-4eff-b0ba-e8edf06feb0f",
 			"name": "airport",
 			"properties": [
 				{
-					"id": "6806c9f3-f8c9-4f4f-9403-fb8a2ec7d426",
+					"id": "061a4625-c85a-4948-ab01-86c6de8e6735",
 					"parent": "",
 					"name": "id",
 					"description": "Unique record ID",
 					"objectType": "string"
 				},
 				{
-					"id": "0064628f-89ae-40ef-acd3-dbf1a46e2571",
+					"id": "5eeae887-1c8d-4b4f-8ea6-98255163acef",
 					"parent": "",
 					"name": "Code",
 					"objectType": "string"
 				},
 				{
-					"id": "c0f1aaa8-7925-43ba-aacc-d040eabf4107",
+					"id": "28e66942-9984-4271-a691-faf869194149",
 					"parent": "",
 					"name": "IATA_Metro",
 					"objectType": "string"
 				},
 				{
-					"id": "436d38ee-5b98-414c-9799-1efc7e209624",
+					"id": "b1589554-369d-40e4-83de-f9d30e003d08",
 					"parent": "",
 					"name": "Name",
 					"objectType": "string"
 				},
 				{
-					"id": "cba43fdd-9890-4000-82b4-2e09ab12137c",
+					"id": "d79d1f39-c5df-4f2d-9e9f-92cd66d50fab",
 					"parent": "",
 					"name": "City",
 					"objectType": "string"
 				},
 				{
-					"id": "d5d11048-a195-4c8f-9943-9e4038650d6b",
+					"id": "91b73985-2fe1-451a-a798-44ddaf25366f",
 					"parent": "",
 					"name": "State",
 					"objectType": "string"
 				},
 				{
-					"id": "8bdd756c-e90e-4814-adf8-71b6619c7e1c",
+					"id": "23236993-edc7-4c9e-87e4-6d54d949fb79",
 					"parent": "",
 					"name": "State_Name",
 					"objectType": "string"
 				},
 				{
-					"id": "91be99fd-d1d5-4f4a-be80-f5c0649693a2",
+					"id": "1965ad18-a165-404c-9d6e-dce6659a5649",
 					"parent": "",
 					"name": "Latitude",
 					"objectType": "number"
 				},
 				{
-					"id": "9cf740a7-8a8b-468f-b6d2-ea0a705183ef",
+					"id": "2d7172da-6f7b-46ca-8438-4cd7279e9392",
 					"parent": "",
 					"name": "Longitude",
 					"objectType": "number"
 				},
 				{
-					"id": "aa719526-4615-40d9-90bb-631ead79728e",
+					"id": "f7a5b81d-684b-41ce-b52f-3f2076d9f2b5",
 					"parent": "",
 					"name": "Country",
 					"objectType": "string"
 				},
 				{
-					"id": "adaa1243-41b7-4ad1-8e0f-8522c749f18e",
+					"id": "d5f3b8ae-0c16-4867-a91d-b4a22f77dc4a",
 					"parent": "",
 					"name": "Country_Name",
 					"objectType": "string"
 				},
 				{
-					"id": "46ba6806-c29a-4cf6-a044-9f17c91b1678",
+					"id": "ce3749fd-3e16-4261-be49-bd2b51c8db64",
 					"parent": "",
 					"name": "Global_Region",
 					"objectType": "string"
 				},
 				{
-					"id": "de19273f-a358-4e29-aa28-7b1a671a6a26",
+					"id": "e65a1198-a72a-4113-8eca-929fe9fbe64a",
 					"parent": "",
 					"name": "WAC",
 					"objectType": "number"
 				},
 				{
-					"id": "aef47fb3-d6bb-4892-b1cb-e45da6aa3bc2",
+					"id": "913dbe5e-f9fd-42a8-9f68-be4f2c07ba90",
 					"parent": "",
 					"name": "Notes",
 					"objectType": "string"
 				},
 				{
-					"id": "76ebaee7-3e34-4cfd-852c-80adc05ab549",
+					"id": "e84ab68e-2990-4720-89e0-77678c9f1c79",
 					"parent": "",
 					"name": "Map",
 					"objectType": "string"
 				},
 				{
-					"id": "c53fe9a4-6c90-4707-adff-fa5a5411173d",
+					"id": "89fbdd47-0457-402a-aa1a-0e41e1b10462",
 					"parent": "",
 					"name": "createdAt",
 					"description": "Date when record was created",
 					"objectType": "number"
 				},
 				{
-					"id": "c5bc774e-3a1f-4979-812e-b6141de12843",
+					"id": "1632871b-63c2-4aa1-a5e1-827e773481b7",
 					"parent": "",
 					"name": "createdBy",
 					"description": "Created by",
 					"objectType": "string"
 				},
 				{
-					"id": "9722f2ef-c705-4ae1-a87b-e0981ec5df0c",
+					"id": "eef240a0-8091-44c5-ab91-89ba615e7ed2",
 					"parent": "",
 					"name": "updatedAt",
 					"description": "Date when record was updated",
 					"objectType": "number"
 				},
 				{
-					"id": "2809396f-5267-482d-9d10-fac2b0d74109",
+					"id": "9b326fc7-cff1-46a8-a7bf-a9bdf51b352a",
 					"parent": "",
 					"name": "updatedBy",
 					"description": "Updated by",
@@ -349,17 +349,17 @@
 			]
 		},
 		{
-			"id": "07d432a6-703b-44be-8265-e88289c30096",
+			"id": "56d46c75-8075-41e3-b613-d388331e6671",
 			"name": "Error",
 			"properties": [
 				{
-					"id": "c1252eb6-98bb-4684-b114-d17874c09a6c",
+					"id": "19188b48-4b00-4c7d-a696-8a423ca04ab1",
 					"parent": "",
 					"name": "status",
 					"objectType": "string"
 				},
 				{
-					"id": "76233f90-9d75-498e-a760-913208cee304",
+					"id": "57db572d-2d54-426b-8bfd-865f9aba63a0",
 					"parent": "",
 					"name": "message",
 					"objectType": "string"
@@ -367,11 +367,11 @@
 			]
 		},
 		{
-			"id": "61cdb3a8-05ac-4b95-81df-9035c6c2326e",
+			"id": "14449c60-40fe-4fe5-b20f-93ce037779a3",
 			"name": "count",
 			"properties": [
 				{
-					"id": "e63380d3-1400-4375-affa-2ecd1a517cf7",
+					"id": "1277b154-9224-492c-bf6f-0c950d3a270d",
 					"parent": "",
 					"name": "count",
 					"objectType": "number"
@@ -382,7 +382,7 @@
 	"documentation": [],
 	"name": "airport",
 	"endpoint": "/api/entity",
-	"ver": "24.11.28.0947",
+	"ver": "24.11.28.0940",
 	"version": null,
 	"description": null,
 	"mediaType": "application/json",
