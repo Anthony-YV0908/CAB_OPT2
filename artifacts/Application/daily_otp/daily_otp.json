@@ -724,6 +724,39 @@
 									]
 								},
 								{
+									"fieldNo": "4e085833-77a0-4168-adfb-31d051544bd8",
+									"fieldName": "colTableCarrier",
+									"fieldParent": "774dec63-7c8e-4219-fe91-1d9d18a630fc",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "06bb35ac-16a4-4ba7-b872-ad7f9b2bb991",
+											"fieldName": "colHTableCarrier",
+											"fieldParent": "4e085833-77a0-4168-adfb-31d051544bd8",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Carrier",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
 									"fieldNo": "b66b2d6e-f481-4181-9b58-63e089a9adc7",
 									"fieldName": "colTableFlightNumber",
 									"fieldParent": "774dec63-7c8e-4219-fe91-1d9d18a630fc",
@@ -1365,6 +1398,26 @@
 											"data": []
 										},
 										{
+											"fieldNo": "1a2a7554-cd07-488a-8c73-5cac0d47c034",
+											"fieldName": "txtTableCarrier",
+											"fieldParent": "be8fa9ad-7657-43ef-8b3d-cd97dfa1b618",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Carrier}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
 											"fieldNo": "caca420d-3768-4c31-e0c7-40a73d18ca00",
 											"fieldName": "txtTableFlightNumber",
 											"fieldParent": "be8fa9ad-7657-43ef-8b3d-cd97dfa1b618",
@@ -1704,375 +1757,6 @@
 					],
 					"data": [
 						{
-							"fieldNo": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-							"fieldName": "Table1",
-							"fieldParent": "16eb47d2-1f4a-4c7f-ed6b-49d49c8d0510",
-							"fieldType": "sap.m.Table",
-							"script": "",
-							"customComponent": false,
-							"disabled": true,
-							"bindingValue": "CABServerside>daily",
-							"bindingType": "h",
-							"bindingSource": "API",
-							"bindingParentID": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
-							"bindingPathID": "615e6987-4fed-4243-c512-d4035633b33b",
-							"request": [],
-							"response": [],
-							"attributes": [],
-							"data": [
-								{
-									"fieldNo": "d9a48940-4649-40cc-d931-3df43efcf82f",
-									"fieldName": "colTable1Airport",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "fec6dfee-d42f-4b3d-e62d-76070dc9f540",
-											"fieldName": "colHTable1Airport",
-											"fieldParent": "d9a48940-4649-40cc-d931-3df43efcf82f",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "Airport",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "19976c96-f3c7-4bf4-ffc2-f123e15b6b5f",
-									"fieldName": "colTable1FlightId",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "58b434d1-21a0-4a11-f89c-ae9512abf25e",
-											"fieldName": "colHTable1FlightId",
-											"fieldParent": "19976c96-f3c7-4bf4-ffc2-f123e15b6b5f",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "FlightId",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "50087074-b20a-4107-95c4-6aac41ef47c3",
-									"fieldName": "colTable1EstimatedTimeDeparture",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "8a1bde51-23ef-43a6-ce43-5d769de117f7",
-											"fieldName": "colHTable1EstimatedTimeDeparture",
-											"fieldParent": "50087074-b20a-4107-95c4-6aac41ef47c3",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "EstimatedTimeDeparture",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "4458544b-7775-44d0-f87e-b79aae8eceed",
-									"fieldName": "colTable1ActualTimeDeParture",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "1687c167-39f0-47b3-bed1-b7315d11e19f",
-											"fieldName": "colHTable1ActualTimeDeParture",
-											"fieldParent": "4458544b-7775-44d0-f87e-b79aae8eceed",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "ActualTimeDeParture",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "6a540b64-9ca5-4c93-fb4f-f928071b3146",
-									"fieldName": "colTable1EstimatedTimeofArrival",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "61a78148-90f9-4880-9220-b54a6fb98a94",
-											"fieldName": "colHTable1EstimatedTimeofArrival",
-											"fieldParent": "6a540b64-9ca5-4c93-fb4f-f928071b3146",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "EstimatedTimeofArrival",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "bdc4343e-91dd-43c3-96ee-9d95dec195b8",
-									"fieldName": "colTable1ActualTimeofArrival",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.Column",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "f9878087-b916-4684-a719-ac05476b96a8",
-											"fieldName": "colHTable1ActualTimeofArrival",
-											"fieldParent": "bdc4343e-91dd-43c3-96ee-9d95dec195b8",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "ActualTimeofArrival",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								},
-								{
-									"fieldNo": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-									"fieldName": "colItemTable1",
-									"fieldParent": "3b92d43a-e0bc-4dd0-81af-86e139dc65f4",
-									"fieldType": "sap.m.ColumnListItem",
-									"script": "",
-									"customComponent": false,
-									"disabled": true,
-									"request": [],
-									"response": [],
-									"attributes": [],
-									"data": [
-										{
-											"fieldNo": "a337ce9d-4100-4a9a-a311-8e9c46246ffe",
-											"fieldName": "txtTable1Airport",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{Airport}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										},
-										{
-											"fieldNo": "04162a3c-a392-4e27-f231-b0c745bd793d",
-											"fieldName": "txtTable1FlightId",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{FlightId}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										},
-										{
-											"fieldNo": "eb2d066e-281a-4ebb-95b1-c67ee0c11052",
-											"fieldName": "txtTable1EstimatedTimeDeparture",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{EstimatedTimeDeparture}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										},
-										{
-											"fieldNo": "e51fe541-238b-4304-ab40-4f28a2b1e6c3",
-											"fieldName": "txtTable1ActualTimeDeParture",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{ActualTimeDeParture}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										},
-										{
-											"fieldNo": "1e872ad4-172e-417f-98ad-2f3ee002d8ff",
-											"fieldName": "txtTable1EstimatedTimeofArrival",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{EstimatedTimeofArrival}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										},
-										{
-											"fieldNo": "b1699a63-c2f8-4d2f-d5d2-d4377f0b6ab4",
-											"fieldName": "txtTable1ActualTimeofArrival",
-											"fieldParent": "860eefa0-3c10-4397-96bd-8dba50ec1449",
-											"fieldType": "sap.m.Text",
-											"script": "",
-											"customComponent": false,
-											"disabled": true,
-											"request": [],
-											"response": [],
-											"attributes": [
-												{
-													"attribute": "text",
-													"grouping": "Properties",
-													"value": "{ActualTimeofArrival}",
-													"script": "",
-													"translation": []
-												}
-											],
-											"data": []
-										}
-									]
-								}
-							]
-						},
-						{
 							"fieldNo": "4426ae45-e868-469c-d99a-9f26c3704879",
 							"fieldName": "oBarFooter",
 							"fieldParent": "16eb47d2-1f4a-4c7f-ed6b-49d49c8d0510",
@@ -2156,7 +1840,7 @@
 							]
 						},
 						{
-							"fieldNo": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+							"fieldNo": "7213651c-1602-4c5b-9092-37dd2f28578e",
 							"fieldName": "SimpleForm",
 							"fieldParent": "16eb47d2-1f4a-4c7f-ed6b-49d49c8d0510",
 							"fieldType": "sap.ui.layout.form.SimpleForm",
@@ -2165,16 +1849,16 @@
 							"bindingValue": "daily_otp>daily_otp",
 							"bindingType": "u",
 							"bindingSource": "API",
-							"bindingParentID": "f3e6ac07-230a-4694-87ca-3a6b4e3a47fa",
-							"bindingPathID": "c8ea770d-4877-4edb-bbcb-1bedbbea123e",
+							"bindingParentID": "3a157a83-f992-486a-896b-b22b1be0704a",
+							"bindingPathID": "2a241f46-cf12-4c56-aec0-953aff4e19f5",
 							"request": [],
 							"response": [],
 							"attributes": [],
 							"data": [
 								{
-									"fieldNo": "294a778d-bbdc-4e3b-a84e-e85e54ca42fd",
+									"fieldNo": "efeec2ab-a9ec-49b1-84c2-74933829b273",
 									"fieldName": "lblSimpleFormDateIssued",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2192,9 +1876,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "feb20b6e-96bb-470a-c045-ecfff6d6e4ab",
+									"fieldNo": "33db80a5-1e73-4155-ac6c-83b379740f84",
 									"fieldName": "inSimpleFormDateIssued",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.DatePicker",
 									"script": "",
 									"customComponent": false,
@@ -2212,9 +1896,30 @@
 									"data": []
 								},
 								{
-									"fieldNo": "24a349d6-84ac-4568-c9a6-a10566ce47f1",
+									"fieldNo": "8ffd4e66-6ff2-4f4d-bfad-f5ce47553aa2",
+									"fieldName": "inSimpleFormDateIssued",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"customComponent": false,
+									"disabled": true,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{/DateIssued}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "3e8da121-7f25-41dd-dc0e-4aed895f5880",
 									"fieldName": "lblSimpleFormAirport",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2232,9 +1937,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "9918efa3-eab1-4929-838a-8697b28075e9",
+									"fieldNo": "6c429bbc-ae83-4dde-a670-13bdbec792ae",
 									"fieldName": "inSimpleFormAirport",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2252,9 +1957,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "7b85fb78-c0bb-4671-fb66-59e726f1df73",
+									"fieldNo": "b97ad88e-ad06-4726-ad59-dd30b437a178",
 									"fieldName": "lblSimpleFormFlightId",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2272,9 +1977,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "ad412163-157e-4beb-ac6d-91d10efd59ed",
+									"fieldNo": "b46ba1be-2795-4c58-8d08-dfe115b06b46",
 									"fieldName": "inSimpleFormFlightId",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2292,9 +1997,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "93dbec77-728d-492c-cc6e-ec0687b7e0c1",
+									"fieldNo": "6d57d74e-5661-4d1b-e941-27ad4ec16a6a",
 									"fieldName": "lblSimpleFormAOC",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2312,9 +2017,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "fc7eac77-6134-4980-b388-197ca58af894",
+									"fieldNo": "c577c2aa-81d1-445d-9062-b2f0dcde3677",
 									"fieldName": "inSimpleFormAOC",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.ComboBox",
 									"script": "",
 									"customComponent": false,
@@ -2350,9 +2055,9 @@
 									],
 									"data": [
 										{
-											"fieldNo": "9c05b287-673c-4d48-9d17-630139b7e28a",
-											"fieldName": "ListItem",
-											"fieldParent": "fc7eac77-6134-4980-b388-197ca58af894",
+											"fieldNo": "eb720b76-c30e-46d6-c2d1-e43c8aed4112",
+											"fieldName": "ListItem6",
+											"fieldParent": "c577c2aa-81d1-445d-9062-b2f0dcde3677",
 											"fieldType": "sap.ui.core.ListItem",
 											"script": "",
 											"customComponent": false,
@@ -2379,9 +2084,9 @@
 									]
 								},
 								{
-									"fieldNo": "529fb602-a5f2-42ef-9b17-960ff7cecbc8",
+									"fieldNo": "27af2154-a40e-445b-adf6-e9b182aa4499",
 									"fieldName": "inSimpleFormAOC",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2400,9 +2105,89 @@
 									"data": []
 								},
 								{
-									"fieldNo": "5ff45140-b3db-43b9-9878-53bfe308747c",
+									"fieldNo": "07e17ca7-daf9-4b4e-cf3e-6e3759b3815f",
+									"fieldName": "lblSimpleFormCarrier",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Carrier",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "5de0b798-029e-4ca2-f8d1-41de16b8b7cc",
+									"fieldName": "inSimpleFormCarrier",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{/Carrier}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1a63c7b3-3764-47db-c405-133479a6d40c",
+									"fieldName": "lblSimpleFormEstimatedTimeDeparture",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "EstimatedTimeDeparture",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b7c0cfd2-78d6-4802-f110-51b98b4dcb24",
+									"fieldName": "inSimpleFormEstimatedTimeDeparture",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{/EstimatedTimeDeparture}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "2c43627e-1a37-4e8e-c9b7-7543df995b28",
 									"fieldName": "lblSimpleFormFlightNumber",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2420,9 +2205,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "051cabc5-6c9b-4fad-b1cb-014dc99951e8",
+									"fieldNo": "4419704e-f549-4c21-ea1c-3e3bd4c53512",
 									"fieldName": "inSimpleFormFlightNumber",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2440,9 +2225,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "2ec29f9d-1427-48b4-99ad-b09a1f5c59b0",
+									"fieldNo": "ba8af3b9-9ae7-4214-f7ed-2095225de2a3",
 									"fieldName": "lblSimpleFormFlightDate",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2460,21 +2245,29 @@
 									"data": []
 								},
 								{
-									"fieldNo": "02ec1b6e-d429-4331-e691-4400b43e861c",
+									"fieldNo": "5c01d4a7-abb8-4900-febd-6cfe7cce48f1",
 									"fieldName": "inSimpleFormFlightDate",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
-									"fieldType": "sap.m.DatePicker",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
+									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
-									"attributes": [],
+									"attributes": [
+										{
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{/FlightDate}",
+											"script": "",
+											"translation": []
+										}
+									],
 									"data": []
 								},
 								{
-									"fieldNo": "2882970d-457d-4901-fec3-09e5bde80f0d",
+									"fieldNo": "ea53e0c5-f5d2-4476-df54-e1d7b5c825ca",
 									"fieldName": "lblSimpleFormOrigin",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2492,17 +2285,17 @@
 									"data": []
 								},
 								{
-									"fieldNo": "a3069972-8e62-4913-cb18-d5c93cdc58ae",
+									"fieldNo": "fb37f981-2c05-4b8a-da10-599afabf4318",
 									"fieldName": "inSimpleFormOrigin",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.ComboBox",
 									"script": "",
 									"customComponent": false,
-									"bindingValue": "airport_ph>airport_ph",
+									"bindingValue": "airport>airport",
 									"bindingType": "h",
 									"bindingSource": "API",
-									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"bindingParentID": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+									"bindingPathID": "85e843a6-0bfe-4eff-b0ba-e8edf06feb0f",
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -2530,9 +2323,9 @@
 									],
 									"data": [
 										{
-											"fieldNo": "3b9061dd-ed5b-489e-c5f7-2e3ac9f32f54",
-											"fieldName": "ListItem2",
-											"fieldParent": "a3069972-8e62-4913-cb18-d5c93cdc58ae",
+											"fieldNo": "69ca3e6f-9e6f-45ce-c3f1-5c19cd35da14",
+											"fieldName": "ListItem7",
+											"fieldParent": "fb37f981-2c05-4b8a-da10-599afabf4318",
 											"fieldType": "sap.ui.core.ListItem",
 											"script": "",
 											"customComponent": false,
@@ -2559,9 +2352,9 @@
 									]
 								},
 								{
-									"fieldNo": "2164f4df-b761-49f7-f1f1-356507745562",
+									"fieldNo": "b96a7d01-2485-49dd-f9a3-c1618a7a0e61",
 									"fieldName": "inSimpleFormOrigin",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2575,14 +2368,22 @@
 											"value": "{/Origin}",
 											"script": "",
 											"translation": []
+										},
+										{
+											"attribute": "change",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.m.Input/inSimpleFormOrigin/change.js",
+											"language": "javascript",
+											"translation": []
 										}
 									],
 									"data": []
 								},
 								{
-									"fieldNo": "faf193d5-66c7-4a92-c274-f5427214a5ef",
+									"fieldNo": "9bd37a8c-a3e3-4bd2-8034-7accfe941b84",
 									"fieldName": "lblSimpleFormDestination",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2600,17 +2401,17 @@
 									"data": []
 								},
 								{
-									"fieldNo": "6f189244-2c94-45e3-9fc5-3c8da4728a29",
+									"fieldNo": "257fa884-321a-40c0-8724-70384bab2849",
 									"fieldName": "inSimpleFormDestination",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.ComboBox",
 									"script": "",
 									"customComponent": false,
-									"bindingValue": "airport_ph>airport_ph",
+									"bindingValue": "airport>airport",
 									"bindingType": "h",
 									"bindingSource": "API",
-									"bindingParentID": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-									"bindingPathID": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+									"bindingParentID": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+									"bindingPathID": "85e843a6-0bfe-4eff-b0ba-e8edf06feb0f",
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -2638,9 +2439,9 @@
 									],
 									"data": [
 										{
-											"fieldNo": "26362b38-b884-4c7c-b4fd-25f5f0d670ec",
-											"fieldName": "ListItem1",
-											"fieldParent": "6f189244-2c94-45e3-9fc5-3c8da4728a29",
+											"fieldNo": "a4fa0559-ef44-46d0-d42e-976f292614e1",
+											"fieldName": "ListItem8",
+											"fieldParent": "257fa884-321a-40c0-8724-70384bab2849",
 											"fieldType": "sap.ui.core.ListItem",
 											"script": "",
 											"customComponent": false,
@@ -2667,9 +2468,9 @@
 									]
 								},
 								{
-									"fieldNo": "b18008da-0c24-4d50-a162-7d604bf44c0c",
+									"fieldNo": "ebae3757-9f55-4191-bd4a-555e34e63d95",
 									"fieldName": "inSimpleFormDestination",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2688,9 +2489,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "915c8bd6-4e74-4f0f-e1f7-de5e5aec23dc",
+									"fieldNo": "0b4f68d5-5950-4e26-d465-bfbf565312a0",
 									"fieldName": "lblSimpleFormSTD",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2708,9 +2509,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "577a2259-8ba8-43da-bd8e-289648bfcec1",
+									"fieldNo": "9a925c9a-d143-49de-a137-e52a0162945b",
 									"fieldName": "inSimpleFormSTD",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2728,49 +2529,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "88f78773-922e-44a6-8ace-8acaf5f8445a",
-									"fieldName": "lblSimpleFormEstimatedTimeDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
-									"fieldType": "sap.m.Label",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "EstimatedTimeDeparture",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": []
-								},
-								{
-									"fieldNo": "47ed4d82-f6b5-45e4-bf0f-5b49068b0943",
-									"fieldName": "inSimpleFormEstimatedTimeDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
-									"fieldType": "sap.m.Input",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "value",
-											"grouping": "Properties",
-											"value": "{/EstimatedTimeDeparture}",
-											"script": "",
-											"translation": []
-										}
-									],
-									"data": []
-								},
-								{
-									"fieldNo": "c92c1a40-88b9-47c3-e147-6e3310c8a4c2",
+									"fieldNo": "e1bf6924-8069-4282-a765-e32ec38225cc",
 									"fieldName": "lblSimpleFormActualTimeDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2788,9 +2549,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "6a29be80-aa76-4435-d94c-198e594daf9a",
+									"fieldNo": "562bf501-6ff4-4e61-9646-d812cbc90731",
 									"fieldName": "inSimpleFormActualTimeDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2808,9 +2569,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "bf4049e9-20c6-45d5-ad01-b8159a2ea6ec",
+									"fieldNo": "37fcfa52-4d2e-4829-e7cd-82d569cffa33",
 									"fieldName": "lblSimpleFormSTA",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2828,9 +2589,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "9fb2cbf2-bbe4-49b6-dbca-15b1f430c607",
+									"fieldNo": "203358ee-021a-4849-ac77-f4ec73f09e72",
 									"fieldName": "inSimpleFormSTA",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2848,9 +2609,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "80fb675e-2b03-4449-b142-3d01765dae94",
+									"fieldNo": "f885a368-dc8b-48fa-9e77-21eea5514c2c",
 									"fieldName": "lblSimpleFormEstimatedTimeofArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2868,9 +2629,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "66a092bc-b007-405c-abbf-fef21cddbe85",
+									"fieldNo": "f5581615-ce7c-414f-a0fd-460fb14456f9",
 									"fieldName": "inSimpleFormEstimatedTimeofArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2888,9 +2649,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "f9b77071-f3ec-489f-d62c-0d7b2022c022",
+									"fieldNo": "3f5d8979-933e-434a-c553-9562c842cb28",
 									"fieldName": "lblSimpleFormActualTimeofArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2908,9 +2669,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "1f51e8ca-eb14-4798-b8d2-0f751c084289",
+									"fieldNo": "f2635322-b517-4104-a815-ae049d343227",
 									"fieldName": "inSimpleFormActualTimeofArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2928,9 +2689,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "b405ee59-1202-437e-e311-191f2ffe0a59",
+									"fieldNo": "0c625809-cb7b-4b21-c6f8-a87303b06e33",
 									"fieldName": "lblSimpleFormAdultPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2948,9 +2709,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "52b60bc2-3660-4f85-8167-8e814cbe3951",
+									"fieldNo": "5e98ee32-3cf1-489d-e795-15de52ddb539",
 									"fieldName": "inSimpleFormAdultPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -2968,9 +2729,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "328335b8-0cd6-48cb-eddd-1e94d2c342f4",
+									"fieldNo": "f62fa2b2-a672-4f3f-ce29-bb801ed129a0",
 									"fieldName": "lblSimpleFormInfantPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -2988,9 +2749,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "9d395241-181b-489f-b698-1629c5625ad2",
+									"fieldNo": "dc7960fd-695d-4395-99f5-5822fd34f4d0",
 									"fieldName": "inSimpleFormInfantPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -3008,9 +2769,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "181122d6-cf0f-4bba-fdc2-4797e4ca451c",
+									"fieldNo": "ac1a5238-a848-4e9c-cc5d-854aa6361b76",
 									"fieldName": "lblSimpleFormTotalPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -3028,9 +2789,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "d168e1bf-b101-45b0-bac0-2b553b7c0eba",
+									"fieldNo": "e3cb538d-e1d3-4dc6-cb07-fd17c5455507",
 									"fieldName": "inSimpleFormTotalPax",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -3048,9 +2809,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "acea6a90-6bf9-4533-8cb4-0a837ab0d8b8",
+									"fieldNo": "5e02a6a9-b705-439a-87d4-333cb28849ee",
 									"fieldName": "lblSimpleFormRemarks",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -3068,9 +2829,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "c47c0c33-fcec-4cac-a95a-e3660a97dcdd",
+									"fieldNo": "7c21e435-54d0-4416-ebaa-d09483005e6e",
 									"fieldName": "inSimpleFormRemarks",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -3088,22 +2849,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "84949ad7-ee1a-4c58-ff80-af04e6e010a2",
+									"fieldNo": "96e34a6b-0fd8-431d-fb21-88ed2fad55a4",
 									"fieldName": "lblSimpleFormIsDelayedArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3115,22 +2869,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "fde8232d-66f9-494d-fd2a-16f4439d1e7e",
+									"fieldNo": "cbf4f95e-2ebe-46cd-f231-ee055f57582f",
 									"fieldName": "inSimpleFormIsDelayedArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3142,22 +2889,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "6e224f18-e227-407f-d171-b2ece65be5e4",
+									"fieldNo": "e17935ac-eb51-4be9-fbb0-f80c849a8870",
 									"fieldName": "lblSimpleFormIsCancelledDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3169,22 +2909,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "436f8bf2-7bb3-413c-8d4a-1ff035bb1ecc",
+									"fieldNo": "b0317e14-bfc3-4c51-fafd-a5e8771a6113",
 									"fieldName": "inSimpleFormIsCancelledDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3196,22 +2929,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "f5d37eea-3a9d-4b1d-dafd-6fd512308141",
+									"fieldNo": "8cb45430-9006-4516-a00d-8ef15468e71f",
 									"fieldName": "lblSimpleFormIsCancelledArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3223,22 +2949,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "4d15da77-9c94-49f7-d54c-79d2fac0e2b8",
+									"fieldNo": "37eca828-e66a-4b36-ee49-72ec76532432",
 									"fieldName": "inSimpleFormIsCancelledArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3250,22 +2969,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "528bb6d1-24b5-4a12-d546-6f8a28a607ab",
+									"fieldNo": "2e2e8016-3351-4700-a2e6-272de4a56c40",
 									"fieldName": "lblSimpleFormIsOTPDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3277,22 +2989,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "86e79384-f760-44e3-cb43-c07fdb0d5a23",
+									"fieldNo": "0ad43028-1602-43b8-c9b0-d81234a4eba3",
 									"fieldName": "inSimpleFormIsOTPDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3304,22 +3009,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "88608729-2e00-48dd-f456-2c9878cd4c05",
+									"fieldNo": "0e70cf8e-5134-4706-8333-0af2c023632f",
 									"fieldName": "lblSimpleFormOTPDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3331,22 +3029,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "c2629a0c-1b0f-4bec-b5e6-7448d1af5e89",
+									"fieldNo": "0bea999d-196e-4b6f-b943-182c1b1b82bc",
 									"fieldName": "inSimpleFormOTPDeparture",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3358,22 +3049,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "99a96997-ffd2-4e67-b207-b112d301d16d",
+									"fieldNo": "0987bf2c-5370-497e-a6de-284326748ce1",
 									"fieldName": "lblSimpleFormIsOTPArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "text",
 											"grouping": "Properties",
@@ -3385,22 +3069,15 @@
 									"data": []
 								},
 								{
-									"fieldNo": "b080ad5f-1cb3-4426-92ef-224d96a3b8c9",
+									"fieldNo": "02c1de8d-2ae0-4ade-c823-86f33bebb907",
 									"fieldName": "inSimpleFormIsOTPArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
-										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
 										{
 											"attribute": "value",
 											"grouping": "Properties",
@@ -3412,9 +3089,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "909404ec-2a50-4b19-8128-dc1c127c0c0a",
-									"fieldName": "lblSimpleFormOTPArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldNo": "e0b94d83-8928-4166-b0c5-3028aa7089ba",
+									"fieldName": "lblSimpleFormRecordedInFlightCancel",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Label",
 									"script": "",
 									"customComponent": false,
@@ -3422,16 +3099,9 @@
 									"response": [],
 									"attributes": [
 										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
-										{
 											"attribute": "text",
 											"grouping": "Properties",
-											"value": "OTPArrival",
+											"value": "RecordedInFlightCancel",
 											"script": "",
 											"translation": []
 										}
@@ -3439,9 +3109,9 @@
 									"data": []
 								},
 								{
-									"fieldNo": "90376255-6a80-46cb-948d-d25d3bca38cb",
-									"fieldName": "inSimpleFormOTPArrival",
-									"fieldParent": "ea087447-e2b3-4289-8d72-c67a7fcff3ba",
+									"fieldNo": "78da887f-dc8b-41f4-e616-cb9908c55ce9",
+									"fieldName": "inSimpleFormRecordedInFlightCancel",
+									"fieldParent": "7213651c-1602-4c5b-9092-37dd2f28578e",
 									"fieldType": "sap.m.Input",
 									"script": "",
 									"customComponent": false,
@@ -3449,16 +3119,9 @@
 									"response": [],
 									"attributes": [
 										{
-											"attribute": "visible",
-											"grouping": "Properties",
-											"value": "false",
-											"script": "",
-											"translation": []
-										},
-										{
 											"attribute": "value",
 											"grouping": "Properties",
-											"value": "{/OTPArrival}",
+											"value": "{/RecordedInFlightCancel}",
 											"script": "",
 											"translation": []
 										}
@@ -3471,7 +3134,7 @@
 				},
 				{
 					"fieldNo": "9501d071-cf22-455b-d0fa-043b530df4c6",
-					"fieldName": "Table",
+					"fieldName": "Table4",
 					"fieldParent": "d6c2f638-6254-451e-be8a-efd64e30b5b5",
 					"fieldType": "sap.ui.table.Table",
 					"script": "",
@@ -3503,7 +3166,7 @@
 							"attribute": "rowSelectionChange",
 							"grouping": "Events",
 							"value": "Anonymous Function",
-							"script": "file://event/sap.ui.table.Table/Table/rowSelectionChange.js",
+							"script": "file://event/sap.ui.table.Table/Table4/rowSelectionChange.js",
 							"language": "javascript",
 							"translation": []
 						},
@@ -3511,7 +3174,7 @@
 							"attribute": "cellClick",
 							"grouping": "Events",
 							"value": "Anonymous Function",
-							"script": "file://event/sap.ui.table.Table/Table/cellClick.js",
+							"script": "file://event/sap.ui.table.Table/Table4/cellClick.js",
 							"language": "javascript",
 							"translation": []
 						}
@@ -5888,13 +5551,13 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"restSource": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+					"restOperation": "4f7f2fbb-885e-4383-89da-8ef5be61a7fd",
 					"request": [],
 					"response": [
 						{
 							"status": 200,
-							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"dataId": "730f3542-b23a-4626-8e1b-9ae51fcd7549",
 							"modelFieldNo": "613ef53d-aaeb-4636-92b8-ac1ed0b194da"
 						}
 					],
@@ -5916,13 +5579,13 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"restSource": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+					"restOperation": "4f7f2fbb-885e-4383-89da-8ef5be61a7fd",
 					"request": [],
 					"response": [
 						{
 							"status": 200,
-							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
+							"dataId": "730f3542-b23a-4626-8e1b-9ae51fcd7549",
 							"modelFieldNo": "e228316c-5ae9-49c7-f98e-0127e24f8c4c"
 						}
 					],
@@ -5979,14 +5642,14 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"restSource": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+					"restOperation": "4f7f2fbb-885e-4383-89da-8ef5be61a7fd",
 					"request": [],
 					"response": [
 						{
 							"status": 200,
-							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
-							"modelFieldNo": "6f189244-2c94-45e3-9fc5-3c8da4728a29"
+							"dataId": "85e843a6-0bfe-4eff-b0ba-e8edf06feb0f",
+							"modelFieldNo": "257fa884-321a-40c0-8724-70384bab2849"
 						}
 					],
 					"attributes": [
@@ -6007,14 +5670,14 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-					"restOperation": "d67cfb3f-3a6b-47be-ad75-22f8c2d0c07f",
+					"restSource": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+					"restOperation": "4f7f2fbb-885e-4383-89da-8ef5be61a7fd",
 					"request": [],
 					"response": [
 						{
 							"status": 200,
-							"dataId": "1a839d99-86d3-4ea1-8d8d-7866e0cb9933",
-							"modelFieldNo": "a3069972-8e62-4913-cb18-d5c93cdc58ae"
+							"dataId": "85e843a6-0bfe-4eff-b0ba-e8edf06feb0f",
+							"modelFieldNo": "fb37f981-2c05-4b8a-da10-599afabf4318"
 						}
 					],
 					"attributes": [
@@ -6049,7 +5712,7 @@
 						{
 							"status": 200,
 							"dataId": "df883712-7887-4ad1-8f85-476a847b2436",
-							"modelFieldNo": "fc7eac77-6134-4980-b388-197ca58af894"
+							"modelFieldNo": "c577c2aa-81d1-445d-9062-b2f0dcde3677"
 						}
 					],
 					"attributes": [
@@ -6133,14 +5796,14 @@
 					"fieldType": "neptune.restapi",
 					"script": "",
 					"customComponent": false,
-					"restSource": "f3e6ac07-230a-4694-87ca-3a6b4e3a47fa",
-					"restOperation": "8de1603d-a452-4c52-a20f-05e3764ab7a7",
+					"restSource": "3a157a83-f992-486a-896b-b22b1be0704a",
+					"restOperation": "1793fcb0-f7f2-42bd-b6c2-5eadb5c32323",
 					"request": [],
 					"response": [
 						{
 							"status": 200,
-							"dataId": "c8ea770d-4877-4edb-bbcb-1bedbbea123e",
-							"modelFieldNo": "774dec63-7c8e-4219-fe91-1d9d18a630fc"
+							"dataId": "2a241f46-cf12-4c56-aec0-953aff4e19f5",
+							"modelFieldNo": "7213651c-1602-4c5b-9092-37dd2f28578e"
 						}
 					],
 					"attributes": [
@@ -6415,7 +6078,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.27.1723",
+	"ver": "24.11.28.1629",
 	"application": "daily_otp",
 	"title": "",
 	"description": "",
@@ -6463,19 +6126,24 @@
 			"ver": "24.11.27.1329"
 		},
 		{
-			"id": "dbc6bf0e-dd58-4071-ba41-8039517b6ad3",
-			"name": "airport_ph",
-			"ver": "24.11.27.1320"
-		},
-		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
-			"ver": "24.11.26.1030"
+			"ver": "24.11.28.1343"
 		},
 		{
 			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
 			"name": "daily_archive",
 			"ver": "24.11.26.1117"
+		},
+		{
+			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+			"name": "airport",
+			"ver": "24.11.28.0940"
+		},
+		{
+			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
+			"name": "daily_otp",
+			"ver": "24.11.28.1416"
 		}
 	],
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f"

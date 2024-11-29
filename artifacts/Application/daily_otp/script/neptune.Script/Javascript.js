@@ -436,6 +436,24 @@ function DailyOTP() {
      // Log the formatted date
      console.log(formattedDate);
  }
+
+
+
+inSimpleFormOrigin.getModel().setSizeLimit(13000);
+inSimpleFormDestination.getModel().setSizeLimit(13000);
+
+
+
+// var comboBox = inSimpleFormOrigin // Replace 'yourComboBoxId' with the actual ID of your ComboBox element
+// comboBox.size = 5; // Set the maximum number of items to be displayed to 5
+
+// function OTP() 
+// {
+//     var comboBox = sap.ui.getCore().byId("inSimpleFormOrigin");
+//     comboBox.setSizeLimit(10000);
+
+// }
+
 // var fromdate = DateRangeSelection.getFrom()
 
 
