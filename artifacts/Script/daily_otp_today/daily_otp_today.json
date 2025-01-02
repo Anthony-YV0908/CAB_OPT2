@@ -1,0 +1,27 @@
+{
+	"id": "19c68e04-074d-4885-b6b6-48384ebedb44",
+	"createdAt": "2024-12-04T03:07:42.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "0e8f8aa9-a322-441a-9a7c-c933b51362e2",
+			"name": "daily_otp",
+			"contextname": "daily_otp"
+		}
+	],
+	"apis": [],
+	"name": "daily_otp_today",
+	"ver": "24.12.26.1230",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "2de22d32-a86c-4e1f-ae61-13f6a1b49072",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

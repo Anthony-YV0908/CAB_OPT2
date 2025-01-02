@@ -1,0 +1,27 @@
+{
+	"id": "1ba35bfc-4092-4f62-b448-093a20ed2997",
+	"createdAt": "2024-12-09T06:17:58.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "0e8f8aa9-a322-441a-9a7c-c933b51362e2",
+			"name": "daily_otp",
+			"contextname": "daily_otp"
+		}
+	],
+	"apis": [],
+	"name": "FlightsPerDay",
+	"ver": "24.12.26.1614",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "2de22d32-a86c-4e1f-ae61-13f6a1b49072",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

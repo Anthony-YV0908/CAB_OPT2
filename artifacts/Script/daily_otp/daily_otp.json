@@ -13,7 +13,7 @@
 	],
 	"apis": [],
 	"name": "daily_otp",
-	"ver": "24.11.28.1340",
+	"ver": "24.12.18.1406",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.js",

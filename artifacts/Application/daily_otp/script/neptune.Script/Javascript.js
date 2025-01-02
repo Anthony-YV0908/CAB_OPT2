@@ -62,7 +62,6 @@ function timeToMinutes(time) {
 }
 
 
-
 function DeleteFlight(oEvent) {
     const context = oEvent.oSource.getBindingContext();
 
@@ -150,155 +149,275 @@ function DeleteFlight(oEvent) {
     });
 }
 
+let globalData = null  // Shared variable to store data
+function SelectAOC(oEvent) {
+    const context = oEvent.oSource.getBindingContext();
+    if (!context) {
+        console.error("No binding context available.");
+        return;
+    }
+
+    const data = context.getObject();
+    if (!data || !data.Code) {
+        console.error("Invalid data or missing 'Code' property.");
+        return;
+    }
+
+    App.to(CreatePage);  // Navigate to the CreatePage
+    globalData = data;  // Store the data globally
+    console.log("Selected Data:", globalData);  // Log the global data to verify
+    CreateFlight()
+}
 
 
-function CreateFlight(){ 
-    // const normalizedUrl = "http://localhost:8080/api/entity/daily_otp";
+async function CreateFlight() {
 
-    var dateissued = inSimpleFormDateIssued.getValue()
-    var airport = inSimpleFormAirport.getValue()
-    var flightid  = inSimpleFormFlightId.getValue()
-    var aoc = inSimpleFormAOC.getValue()
-    var flightdate = inSimpleFormFlightDate.getValue()
-    var origin = inSimpleFormOrigin.getValue()
-    var destination = inSimpleFormDestination.getValue()
-    var std = inSimpleFormSTD.getValue()
-    var etd =  inSimpleFormEstimatedTimeDeparture.getValue().trim()
-    var atd = inSimpleFormActualTimeDeparture.getValue().trim()
-    var eta = inSimpleFormEstimatedTimeofArrival.getValue().trim()
-    var ata = inSimpleFormActualTimeofArrival.getValue().trim() 
-    var adult = inSimpleFormAdultPax.getValue()
-    var infant = inSimpleFormInfantPax.getValue()
-    var total = inSimpleFormTotalPax.getValue()
-    var remarks = inSimpleFormRemarks.getValue()
-    var isotpdeparture = inSimpleFormIsOTPDeparture.getValue(); 
+
+     if (!globalData) {
+        console.error("No data available.");
+        return;
+    }
+
+    const dataCode = globalData.Code;
+    console.log("CreateFlight using data code:", dataCode);
+
+    // console.log(data);
+
+
+    var aoc = inSimpleFormAOC.getValue(dataCode);
+    inSimpleFormAOC.setValue(dataCode);    
+
+    // Retrieve form values
+    var dateissued = inSimpleFormDateIssued.getValue();
+    var airport = inSimpleFormAirport.getValue();
+    var flightid = inSimpleFormFlightId.getValue();
+    var flightdate = inSimpleFormFlightDate.getValue();
+    var origin = inSimpleFormOrigin.getValue();
+    var destination = inSimpleFormDestination.getValue();
+    var std = inSimpleFormSTD.getValue();
+    var sta = inSimpleFormSTA.getValue();
+    var etd = inSimpleFormEstimatedTimeDeparture.getValue().trim();
+    var atd = inSimpleFormActualTimeDeparture.getValue().trim();
+    var eta = inSimpleFormEstimatedTimeofArrival.getValue().trim();
+    var ata = inSimpleFormActualTimeofArrival.getValue().trim();
+    var adult = inSimpleFormAdultPax.getValue();
+    var infant = inSimpleFormInfantPax.getValue();
+    var total = inSimpleFormTotalPax.getValue();
+    var remarks = inSimpleFormRemarks.getValue();
+    var isotpdeparture = inSimpleFormIsOTPDeparture.getValue();
     var otpdeparture = inSimpleFormOTPDeparture.getValue();
     var isotparrival = inSimpleFormIsOTPArrival.getValue();
     var otparrival = inSimpleFormOTPArrival.getValue();
+    if(inSimpleFormDateIssued.getValue() === '')
+        {
+               sap.m.MessageToast.show(
+                "No Date issue data"
+            );
+            return;
+        }
+
+        if(inSimpleFormAirport.getValue() === '') 
+        { 
+               sap.m.MessageToast.show(
+                "No Airport Data"
+            );
+            return;
+        }
+
+        if(inSimpleFormAOC.getValue() === '') 
+        { 
+               sap.m.MessageToast.show(
+                "No AOC data"
+            );
+            return;
+        }
+
+        if(inSimpleFormFlightId.getValue() === '') 
+        { 
+               sap.m.MessageToast.show(
+                "No Flight Id data"
+            );
+            return;
+        }
+
+        if(inSimpleFormFlightDate.getValue() === '') 
+        { 
+               sap.m.MessageToast.show(
+                "No FlightDate data"
+            );
+            return;
+        }   
+
+        if(inSimpleFormOrigin.getValue() === '') 
+        {
+               sap.m.MessageToast.show(
+                "No Origin data"
+            );
+            return;
+        } 
+
+        if(inSimpleFormDestination.getValue() === '') 
+        { 
+               sap.m.MessageToast.show(
+                "No Destination data"
+            );
+            return;
+        }
+
+       
+        if(inSimpleFormSTD.getValue() ==='') 
+        { 
+          sap.m.MessageToast.show(
+                "No STD data"
+            );
+            return;
+        }
+
+      if(inSimpleFormSTD.getValue() ==='') 
+        { 
+          sap.m.MessageToast.show(
+                "No "
+            );
+            return;
+        }
+
+        if(inSimpleFormSTA.getValue() === '') 
+        { 
+            sap.m.MessageToast.show(
+                "No STA value"
+            );
+            return;
+        }
+
+        // Validate time inputs
+        const etdMinutes = timeToMinutes(etd);
+        const atdMinutes = timeToMinutes(atd);
+        const etaMinutes = timeToMinutes(eta);
+        const ataMinutes = timeToMinutes(ata);
+
+      
+        const differenceDeparture = atdMinutes - etdMinutes;
+        const differenceArrival = ataMinutes - etaMinutes;
 
 
-console.log('etd' , etd) 
-console.log('atd' , atd) 
-
-console.log('eta', eta) 
-console.log('ata', ata)
 
 
-const etdMinutes = timeToMinutes(etd);
-const atdMinutes = timeToMinutes(atd);
+          if (atdMinutes < etdMinutes) {
+            sap.m.MessageToast.show(
+                "Actual Time Departure (ATD) cannot be earlier than Estimated Time Departure (ETD)."
+            );
+            return;
+        }
 
-const etaMinutes = timeToMinutes(eta);
-const ataMinutes = timeToMinutes(ata);
-
-// Validate ATD against ETD
-if (atdMinutes < etdMinutes) {
-
-    sap.m.MessageToast.show("Actual Time Departure (ATD) cannot be earlier than Estimated Time Departure (ETD).")
-    return; // Stop execution if invalid time
-}
-
-// Validate ATA against ETA
-if (ataMinutes < etaMinutes) {
-    sap.m.MessageToast.show("Actual Time of Arrival (ATA) cannot be earlier than Estimated Time of Arrival (ETA).")
-
-    return; // Stop execution if invalid time
-}
+        if (ataMinutes < etaMinutes) {
+            sap.m.MessageToast.show(
+                "Actual Time of Arrival (ATA) cannot be earlier than Estimated Time of Arrival (ETA)."
+            );
+            return;
+        }
 
 
-
-const differenceDeparture = atdMinutes - etdMinutes;
-
-const differenceArrival = ataMinutes - etaMinutes ;
-
-
-console.log('departure', differenceDeparture)
-
-console.log('arrival ' , differenceArrival)
+        isotpdeparture = differenceDeparture > 15 ? 1 : 0;
+        otpdeparture = differenceDeparture;
+        delayeddeparture = differenceDeparture;
 
 
-if (differenceDeparture > 15) {
-    console.log("The departure is late.");
-    isotpdeparture = 1 
-    otpdeparture = differenceDeparture
-     
-} else {
-    console.log("The departure is on time.");
-    isotpdeparture = 0 
-    otpdeparture = differenceDeparture
-}
+        isotparrival = differenceArrival > 15 ? 1 : 0;
+        otparrival = differenceArrival;
+        delayedarrival = differenceArrival;
 
+    setTimeout(async () => {
+        try {
+            // Fetch service type for the carrier
+            const apiUrl = `http://localhost:8080/api/entity/airportcode?where={"Code":"${aoc}"}`;
+            const response = await fetch(apiUrl);
 
-if(differenceArrival > 15) 
-{ 
-    console.log('The arrival is late ') 
-    isotparrival = 1 
-    otparrival = differenceArrival
-}
-else 
-{ 
-    console.log('The departure is on time');
-    isotparrival = 0 
-    otparrival = differenceArrival;
-}
-
-
-    
-
-    var data = { 
-        DateIssued:dateissued,
-        Airport:airport,
-        FlightId:flightid,
-        AOC:aoc,
-        FlightDate:flightdate,
-        Origin:origin,
-        Destination:destination,
-        STD:std,
-        EstimatedTimeDeparture:etd,
-        ActualTimeDeparture:atd,
-        EstimatedTimeofArrival:eta,
-        ActualTimeofArrival:ata,
-        AdultPax:adult,
-        InfantPax:infant,
-        TotalPax:total,
-        Remarks:remarks,
-        IsOTPDeparture:isotpdeparture, 
-        OTPDeparture:otpdeparture,
-        IsOTPArrival:isotparrival,
-        OTPArrival:otparrival,
-    }
-
-
-    try {
-        fetch("http://localhost:8080/api/entity/daily_otp",{
-            method:'PUT',
-            headers:{
-                'Content-Type':'application/json',
-            },
-            body:JSON.stringify(data)
-        })
-        .then(response => { 
-            if(!response.ok) { 
-                return response.json().then(errData => { 
-                    throw new Error(`Request ${errData.message || response.statusText}`)
-                })
-                
+            if (!response.ok) {
+                throw new Error("Failed to fetch service type data.");
             }
-            return response.json();
-        })
-        .then(data=>{
-            // console.log('Success',data)
-             sap.m.MessageToast.show("Flight created")
-        })
-    
-    }catch(e){
-        // console.error('Error',error)
-         sap.m.MessageToast.show("Flight error creation")
-        
-    }
+
+            const data = await response.json();
+            if (data.length === 0) {
+                throw new Error("No matching data found for the AOC code.");
+            }
+
+            // Process the data and assign to carrier
+            const carrier = data[0].Service_Type;
+
+            // Create payload
+            const flightData = {
+                DateIssued: dateissued,
+                Airport: airport,
+                FlightId: flightid,
+                AOC: aoc,
+                Carrier: carrier,
+                FlightDate: flightdate,
+                Origin: origin,
+                Destination: destination,
+                STD: std,
+                STA: sta,
+                EstimatedTimeDeparture: etd,
+                ActualTimeDeparture: atd,
+                EstimatedTimeofArrival: eta,
+                ActualTimeofArrival: ata,
+                AdultPax: adult,
+                InfantPax: infant,
+                TotalPax: total,
+                Remarks: remarks,
+                IsOTPDeparture: isotpdeparture,
+                OTPDeparture: otpdeparture,
+                IsOTPArrival: isotparrival,
+                OTPArrival: otparrival,
+            };
+
+            console.log("Flight Data:", flightData);
+
+            // Send flight data to the API
+            const createResponse = await fetch(
+                "http://localhost:8080/api/entity/daily_otp",
+                {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(flightData),
+                }
+            );
+
+            if (!createResponse.ok) {
+                const errData = await createResponse.json();
+                throw new Error(`Request failed: ${errData.message || createResponse.statusText}`);
+            }
+
+            const result = await createResponse.json();
+            sap.m.MessageToast.show("Flight created successfully.");
+            console.log("Success:", result);
+        } catch (error) {
+            console.error("Error:", error);
+            sap.m.MessageToast.show(`Error creating flight: ${error.message}`);
+        }
+    }, 2000); // Delay of 2000ms (2 seconds) before executing the fetch call
 }
+
+
 
 
 function UpdateFlight() {
+
+    //  // Fetch service type for the carrier
+    //     const apiUrl = `http://localhost:8080/api/entity/airportcode?where={"Code":"${aoc}"}`;
+    //     const response = await fetch(apiUrl);
+
+    //     if (!response.ok) {
+    //         throw new Error("Failed to fetch service type data.");
+    //     }
+
+    //     const data = await response.json();
+    //     if (data.length === 0) {
+    //         throw new Error("No matching data found for the AOC code.");
+    //     }
+
+    //     carrier = data[0].Service_Type;
 
     let update_data = {}
 
@@ -310,6 +429,7 @@ function UpdateFlight() {
     var aiport = update_data.Airport = inEditSimpleFormAirport.getValue()
     var flightid = update_data.FlightId = inEditSimpleFormFlightId.getValue()
     var aoc = update_data.AOC = inEditSimpleFormAOC.getValue()
+    // var carrier = update_data.carrier = 
     var flightdate = update_data.FlightDate = inEditSimpleFormFlightDate.getValue()
     var origin = update_data.Origin = inEditSimpleFormOrigin.getValue()
     var destination = update_data.Destination = inEditSimpleFormDestination.getValue()
@@ -358,7 +478,7 @@ if (ataMinutes < etaMinutes) {
 
     const differenceDeparture = atdMinutes - etdMinutes;
 
-const differenceArrival = ataMinutes - etaMinutes ;
+    const differenceArrival = ataMinutes - etaMinutes ;
 
 
 console.log('departure', differenceDeparture)
@@ -396,73 +516,519 @@ if (differenceArrival > 15) {
 }
 
 
-// function apiMonthly(from, to) {
-//   // Your API logic here
-//   console.log("From:", from);
-//   console.log("To:", to);
-// }
 
-function MonthlyOTP() {
-     // const normalizedUrl = "http://localhost:8080/api/entity/daily_otp";
-  var fromdate = DateRangeSelection.getFrom();
-  var todate = DateRangeSelection.getTo();
+function OnTimeFlights() {
+    console.log('Pressed');
+    var fromDate = OnTimeArrival.getFrom();
+    var toDate = OnTimeArrival.getTo();
+    
+    // Format the start date
+    const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+    
+    // Format the end date
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+    
+    // Log the formatted dates to the console
+    console.log(formattedStartDate); // Output: 11/01/24
+    console.log(formattedEndDate); // Output: 11/30/24
+    
+    var optionData = {  
+        data: { 
+            "from": formattedStartDate,
+            "to": formattedEndDate
+        }
+    };
+    
+    console.log('this is ontime', optionData);
+    
+    setTimeout(function() {
+        apiOnTimeFlight(optionData);
+    }, 1000); // Delay the function call by 1 second (1000 milliseconds)
+}
 
-  var Monthlydata = {
-    from: fromdate,
-    to: todate,
-  };
 
-  apiMonthly(Monthlydata);
+function DailyOTP() {
+  // Get the selected date as a string
+  const selectedDate = DatePicker.getValue();
+
+  // Convert the selected date string into a Date object
+  const dateObj = new Date(selectedDate);
+
+  // Format the date as MM/DD/YY
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit"
+  }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+  console.log(formattedDate);
+
+  // Options and call the API
+  const options = { data: { "monthly": formattedDate } };
+  console.log(selectedDate);
+  apiDailyOTP(options);
+  // Log the formatted date
+}
+
+function ArrivalorDepartureTotal() 
+{ 
+    var fromDate = ArrivalorDeparture.getFrom()
+    var toDate = ArrivalorDeparture.getTo()
+
+
+
+   const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+  month: "numeric",
+  day: "numeric",
+  year: "2-digit"
+}).split('/').map(part => part.padStart(2, '0')).join('/');
+
+// Format the end date
+const formattedEndDate = toDate.toLocaleDateString("en-US", {
+  month: "numeric",
+  day: "numeric",
+  year: "2-digit"
+}).split('/').map(part => part.padStart(2, '0')).join('/');
+
+
+    // Log the formatted dates to the console
+    console.log(formattedStartDate); // Output: 11/1/24
+    console.log(formattedEndDate); // Output: 11/30/24
+
+        var OnTimedata = {  
+            data: { "from": formattedStartDate,
+                    "to":formattedEndDate
+                    }
+            
+        }
+
+        console.log(OnTimedata)
+
+        apiNumberFlightsOnTimeAPI(OnTimedata) 
+}
+
+function OnTimePercentArrivalDeparture() 
+{ 
+    console.log('pressed')
+    var fromDate = PercentTotalArrivalDeparture.getFrom()
+    var toDate = PercentTotalArrivalDeparture.getTo()
+
+   const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    // Log the formatted dates to the console
+    console.log(formattedStartDate); // Output: 11/1/24
+    console.log(formattedEndDate); // Output: 11/30/24
+
+    var OnTimedata = {  
+        data: { "from": formattedStartDate,
+                "to":formattedEndDate
+                 }
+        
+    }
+
+    console.log(OnTimedata)
+
+    apiPercentArrivalDeparture(OnTimedata) 
+
 }
 
 
 
-function DailyOTP() {
-     // Get the selected date as a string
-     const selectedDate = DatePicker.getValue();
-     // Parse the date (assuming MM/DD/YYYY format)
-     const [month, day, year] = selectedDate.split("/").map(Number);
-     // Create a Date object
-     const dateObj = new Date(year, month - 1, day);
-     // Format the date as MM/DD/YY
-     const formattedDate = dateObj.toLocaleDateString("en-US", {
-         year: "2-digit",
-         month: "2-digit",
-         day: "2-digit",
-     });
-     // Options and call the API
-     const options = { data: { "monthly": formattedDate } };
-     apiDailyOTP(options);
-     // Log the formatted date
-     console.log(formattedDate);
+function ArrivalandDeparturePercent() 
+{ 
+    console.log('Pressed');
+
+    var fromDate = TotalArrivalandDeparture.getFrom()
+    var toDate = TotalArrivalandDeparture.getTo()
+
+  const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    console.log(formattedStartDate); // Output: 11/1/24
+    console.log(formattedEndDate); // Output: 11/30/24
+
+        var OnTimedata = {  
+            data: { "from": formattedStartDate,
+                    "to":formattedEndDate
+                    }
+            
+        }
+
+     apiPercentTotalArrivalandDeparture(OnTimedata);
+}
+
+function PerAirlinePerRouteFlights() 
+{ 
+    
+    var fromDate = AirlineRoute.getFrom() 
+    var toDate = AirlineRoute.getTo() 
+
+    var airLine = AirlineInput.getValue()
+    var destination = DestinationInput_1.getValue() 
+    var origin = OriginInput_1.getValue()
+
+    // var destination = Destination_1.getValue() 
+    // var origin = Origin_1.getValue() 
+
+
+     const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+
+    var OptionData = { 
+        data:{
+            "from":formattedStartDate,
+            "to":formattedEndDate,
+            "airline":airLine,
+            "destination":destination,
+            "origin":origin 
+        }
+    }
+
+            console.log(OptionData)
+
+       apiPerRoutePerAirline(OptionData)
+
+
+
+
+}
+
+
+
+function PerAirline() 
+ { 
+    var fromDate = DatePerAirline.getFrom()
+    var toDate = DatePerAirline.getTo()
+    var airlineinput = AirlineInput_1.getValue();
+
+
+
+     const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+
+     var OnTimedata = {  
+        data: { "from": formattedStartDate,
+                "to":formattedEndDate,
+                "airline":airlineinput,
+
+               
+            }
+    }
+
+    console.log(OnTimedata)
+
+    apiPerAirline(OnTimedata)
+
  }
+
+
+
+
+
+
+ function PerRoute() 
+ { 
+    var fromDate = DatePerRoute.getFrom();
+    var toDate = DatePerRoute.getTo();
+    var originInput = OriginInput_2.getValue(); 
+    var destinationInput = DestinationInput_2.getValue();
+
+     const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+
+
+
+    var OnTimedata = {  
+        data: { "from": formattedStartDate,
+                "to":formattedEndDate,
+                "origin":originInput,
+                "destination":destinationInput,
+               
+            }
+    }
+
+
+    console.log(OnTimedata)
+
+    apiPerRoute(OnTimedata)
+
+ }
+
+function PerAirport() 
+{ 
+
+    var fromDate = DatePerAirport.getFrom()
+    var toDate = DatePerAirport.getTo()
+    var airportinput = AirportInput_1.getValue()
+
+
+     const formattedStartDate = fromDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+    const formattedEndDate = toDate.toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        year: "2-digit"
+    }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+// Log the formatted dates to the console
+console.log(formattedStartDate); // Output: 11/1/24
+console.log(formattedEndDate); // Output: 11/30/24
+
+
+
+
+    var OnTimedata = {  
+        data: { "from": formattedStartDate,
+                "to":formattedEndDate,
+                "airport":airportinput
+                 }
+        
+    }
+
+    console.log(OnTimedata)
+
+    apiPerAirport(OnTimedata)
+
+}
+
+
+
+function PerDay() 
+{   
+    var perday = PerDayFlight.getValue()
+
+  
+     // Convert the selected date string into a Date object
+  const dateObj = new Date(perday);
+
+  // Format the date as MM/DD/YY
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit"
+  }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+      console.log('this is perday',formattedDate)
+
+
+      var Perday = { 
+        data:{"day":formattedDate}
+      }
+
+      console.log(Perday) 
+
+      apiFlightPerDay(Perday)
+}
+
+
+
+function PerQuarter() 
+{ 
+    
+    var perQuarter = Select1.getSelectedKey() 
+
+    console.log(perQuarter)
+
+
+        var PerQuarter = { 
+            data:{"quarter":perQuarter}
+        }
+        
+        console.log(PerQuarter)
+
+
+    apiFlightPerQuarter(PerQuarter)
+
+}
+
+
+
+function PerMonth()
+{ 
+    var permonth = PerMonthFlight.getValue(); 
+
+
+//   // Convert the selected date string into a Date object
+//     const dateObj = new Date(permonth);
+
+//        const formattedStartDate = dateObj.toLocaleDateString("en-US", {
+//         month: "numeric",
+//         day: "numeric",
+//         year: "2-digit"
+//     }).split('/').map(part => part.padStart(2, '0')).join('/');
+
+      console.log('this is permonth',permonth)
+
+
+      var Flightmonth = { 
+        data:{"month":permonth}
+      }
+
+      console.log(Flightmonth)
+
+    apiFlightPerMonth(Flightmonth) 
+}
+
+function Peryear() 
+{ 
+    var yearflights = FlightsYear.getValue()
+
+    var Flightyear = { 
+        data:{"year":yearflights}
+    }
+
+      console.log(Flightyear)
+
+    apiFlightPerYear(Flightyear) 
+}
+
+
+function PerformancePerAirline() 
+{ 
+    var month = OnTimePerformanceAirlineDate.getValue()
+    var AirlineOnTime = OnTimePerformancePerAirlineInput.getValue()
+
+
+    var OnTimePerformance = { 
+        data:{ "Month":month,
+                "Airline":AirlineOnTime}
+    }
+
+    console.log(OnTimePerformance )
+
+    apiFlightOnTimePerformancePerAirline(OnTimePerformance)
+}  
+
+function formatDate(date) {
+  return date.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit"
+  }).split('/').map(part => part.padStart(2, '0')).join('/');
+}
+
+async function fetchServiceType(perairlineinput) {
+  const apiUrl = `http://localhost:8080/api/entity/airportcode?where={"Code":"${perairlineinput}"}`;
+  const response = await fetch(apiUrl);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch service type data.");
+  }
+
+  const data = await response.json();
+  if (data.length === 0) {
+    throw new Error("No matching data found for the AOC code.");
+  }
+
+  return data[0].Service_Type;
+}
+
+async function Monthly() { // Made the function async
+  try {
+    const monthlydate = new Date(PerMonthly.getValue());
+    const airportinput = AirportMonthlyInput.getValue();
+    const perairlineinput = PerMonthlyInput.getValue();
+
+    const formattedStartDate = formatDate(monthlydate);
+
+    const carrier = await fetchServiceType(perairlineinput); // Await the fetch
+
+    const monthly = {
+      data: {
+        "Month": formattedStartDate,
+        "Airline": perairlineinput,
+        "Carrier": carrier,
+        "Airport": airportinput
+      }
+    };
+
+    console.log(monthly);
+
+ setTimeout(() => {
+      apiMonthly(monthly); // Call the API with the constructed object
+      console.log("successfully fetched");
+    }, 2000);
+
+  } catch (error) {
+    console.error("Error in Monthly function:", error);
+  }
+}
+
 
 
 
 inSimpleFormOrigin.getModel().setSizeLimit(13000);
 inSimpleFormDestination.getModel().setSizeLimit(13000);
+Table18.getModel().setSizeLimit(4000);
+
+// Origin_1.getModel().setSizeLimit(13000);
+// Destination_1.getModel().setSizeLimit(13000);
+// Airline_1.getModel().setSizeLimit(4000);
+Table.getModel().setSizeLimit(4000);
 
 
 
-// var comboBox = inSimpleFormOrigin // Replace 'yourComboBoxId' with the actual ID of your ComboBox element
-// comboBox.size = 5; // Set the maximum number of items to be displayed to 5
 
-// function OTP() 
-// {
-//     var comboBox = sap.ui.getCore().byId("inSimpleFormOrigin");
-//     comboBox.setSizeLimit(10000);
-
-// }
-
-// var fromdate = DateRangeSelection.getFrom()
-
-
-// var todate = DateRangeSelection.getTo()
-
-
-// console.log(fromdate)
-
-
-// console.log(todate)
 
 

@@ -7,18 +7,9 @@
 	},
 	"name": "CAB_OTP2",
 	"description": null,
-	"ver": "25.01.02.1430",
+	"ver": "24.11.26.1032",
 	"enableCICD": true,
 	"apps": [
-		{
-			"id": "fa987c6d-b3d9-40a8-a5bb-61e61254af44",
-			"application": "userpermission",
-			"title": "userPermission",
-			"description": "",
-			"package": {
-				"id": "146c0edc-139e-4d84-9511-c28139a2520f"
-			}
-		},
 		{
 			"id": "e59192fe-ea25-47b8-9eb7-37cb0c067da3",
 			"application": "cablist",
@@ -64,44 +55,20 @@
 			"apiGroup": null
 		},
 		{
-			"id": "e14d35f7-72fa-4d4d-bd5f-783e10ee97d4",
-			"name": "roles",
-			"description": null,
-			"apiGroup": null
-		},
-		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
 			"description": null,
 			"apiGroup": null
 		},
 		{
-			"id": "b491797d-5d3a-49dc-9594-5088f6c76803",
-			"name": "sub_modules",
+			"id": "c5c61f32-dfd9-405a-880c-5c2ebb228119",
+			"name": "daily_archive",
 			"description": null,
-			"apiGroup": null
+			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		},
 		{
 			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
 			"name": "airport",
-			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "a602d420-b315-4b84-9eea-4b48e2b7411e",
-			"name": "tbl_user",
-			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "a420158c-5320-49c7-8eed-f8e57e1cb64b",
-			"name": "roles_permissions",
-			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "624da188-e4a1-4c40-a7d5-ed72b5247c8f",
-			"name": "rolepermission",
 			"description": null,
 			"apiGroup": null
 		},
@@ -112,22 +79,10 @@
 			"apiGroup": null
 		},
 		{
-			"id": "59df968b-9d90-45e4-a6a1-ab0aa8e403d6",
-			"name": "parent_module",
+			"id": "3a157a83-f992-486a-896b-b22b1be0704a",
+			"name": "daily_otp",
 			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "33411e9a-8cfd-40d5-9bb0-2229fd62ed27",
-			"name": "getUserRole",
-			"description": null,
-			"apiGroup": null
-		},
-		{
-			"id": "2d162dca-f470-4d0f-bdf2-8db9921c0507",
-			"name": "getUserBeforeUpdate",
-			"description": null,
-			"apiGroup": null
+			"apiGroup": "31d359ef-379b-4cbe-9b62-a2e2b4b6888f"
 		}
 	],
 	"odataSource": [],
@@ -139,33 +94,18 @@
 			"description": null
 		},
 		{
-			"id": "b479ff85-0c6a-4358-9efc-8d96d5a11580",
-			"name": "sub_modules",
-			"description": null
-		},
-		{
 			"id": "9d25a706-b00e-457a-abaa-05d64fabfa64",
 			"name": "airport",
 			"description": null
 		},
 		{
 			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
-			"name": "roles",
+			"name": "userroles",
 			"description": null
 		},
 		{
 			"id": "84510a0b-3683-40bb-82cf-76932b18e146",
 			"name": "userpermission",
-			"description": null
-		},
-		{
-			"id": "43e9903d-c064-4da7-b211-3888091cdf6d",
-			"name": "parent_module",
-			"description": null
-		},
-		{
-			"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
-			"name": "roles_permissions",
 			"description": null
 		},
 		{
@@ -186,13 +126,18 @@
 	],
 	"jsclass": [
 		{
-			"id": "fb7b294e-966d-4f90-8dce-0693988d5b43",
-			"name": "monthly_otp",
+			"id": "f06a6112-2602-4f8a-a704-fe815114d791",
+			"name": "Auth",
 			"description": null
 		},
 		{
-			"id": "f06a6112-2602-4f8a-a704-fe815114d791",
-			"name": "Auth",
+			"id": "d7006593-64c3-4e58-a6bc-754c9ada294a",
+			"name": "FlightsPerAirLine",
+			"description": null
+		},
+		{
+			"id": "d37cdfa9-4749-4bb0-a269-244c8fac5efa",
+			"name": "OnTimePercentTotalArrivalandDeparture",
 			"description": null
 		},
 		{
@@ -201,18 +146,18 @@
 			"description": null
 		},
 		{
+			"id": "d1f7e9fa-ebea-4790-9e2b-2ce8aa414f0e",
+			"name": "OnTimePerformanceAirlines",
+			"description": null
+		},
+		{
 			"id": "c60ea49a-3bc3-40f8-bfc0-2553e224e68b",
 			"name": "daily_otp",
 			"description": null
 		},
 		{
-			"id": "c5f6cd50-b7f9-4fbc-9bb2-64f1aba26c52",
-			"name": "GetRolePermission",
-			"description": null
-		},
-		{
-			"id": "b5384509-10a5-4338-8fd8-882601afec6a",
-			"name": "getUserRole",
+			"id": "b755cf3e-ce87-497b-881d-d7b9cf3a463a",
+			"name": "FlightsPerMonth",
 			"description": null
 		},
 		{
@@ -221,8 +166,8 @@
 			"description": null
 		},
 		{
-			"id": "a60d4eba-0458-4425-8882-e4e8aba0a842",
-			"name": "RolePermission",
+			"id": "b22c29ce-805a-4ff3-bb96-caf05d84d4bf",
+			"name": "FlightsOnTime",
 			"description": null
 		},
 		{
@@ -231,8 +176,13 @@
 			"description": null
 		},
 		{
-			"id": "8daf8b6c-1519-4881-987e-4dbfc2a4abe6",
-			"name": "DeleteRolePermission",
+			"id": "9ed14fec-9ace-4403-a783-57ca93debc0e",
+			"name": "FlightsPerQuarter",
+			"description": null
+		},
+		{
+			"id": "8d815f11-c5db-4276-a41f-67fd20d98f7a",
+			"name": "OnTimePercent ",
 			"description": null
 		},
 		{
@@ -241,8 +191,38 @@
 			"description": null
 		},
 		{
+			"id": "7bc54ac7-d534-4eef-ad20-9ef70bb4f4b8",
+			"name": "Monthly",
+			"description": null
+		},
+		{
+			"id": "7b0d8125-0bf6-4880-9de9-0c520183345c",
+			"name": "NumberFlightsOnTime",
+			"description": null
+		},
+		{
+			"id": "665b9a82-7acf-471d-9af9-8c4cd6ac38d4",
+			"name": "FlightsPerRoute",
+			"description": null
+		},
+		{
+			"id": "5bcf4834-3f9c-4b59-bf79-14a70b3fc063",
+			"name": "FlightsPerAirline(Airport)",
+			"description": null
+		},
+		{
 			"id": "5811f8a8-4edf-4d24-ae6e-79bafe14a14b",
 			"name": "UserRoles",
+			"description": null
+		},
+		{
+			"id": "4feafaa5-f5e3-40ac-a117-585021b0243e",
+			"name": "CancellationDelayed",
+			"description": null
+		},
+		{
+			"id": "4361311b-6185-4eee-a013-5415d8a70214",
+			"name": "FlightsPerAirport",
 			"description": null
 		},
 		{
@@ -251,8 +231,18 @@
 			"description": null
 		},
 		{
-			"id": "219016df-d5f5-4060-b859-3dce817217e0",
-			"name": "getUserIdBeforeUpdate",
+			"id": "20d05696-b839-4954-9032-7c70d18426b7",
+			"name": "FlightsPerYear",
+			"description": null
+		},
+		{
+			"id": "1ba35bfc-4092-4f62-b448-093a20ed2997",
+			"name": "FlightsPerDay",
+			"description": null
+		},
+		{
+			"id": "19c68e04-074d-4885-b6b6-48384ebedb44",
+			"name": "daily_otp_today",
 			"description": null
 		},
 		{
@@ -282,18 +272,6 @@
 	"pdf": [],
 	"rulesengine": [],
 	"reports": [
-		{
-			"id": "ba46ea64-86f0-47ca-b452-19cdcebdd560",
-			"name": "role_create",
-			"description": "",
-			"application": "planet9_adaptive_edit"
-		},
-		{
-			"id": "7dfd2fe3-7d45-4358-8219-1b88b8f81371",
-			"name": "role_listing",
-			"description": "",
-			"application": "planet9_adaptive_list"
-		},
 		{
 			"id": "4e75b415-4da9-484d-bf4c-009e9f1761b5",
 			"name": "users_create",
@@ -332,7 +310,7 @@
 		{
 			"id": "cf3d0db3-8fe2-43ea-8bd6-b5d3e5055b42",
 			"name": "resetEmailPassword",
-			"description": "Reset Password"
+			"description": null
 		}
 	],
 	"department": [],
@@ -342,11 +320,6 @@
 		{
 			"id": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
 			"name": "user_connectors_scripts",
-			"description": null
-		},
-		{
-			"id": "619f385e-51eb-408a-af88-76c4a8fdf210",
-			"name": "roles",
 			"description": null
 		}
 	],

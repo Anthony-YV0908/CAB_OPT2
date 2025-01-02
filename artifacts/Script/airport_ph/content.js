@@ -3,7 +3,7 @@
     where the entity's ID matches a specified value.
 */
 const entity = await entities.airport_ph.createQueryBuilder("alias")
-    // .where('alias.Country = :Country' , {Country:'P'})
+    
     .getMany();
 
 

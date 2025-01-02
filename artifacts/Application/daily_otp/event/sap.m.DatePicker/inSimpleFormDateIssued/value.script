@@ -1,0 +1,7 @@
+// if (typeof DateIssued === "undefined" || DateIssued === null || DateIssued === "") {
+//   return;
+// }
+
+// var formattedText = new Date(DateIssued).toLocaleString('en-US', { month: 'long' });
+// formattedText = formattedText.split(' ')[0]; // Extract the month part
+// return formattedText;

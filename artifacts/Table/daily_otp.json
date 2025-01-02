@@ -11,7 +11,7 @@
 			"isNullable": true
 		},
 		{
-			"id": "e3e86117-b753-48bc-822d-f7fa48bcf402",
+			"id": "0bd819e8-e84c-4446-826f-30763b3a6083",
 			"fieldName": "Airport",
 			"fieldType": "text",
 			"isUnique": false,
@@ -137,6 +137,13 @@
 			"isNullable": true
 		},
 		{
+			"id": "dc9a2722-ad3d-4f46-a7ed-ff850c0c693b",
+			"fieldName": "IsDelayedDeparture",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
 			"id": "8b506331-9926-41a5-8696-a1bc3d9c53b4",
 			"fieldName": "IsDelayedArrival",
 			"fieldType": "integer",
@@ -253,7 +260,7 @@
 	"foreignKeys": [],
 	"name": "daily_otp",
 	"description": "Daily OTP CAB",
-	"ver": "24.11.28.1346",
+	"ver": "24.12.09.1422",
 	"enableAudit": true,
 	"includeDataInPackage": true,
 	"package": "146c0edc-139e-4d84-9511-c28139a2520f",

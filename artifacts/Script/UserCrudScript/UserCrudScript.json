@@ -35,7 +35,7 @@
 		}
 	],
 	"name": "UserCrudScript",
-	"ver": "24.12.20.1406",
+	"ver": "24.11.26.1331",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.js",
