@@ -1,0 +1,27 @@
+{
+	"id": "219016df-d5f5-4060-b859-3dce817217e0",
+	"createdAt": "2024-12-16T07:49:05.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
+			"name": "tbl_user",
+			"contextname": "tbl_user"
+		}
+	],
+	"apis": [],
+	"name": "getUserIdBeforeUpdate",
+	"ver": "24.12.16.1606",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

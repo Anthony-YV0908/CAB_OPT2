@@ -1,0 +1,361 @@
+{
+	"id": "624da188-e4a1-4c40-a7d5-ed72b5247c8f",
+	"createdAt": "2024-12-04T03:10:05.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "f0e07839-7aa0-4fd5-ce2d-76761fe2cca9",
+			"method": "POST",
+			"path": "/Save",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "535644df-172f-478c-fa8f-2ab683a5e515",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "6fb590b6-97d5-4cb6-d27f-186767152fa0",
+							"name": "ScriptResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "Save"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "a60d4eba-0458-4425-8882-e4e8aba0a842"
+		},
+		{
+			"id": "7e6105df-878a-4aa8-9ba7-ff9f3f10bad0",
+			"method": "POST",
+			"path": "/Delete",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "Delete"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "8daf8b6c-1519-4881-987e-4dbfc2a4abe6"
+		},
+		{
+			"id": "adca3f0f-1422-4323-b332-50c9fe541366",
+			"method": "POST",
+			"path": "/Get",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "c5f6cd50-b7f9-4fbc-9bb2-64f1aba26c52"
+		}
+	],
+	"definitions": [
+		{
+			"id": "eefc9c78-821d-47ad-d6e8-c51d71ab47ac",
+			"name": "Save",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "610e1d7d-f8a8-4342-e1e6-a5a11fbdb660",
+					"name": "RoleId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "9b8d24c1-b93e-4640-e806-66b61b23778d",
+					"name": "ParentModuleId",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "88878039-5c3e-40e5-ce47-2cdae286507e",
+					"name": "SubModuleId",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d66e733f-1cd3-47bd-d897-f9656d12806c",
+					"name": "Create",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ab9ca072-d40e-4589-9f1a-74e50b058626",
+					"name": "Read",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b0a4b7cf-272a-441d-9fa5-f63307c4f621",
+					"name": "Update",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "302d12bd-4c29-4627-b77e-e074e5b90bf9",
+					"name": "Delete",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "3941a2b0-529a-46b8-cdcb-90a15d54f041",
+			"name": "ScriptResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c3ec2a53-567e-4a65-b9b5-d495b5309c47",
+					"name": "RoleId",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "83da0861-78ea-4c2a-be51-38f0aa4c39cc",
+					"name": "ParentModuleId",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "8496efa1-aaf2-42c2-b266-849ca79ac264",
+					"name": "SubModuleId",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "811c55b3-b3d6-4bc9-e970-26c8456c869f",
+					"name": "Create",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "90c75963-db1c-4917-a07e-f796285fdab3",
+					"name": "Read",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b24ad51a-626a-4000-e179-322650f5547c",
+					"name": "Update",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "30d08ff1-b0c8-4404-9bdc-cef9170fca86",
+					"name": "Delete",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "f3ea41c8-064e-451b-9177-3bc536200913",
+			"name": "Delete",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "42f738f8-4d7e-4b72-ec24-e729b12450c8",
+					"name": "RoleId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "7ce0c220-09e4-4154-aa33-a626ec548bf8",
+					"name": "ParentModuleId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "2f63206f-6492-4451-fa12-635d7a107908",
+					"name": "SubModuleId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "rolepermission",
+	"endpoint": "/api/serverscript/rolepermission",
+	"ver": "24.12.19.1438",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

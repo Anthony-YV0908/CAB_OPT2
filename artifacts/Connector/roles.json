@@ -1,0 +1,17 @@
+{
+	"id": "619f385e-51eb-408a-af88-76c4a8fdf210",
+	"createdAt": "2024-11-29T06:09:44.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"hasDocumentation": false,
+		"tableid": "89b11540-a223-41eb-b70e-1acff05ee4bb"
+	},
+	"documentation": {},
+	"name": "roles",
+	"description": null,
+	"group": null,
+	"type": "T",
+	"ver": "24.11.29.1409",
+	"disabled": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

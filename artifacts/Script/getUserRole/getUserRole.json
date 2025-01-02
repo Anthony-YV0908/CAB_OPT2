@@ -1,0 +1,42 @@
+{
+	"id": "b5384509-10a5-4338-8fd8-882601afec6a",
+	"createdAt": "2024-12-18T05:09:04.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
+			"name": "roles",
+			"contextname": "roles"
+		},
+		{
+			"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
+			"name": "roles_permissions",
+			"contextname": "roles_permissions"
+		},
+		{
+			"id": "2ef882e5-7ca7-42e3-a059-d95086cf05d7",
+			"name": "tbl_user",
+			"contextname": "tbl_user"
+		},
+		{
+			"id": "43e9903d-c064-4da7-b211-3888091cdf6d",
+			"name": "parent_module",
+			"contextname": "parent_module"
+		}
+	],
+	"apis": [],
+	"name": "getUserRole",
+	"ver": "24.12.18.1553",
+	"description": null,
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

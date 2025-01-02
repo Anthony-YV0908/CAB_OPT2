@@ -1,0 +1,61 @@
+{
+	"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
+	"createdAt": "2024-12-11T18:32:39.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "152db208-94c6-4d47-f8be-e4e1123a98fd",
+			"fieldName": "RoleId",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "3f04cec1-4cf8-480b-94dc-c7a1963c69b6",
+			"fieldName": "ParentModuleId",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "c7346cb0-7fd5-4452-98ec-0053c3c6598f",
+			"fieldName": "isParentModuleActive",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "243193e5-e2e4-499d-e3a1-a9b288ecdf78",
+			"fieldName": "DeleterUserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"default": "",
+			"isNullable": true
+		},
+		{
+			"id": "de3ed60c-6411-4258-e938-f2aa69e7c6d9",
+			"fieldName": "DeletionTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"default": "",
+			"isNullable": true
+		},
+		{
+			"id": "5cf8a6f7-5917-4715-b5e6-5ce776e4a12a",
+			"fieldName": "IsDeleted",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "roles_permissions",
+	"description": null,
+	"ver": "25.01.02.1419",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"rolesRead": [],
+	"rolesWrite": []
+}

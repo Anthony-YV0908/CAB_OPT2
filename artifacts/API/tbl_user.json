@@ -1,0 +1,781 @@
+{
+	"id": "a602d420-b315-4b84-9eea-4b48e2b7411e",
+	"createdAt": "2024-12-16T10:03:15.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "fd2b1089-7c93-4df4-8ee8-80c1f3f143b8",
+			"path": "/tbl_user",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					],
+					"inPath": true
+				},
+				{
+					"name": "select",
+					"description": "fieldName1, fieldname2, fieldName3",
+					"inPath": true
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "id"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "tbl_user"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "f1b59f60-c133-4c7c-8cec-3195a4c5b58d",
+			"path": "/tbl_user",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "tbl_user"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "tbl_user"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "682a615b-15df-4866-92e2-cf6f413c9086",
+			"path": "/tbl_user",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectTyoe": "array",
+					"name": "tbl_user"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "tbl_user"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "81fe251b-c358-4d0b-9f8d-a4cb710a7ef5",
+			"path": "/tbl_user",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "tbl_user"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "dcf22ddb-463e-4e9f-9c39-10b2ef274595",
+			"path": "/tbl_user/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"}",
+						"            or {fieldName: In([\"value1\", \"value2\"])}",
+						"            Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "071054b0-0a75-4e1a-ac49-ab61add5fd46",
+			"name": "tbl_user",
+			"properties": [
+				{
+					"id": "8a521a79-8c88-4a13-b8ed-89d3b4b08b52",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "6c09d55d-c559-4644-8b94-e0cdaadaa7f5",
+					"parent": "",
+					"name": "UserId",
+					"description": "USER ID",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "897ec9d4-32b5-4ac8-bf52-fe98ed3cc7dc",
+					"parent": "",
+					"name": "FirstName",
+					"description": "First Name",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e6a7cec0-246f-4dab-af7e-754736a63acc",
+					"parent": "",
+					"name": "MiddleName",
+					"description": "Middle Name",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "84a96b8a-e20e-4bdc-82e2-758750294227",
+					"parent": "",
+					"name": "LastName",
+					"description": "Last Name",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "7f175574-0838-40ca-aff6-78ed2ba7bcd3",
+					"parent": "",
+					"name": "Suffix",
+					"description": "Suffix",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d3fad5b1-5905-415b-a38c-8708784e48d8",
+					"parent": "",
+					"name": "UserName",
+					"description": "User Name",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b75da279-66cc-49cc-8d55-c2ca87181037",
+					"parent": "",
+					"name": "ContactNumber",
+					"description": "Contact Number",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "392bcffd-c668-4f56-849b-71b4e966fb2a",
+					"parent": "",
+					"name": "EmailAddress",
+					"description": "Email Address",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "5fe30234-fd92-47b4-8d7e-4c16fa621084",
+					"parent": "",
+					"name": "UserRole",
+					"description": "User Role",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a603a495-9173-4e96-8985-1ffb05192d3d",
+					"parent": "",
+					"name": "CreatorUserId",
+					"description": "Creation User Id",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "d69ac39b-6dd0-4196-8f36-6d538f3ce9c4",
+					"parent": "",
+					"name": "CreationTime",
+					"description": "Creation Time",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "fe5d7996-c979-466b-a7da-b6581781fba1",
+					"parent": "",
+					"name": "LastModifierUserId",
+					"description": "Last Modifier User Id",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "7d59bc17-ba8e-4903-a02c-90e7e9df20fe",
+					"parent": "",
+					"name": "LastModificationTime",
+					"description": "Last Modification Time",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "2aca5233-ed43-4587-a3eb-fa9796c233e3",
+					"parent": "",
+					"name": "DeleterUserId",
+					"description": "Deleter User Id",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a64e43fd-9ff2-4da6-a606-1763db08b52f",
+					"parent": "",
+					"name": "DeletionTime",
+					"description": "Deletion Time",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b69bce13-ab99-4bc4-bb7c-022c7821ea89",
+					"parent": "",
+					"name": "IsDeleted",
+					"description": "Is Deleted",
+					"default": "0",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c11b9e6a-3bad-4320-91ef-ed9038ba5889",
+					"parent": "",
+					"name": "Password",
+					"description": "Password",
+					"default": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "c649c1af-009c-4c93-be3a-961a0806a07b",
+					"parent": "",
+					"name": "UserGender",
+					"description": "User Gender",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "bfc74e78-33cc-47e8-bf7d-afc00fb36f8e",
+					"parent": "",
+					"name": "IsNewUser",
+					"description": "Is New User",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ba5f77ea-7db1-4bb9-b3c4-955ea13f1434",
+					"parent": "",
+					"name": "ReqToChangePassword",
+					"description": "Req To Change Password",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "984d8370-3982-41a5-bd46-20b4ed699f77",
+					"parent": "",
+					"name": "IsLockedOut",
+					"description": "Is Locked Out",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "3fc0fd61-bee5-4a3f-bd07-2d29267971d5",
+					"parent": "",
+					"name": "IsActive",
+					"description": "Is Active",
+					"objectType": "integer",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "28868d4c-4732-4b20-86ce-450da803f379",
+					"parent": "",
+					"name": "PRAOAirportCode",
+					"description": "PRAO Airport Code",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "eab66754-9f7d-41d9-8ee6-217197a21551",
+					"parent": "",
+					"name": "PRAOStartDate",
+					"description": "PRAO Start Date",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "def70ff6-6099-43fc-baa4-ca6231eab9e6",
+					"parent": "",
+					"name": "PRAOEndDate",
+					"description": "PRAO End Date",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a0c0d6e3-2a71-4261-839d-53bc677de80c",
+					"parent": "",
+					"name": "PRAOBatch",
+					"description": "PRAO Batch",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "5811ec74-5f31-47fb-a8b3-6b0632147f73",
+					"parent": "",
+					"name": "PRAORemarks",
+					"description": "PRAO Remarks",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "2a230d2d-bef7-40fc-b18d-c4c32bf98bd0",
+					"parent": "",
+					"name": "AirlineCode",
+					"description": "Airline Code",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "3e7c7635-8426-47d5-af8b-d89a2ecd8a3d",
+					"parent": "",
+					"name": "OTP",
+					"description": "OTP",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "0356eba7-a1f9-4850-90f2-485da7242c38",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "a1625a6b-c6ea-4067-aad2-cbb95dac916c",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created by",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "9ffd2bc8-ea2f-45cd-bbe2-85cf711faeaf",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "3a3e4f7e-442a-4123-adb7-0468cca661b1",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated by",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "da068fc9-28ed-4287-bbad-e936593d03c3",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "ecc2c502-83c1-4b04-8d80-120145ca7a0f",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "c08a14fb-aa31-4b3f-b2fe-6ec32a9b1f85",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "8989712c-b724-4d68-baf3-25f1315b86cd",
+			"name": "count",
+			"properties": [
+				{
+					"id": "29acdf06-0703-4fae-a8b6-5df4576d44a5",
+					"parent": "",
+					"name": "count",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "2dc11426-b6d5-452c-8009-020be65580cf",
+			"name": "id",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "d3ff026c-c3ec-42f9-8c79-5fc69ecd79fd",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "tbl_user",
+	"endpoint": "/api/entity",
+	"ver": "24.12.18.1110",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

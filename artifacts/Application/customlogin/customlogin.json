@@ -1720,46 +1720,116 @@
 																						{
 																							"attribute": "liveChange",
 																							"grouping": "Events",
-																							"value": "this.setValueState();",
+																							"value": "Anonymous Function",
 																							"script": "this.setValueState();",
+																							"language": "javascript",
 																							"translation": []
 																						}
 																					],
 																					"data": []
 																				},
 																				{
-																					"fieldNo": "b3138b48-7f09-44a0-e55d-fe80294e9015",
-																					"fieldName": "butSubmitNewPass",
+																					"fieldNo": "26db669d-1f07-49b8-fd6a-db5584c0faea",
+																					"fieldName": "boxActionsNewPass",
 																					"fieldParent": "5d064a65-2d26-45cb-e2df-1ae6754545b3",
-																					"fieldType": "sap.m.Button",
+																					"fieldType": "sap.m.HBox",
 																					"script": "",
 																					"customComponent": false,
 																					"request": [],
 																					"response": [],
 																					"attributes": [
 																						{
-																							"attribute": "width",
+																							"attribute": "alignItems",
 																							"grouping": "Properties",
-																							"value": "150px",
+																							"value": "Center",
 																							"script": "",
 																							"translation": []
 																						},
 																						{
-																							"attribute": "text",
+																							"attribute": "alignContent",
 																							"grouping": "Properties",
-																							"value": "Submit",
+																							"value": "Center",
 																							"script": "",
-																							"translation": []
-																						},
-																						{
-																							"attribute": "press",
-																							"grouping": "Events",
-																							"value": "logonScreen.resetPassword();",
-																							"script": "logonScreen.resetPassword();",
 																							"translation": []
 																						}
 																					],
-																					"data": []
+																					"data": [
+																						{
+																							"fieldNo": "b3138b48-7f09-44a0-e55d-fe80294e9015",
+																							"fieldName": "butSubmitNewPass",
+																							"fieldParent": "26db669d-1f07-49b8-fd6a-db5584c0faea",
+																							"fieldType": "sap.m.Button",
+																							"script": "",
+																							"customComponent": false,
+																							"request": [],
+																							"response": [],
+																							"attributes": [
+																								{
+																									"attribute": "width",
+																									"grouping": "Properties",
+																									"value": "150px",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "type",
+																									"grouping": "Properties",
+																									"value": "Emphasized",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "text",
+																									"grouping": "Properties",
+																									"value": "Submit",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "press",
+																									"grouping": "Events",
+																									"value": "logonScreen.resetPassword();",
+																									"script": "logonScreen.resetPassword();",
+																									"translation": []
+																								}
+																							],
+																							"data": []
+																						},
+																						{
+																							"fieldNo": "6178130a-deda-4d86-ac88-768900568900",
+																							"fieldName": "linkBack1",
+																							"fieldParent": "26db669d-1f07-49b8-fd6a-db5584c0faea",
+																							"fieldType": "sap.m.Link",
+																							"script": "",
+																							"customComponent": false,
+																							"request": [],
+																							"response": [],
+																							"attributes": [
+																								{
+																									"attribute": "text",
+																									"grouping": "Properties",
+																									"value": "Cancel",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "styleClassMargin",
+																									"grouping": "Properties",
+																									"value": "sapUiMediumMarginBegin",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "press",
+																									"grouping": "Events",
+																									"value": "Anonymous Function",
+																									"script": "file://event/sap.m.Link/linkBack1/press.script",
+																									"translation": []
+																								}
+																							],
+																							"data": []
+																						}
+																					]
 																				}
 																			]
 																		},
@@ -2393,7 +2463,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.28.1423",
+	"ver": "24.12.20.1435",
 	"application": "customlogin",
 	"title": "CAB Login",
 	"description": "CustomLogin",
@@ -2413,9 +2483,9 @@
 	"ui5_uxap": false,
 	"ui5_chart": false,
 	"ui5_theme": "sap_horizon",
-	"ui5_version": "1.108",
+	"ui5_version": "customCDN",
 	"ui5_language": null,
-	"ui5_url": "https://openui5.hana.ondemand.com/1.71.47/resources/sap-ui-core.js",
+	"ui5_url": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
 	"cus_theme": "",
 	"css": "",
 	"compiledCss": null,

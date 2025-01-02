@@ -1,0 +1,12 @@
+
+// var bState = oTransactionSwitch.getState();
+
+//     if(bState == true){
+//     oFlightSchedule.setVisible(true);
+//     oFlightCancelation.setVisible(true);
+//     oFlightDelay.setVisible(true);
+//     }else{
+//     oFlightSchedule.setVisible(false);
+//     oFlightCancelation.setVisible(false);
+//     oFlightDelay.setVisible(false);
+//     }

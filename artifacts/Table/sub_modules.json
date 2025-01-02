@@ -1,0 +1,57 @@
+{
+	"id": "b479ff85-0c6a-4358-9efc-8d96d5a11580",
+	"createdAt": "2024-11-27T01:13:14.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "ba70316a-8914-4743-c682-01b504d9544a",
+			"fieldName": "Name",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Module Name",
+			"isNullable": true
+		},
+		{
+			"id": "7f2ad92c-67a3-4675-f8fa-a50ae2055d50",
+			"fieldName": "Description",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Module Description",
+			"isNullable": true
+		},
+		{
+			"id": "07fe378a-55ef-4f8f-bb6a-71ad920d76df",
+			"fieldName": "DeleterUserId",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Deleter User Id",
+			"isNullable": true
+		},
+		{
+			"id": "68e62613-b54d-4bd1-9720-34f849c696b4",
+			"fieldName": "DeletionTime",
+			"fieldType": "timestamptz",
+			"isUnique": false,
+			"description": "Deletion Time",
+			"isNullable": true
+		},
+		{
+			"id": "8887c9f8-c1f2-46fe-8587-2aac153204b1",
+			"fieldName": "IsDeleted",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "Is Deleted",
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "sub_modules",
+	"description": null,
+	"ver": "24.12.03.1141",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"rolesRead": [],
+	"rolesWrite": []
+}

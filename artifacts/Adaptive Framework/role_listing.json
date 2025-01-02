@@ -1,0 +1,241 @@
+{
+	"id": "7dfd2fe3-7d45-4358-8219-1b88b8f81371",
+	"createdAt": "2024-11-29T06:10:38.000Z",
+	"createdBy": "admin",
+	"settings": {
+		"properties": {
+			"report": {
+				"showIcon": true,
+				"actionButtonLeft": false,
+				"hideHeader": false,
+				"iconButtonClose": "",
+				"textButtonClose": "Close",
+				"typeButtonClose": "Transparent",
+				"iconButtonCreate": "",
+				"textButtonCreate": "Create",
+				"typeButtonCreate": "Emphasized",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"textButtonExport": "",
+				"typeButtonExport": "Transparent",
+				"iconButtonImport": "sap-icon://fa-solid/file-import",
+				"textButtonImport": "",
+				"typeButtonImport": "Transparent",
+				"iconButtonMultiSelect": "",
+				"textButtonMultiSelect": "MultiSelect",
+				"typeButtonMultiSelect": "Emphasized",
+				"iconButtonRun": "",
+				"textButtonRun": "Update",
+				"typeButtonRun": "Emphasized",
+				"enableRun": false,
+				"enableCreate": true,
+				"enableClose": true,
+				"enableDelete": true,
+				"enableExport": false,
+				"enableImport": false,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"autoRun": true,
+				"autoRunFocus": false,
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"requiredFieldsToast": "Please fill in all required fields",
+				"textConfirmDelete": "Do you want to delete this entry ? ",
+				"titleConfirmDelete": "Delete",
+				"odataValueList": "Field does not have any OData ValueList reference",
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "P",
+					"butType": "Default"
+				},
+				"title": "Roles",
+				"subTitle": "Access Role",
+				"avatarIcon": "sap-icon://settings",
+				"_navigationCreate": {
+					"destinationType": "F",
+					"openAs": "D",
+					"butType": "Accept",
+					"destinationTargetF": "ba46ea64-86f0-47ca-b452-19cdcebdd560",
+					"keyField": [
+						{
+							"fieldName": "id",
+							"key": "id",
+							"value": ""
+						}
+					],
+					"dialogResize": false,
+					"dialogHeight": "500px",
+					"dialogWidth": "750px"
+				}
+			},
+			"form": {
+				"enableCompact": false,
+				"headerExpanded": true,
+				"headerPreserveState": false
+			},
+			"table": {
+				"enablePagination": false,
+				"paginationShowSelection": false,
+				"paginationRows": "10",
+				"showSeparators": "All",
+				"alternateRowColors": false,
+				"fixedLayout": false,
+				"inset": false,
+				"enableCompact": false,
+				"enableAutoPopin": false,
+				"enableAction1": true,
+				"enableAction2": false,
+				"enableAction3": false,
+				"enableAction4": false,
+				"enableAction5": false,
+				"action1Text": "Permission",
+				"action1Type": "Transparent",
+				"action2Text": "",
+				"action2Type": "Transparent",
+				"action3Text": "",
+				"action3Type": "Transparent",
+				"action4Text": "",
+				"action4Type": "Transparent",
+				"action5Text": "",
+				"action5Type": "Transparent",
+				"_action1Nav": {
+					"destinationType": "A",
+					"openAs": "D",
+					"butType": "Accept",
+					"destinationTargetA": "userpermission",
+					"dialogTitle": "Roles Permission",
+					"dialogIcon": "sap-icon://settings",
+					"keyField": [],
+					"dialogHeight": "500px",
+					"dialogWidth": "750px",
+					"dialogHeader": false,
+					"dialogTitleField": "",
+					"dialogResize": false,
+					"dialogScrollHorizontal": false
+				},
+				"action1VisibleFieldName": "",
+				"action1VisibleCondition": "",
+				"action1Width": "",
+				"action1VisibleInverse": false
+			}
+		},
+		"fieldCatalog": [
+			{
+				"name": "Name",
+				"label": "Role Name",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "Description",
+				"label": "Role Description",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeleterUserId",
+				"label": "Deleter User Id",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "DeletionTime",
+				"label": "Deletion Time",
+				"type": "timestamptz",
+				"usage": "BOTH"
+			},
+			{
+				"name": "IsDeleted",
+				"label": "Is Deleted",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [],
+		"fieldsRun": [
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "Name",
+				"text": "Role Name",
+				"fieldPos": 1
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": true,
+				"enableSort": true,
+				"visible": true,
+				"name": "Description",
+				"text": "Description",
+				"fieldPos": 2
+			},
+			{
+				"buttonType": "Transparent",
+				"popinDisplay": "Inline",
+				"enableFilter": false,
+				"enableSort": true,
+				"visible": true,
+				"name": "createdAt",
+				"text": "Created At",
+				"fieldPos": 3,
+				"type": "",
+				"valueType": "",
+				"formatter": "date02"
+			}
+		],
+		"defaultVariant": {
+			"id": "098854b2-3af1-492a-eedb-6bdddf8e9238",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		}
+	},
+	"name": "role_listing",
+	"description": "",
+	"group": "",
+	"type": "C",
+	"connectorid": "619f385e-51eb-408a-af88-76c4a8fdf210",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "24.12.03.1449",
+	"disabled": false,
+	"appType": "A",
+	"application": "planet9_adaptive_list",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null
+}

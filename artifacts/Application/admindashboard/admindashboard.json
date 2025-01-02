@@ -126,6 +126,13 @@
 									"response": [],
 									"attributes": [
 										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
 											"attribute": "text",
 											"grouping": "Properties",
 											"value": "Dashboard",
@@ -151,8 +158,8 @@
 									"data": []
 								},
 								{
-									"fieldNo": "0e48a539-4fc2-4695-d5e7-c6fc053854ee",
-									"fieldName": "oDailyOTPNav",
+									"fieldNo": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+									"fieldName": "oReferences",
 									"fieldParent": "6",
 									"fieldType": "sap.tnt.NavigationListItem",
 									"script": "",
@@ -161,51 +168,23 @@
 									"response": [],
 									"attributes": [
 										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
 											"attribute": "text",
 											"grouping": "Properties",
-											"value": "Daily OTP",
+											"value": "References",
 											"script": "",
 											"translation": []
 										},
 										{
 											"attribute": "icon",
 											"grouping": "Properties",
-											"value": "sap-icon://fa-solid/plane",
-											"script": "",
-											"translation": []
-										},
-										{
-											"attribute": "select",
-											"grouping": "Events",
-											"value": "Anonymous Function",
-											"script": "file://event/sap.tnt.NavigationListItem/oDailyOTPNav/select.js",
-											"language": "javascript",
-											"translation": []
-										}
-									],
-									"data": []
-								},
-								{
-									"fieldNo": "11",
-									"fieldName": "oNavigationListItem",
-									"fieldParent": "6",
-									"fieldType": "sap.tnt.NavigationListItem",
-									"script": "",
-									"customComponent": false,
-									"request": [],
-									"response": [],
-									"attributes": [
-										{
-											"attribute": "text",
-											"grouping": "Properties",
-											"value": "Admin",
-											"script": "",
-											"translation": []
-										},
-										{
-											"attribute": "icon",
-											"grouping": "Properties",
-											"value": "sap-icon://list",
+											"value": "sap-icon://business-objects-mobile",
 											"script": "",
 											"translation": []
 										},
@@ -220,7 +199,679 @@
 											"attribute": "select",
 											"grouping": "Events",
 											"value": "Anonymous Function",
-											"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem/select.script",
+											"script": "file://event/sap.tnt.NavigationListItem/oReferences/select.script",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "3ca238c0-a13c-4c35-aa2a-2e9e1a541ec4",
+											"fieldName": "oNavAirports",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Airports",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavAirports/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "54420e16-cf11-4d1a-f146-b618f1880bf3",
+											"fieldName": "oNavAirlines",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Airlines",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavAirlines/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "918fa5d6-264a-4682-e720-9ef79de05930",
+											"fieldName": "oNavGlobalRegion",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Global Region",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavGlobalRegion/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ebcf48b9-b232-414b-8234-8cb9d5bd02f5",
+											"fieldName": "oNavCountry",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Country",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavCountry/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "28abda83-86ee-4e5c-dc48-3f86c818167b",
+											"fieldName": "oNavRegion",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Region",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavRegion/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0c682de3-6568-4258-bf9d-1d560c1b25de",
+											"fieldName": "oNavProvince",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Province",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavProvince/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0565167f-cc27-42c9-c18f-2baafd773ac9",
+											"fieldName": "oNavState",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "State",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavState/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "efb5b738-2003-4263-fe5c-f880e477ffb0",
+											"fieldName": "oNavCity",
+											"fieldParent": "67ad2de2-5c0b-4e28-f369-b5d25997c41f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "City",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavCity/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "3e838f4f-9acf-4cda-f3db-80bd7a8b0b5a",
+									"fieldName": "oTransaction",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Transaction",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://newspaper",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.tnt.NavigationListItem/oTransaction/select.script",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "d14325a8-330d-4d82-9270-7df119ab81a3",
+											"fieldName": "oNavFlightSchedule",
+											"fieldParent": "3e838f4f-9acf-4cda-f3db-80bd7a8b0b5a",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Flight Schedule",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavFlightSchedule/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "470f7716-9a90-434c-f375-7d1716c179f5",
+											"fieldName": "oNavFlightCancelation",
+											"fieldParent": "3e838f4f-9acf-4cda-f3db-80bd7a8b0b5a",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Flight Cancelation",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavFlightCancelation/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "3816b3e7-5637-4370-ca29-aa2951e9712c",
+											"fieldName": "oNavFlightDelay",
+											"fieldParent": "3e838f4f-9acf-4cda-f3db-80bd7a8b0b5a",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Flight Delay",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavFlightDelay/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0e48a539-4fc2-4695-d5e7-c6fc053854ee",
+											"fieldName": "oDailyOTPNav",
+											"fieldParent": "3e838f4f-9acf-4cda-f3db-80bd7a8b0b5a",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Daily OTP",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oDailyOTPNav/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "e2584ce2-6e50-416b-88ed-437e8b730d1e",
+									"fieldName": "oReports",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Reports",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://clinical-tast-tracker",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.tnt.NavigationListItem/oReports/select.script",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "6674bdc2-b0b3-4e77-adc3-bb1fcb10fab8",
+											"fieldName": "oNavRFlightSchedule",
+											"fieldParent": "e2584ce2-6e50-416b-88ed-437e8b730d1e",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Flight Schedule",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavRFlightSchedule/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "354e332c-b0f3-4844-cbb1-f65cc3d5653d",
+											"fieldName": "oNavScheduleByAirline",
+											"fieldParent": "e2584ce2-6e50-416b-88ed-437e8b730d1e",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Schedule by Airline",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavScheduleByAirline/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "4950039a-c3bc-42af-db30-80909a766922",
+											"fieldName": "oNavOTPReports",
+											"fieldParent": "e2584ce2-6e50-416b-88ed-437e8b730d1e",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "OTP Reports",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavOTPReports/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+									"fieldName": "oUserMaintenance",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "User Maintenance",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://family-care",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "expanded",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/sap.tnt.NavigationListItem/oUserMaintenance/select.script",
 											"translation": []
 										}
 									],
@@ -228,7 +879,7 @@
 										{
 											"fieldNo": "12",
 											"fieldName": "oUserCrudNav",
-											"fieldParent": "11",
+											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
 											"fieldType": "sap.tnt.NavigationListItem",
 											"script": "",
 											"customComponent": false,
@@ -245,7 +896,7 @@
 												{
 													"attribute": "icon",
 													"grouping": "Properties",
-													"value": "sap-icon://fa-solid/user",
+													"value": "sap-icon://feeder-arrow",
 													"script": "",
 													"translation": []
 												},
@@ -259,12 +910,124 @@
 												}
 											],
 											"data": []
+										},
+										{
+											"fieldNo": "e67f1b72-d213-4763-bd61-b93663e88629",
+											"fieldName": "oNavUserAccess",
+											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "visible",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Users Access",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavUserAccess/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "72cbf7da-8051-4671-a1c4-1a38af7662d3",
+											"fieldName": "oUserRole",
+											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Roles",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oUserRole/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "9564d8e6-0cc0-4c20-c78e-37a650638267",
+											"fieldName": "oNavAuditTrail",
+											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Audit Trail",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavAuditTrail/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
 										}
 									]
 								},
 								{
-									"fieldNo": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
-									"fieldName": "oNavigationListItem1",
+									"fieldNo": "76a8108f-2521-4766-a321-3824ef84c7c5",
+									"fieldName": "oUtilities",
 									"fieldParent": "6",
 									"fieldType": "sap.tnt.NavigationListItem",
 									"script": "",
@@ -273,16 +1036,23 @@
 									"response": [],
 									"attributes": [
 										{
+											"attribute": "visible",
+											"grouping": "Properties",
+											"value": "false",
+											"script": "",
+											"translation": []
+										},
+										{
 											"attribute": "text",
 											"grouping": "Properties",
-											"value": "User Maintenance",
+											"value": "Utilities",
 											"script": "",
 											"translation": []
 										},
 										{
 											"attribute": "icon",
 											"grouping": "Properties",
-											"value": "sap-icon://fa-solid/users-cog",
+											"value": "sap-icon://example",
 											"script": "",
 											"translation": []
 										},
@@ -297,15 +1067,15 @@
 											"attribute": "select",
 											"grouping": "Events",
 											"value": "Anonymous Function",
-											"script": "file://event/sap.tnt.NavigationListItem/oNavigationListItem1/select.script",
+											"script": "file://event/sap.tnt.NavigationListItem/oUtilities/select.script",
 											"translation": []
 										}
 									],
 									"data": [
 										{
-											"fieldNo": "e67f1b72-d213-4763-bd61-b93663e88629",
-											"fieldName": "oNavUserAccess",
-											"fieldParent": "7287bcd4-18ac-4dc4-c9cc-ce4df0d4929f",
+											"fieldNo": "a0382539-916b-4a20-e8fe-6f5de27b69bb",
+											"fieldName": "oNavMonthlyOTPSys",
+											"fieldParent": "76a8108f-2521-4766-a321-3824ef84c7c5",
 											"fieldType": "sap.tnt.NavigationListItem",
 											"script": "",
 											"customComponent": false,
@@ -315,14 +1085,14 @@
 												{
 													"attribute": "text",
 													"grouping": "Properties",
-													"value": "Users Access",
+													"value": "Monthly OTP Summary From System",
 													"script": "",
 													"translation": []
 												},
 												{
 													"attribute": "icon",
 													"grouping": "Properties",
-													"value": "sap-icon://fa-solid/users",
+													"value": "sap-icon://feeder-arrow",
 													"script": "",
 													"translation": []
 												},
@@ -330,7 +1100,42 @@
 													"attribute": "select",
 													"grouping": "Events",
 													"value": "Anonymous Function",
-													"script": "file://event/sap.tnt.NavigationListItem/oNavUserAccess/select.js",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavMonthlyOTPSys/select.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "5799aeac-55eb-49ec-c9ef-8d0451ad0621",
+											"fieldName": "oNavMonthlyOTPAirlines",
+											"fieldParent": "76a8108f-2521-4766-a321-3824ef84c7c5",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Monthly OTP Summary From Airlines",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "icon",
+													"grouping": "Properties",
+													"value": "sap-icon://feeder-arrow",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.tnt.NavigationListItem/oNavMonthlyOTPAirlines/select.js",
 													"language": "javascript",
 													"translation": []
 												}
@@ -522,6 +1327,61 @@
 									"value": "false",
 									"script": "",
 									"translation": []
+								},
+								{
+									"attribute": "backgroundDesign",
+									"grouping": "Properties",
+									"value": "List",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "titleAlignment",
+									"grouping": "Properties",
+									"value": "Start",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "c57fd227-d0ed-4585-f518-2b202e6b078a",
+							"fieldName": "oRoles",
+							"fieldParent": "14",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showFooter",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "enableScrolling",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "backgroundDesign",
+									"grouping": "Properties",
+									"value": "List",
+									"script": "",
+									"translation": []
 								}
 							],
 							"data": []
@@ -532,7 +1392,20 @@
 		},
 		{
 			"fieldNo": 99999,
-			"data": []
+			"data": [
+				{
+					"fieldNo": "f9e2080f-5102-4497-c0fa-383060bd2914",
+					"fieldName": "onInit",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/onInit.js",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
 		},
 		{
 			"fieldNo": 99998,
@@ -540,7 +1413,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.11.29.1335",
+	"ver": "24.12.20.1115",
 	"application": "admindashboard",
 	"title": "Admin Dashboard",
 	"description": "",
@@ -562,7 +1435,7 @@
 	"ui5_theme": "sap_horizon",
 	"ui5_version": "customCDN",
 	"ui5_language": null,
-	"ui5_url": "https://sdk.openui5.org/1.130.0/resources/sap-ui-core.js",
+	"ui5_url": "https://openui5.hana.ondemand.com/resources/sap-ui-core.js",
 	"cus_theme": "",
 	"css": "",
 	"compiledCss": null,

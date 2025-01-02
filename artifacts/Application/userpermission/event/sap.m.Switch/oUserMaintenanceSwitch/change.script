@@ -1,0 +1,10 @@
+
+// var bState = oUserMaintenanceSwitch.getState();
+
+//     if(bState == true){
+//     oUserAccess.setVisible(true);
+//     oAuditTrail.setVisible(true);
+//     }else{
+//     oUserAccess.setVisible(false);
+//     oAuditTrail.setVisible(false);
+//     }

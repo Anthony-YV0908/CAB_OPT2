@@ -256,7 +256,7 @@ forgotPassword: function () {
         formLogin.setVisible(true);
         formForgot.setVisible(false);
         sap.m.MessageToast.show('A password reset link has been sent to the email address connected with the account');
-      }, 300);
+      }, 3000);
     },
     error: function (xhr, status, error) {
       // Step 5: Handle error scenario (e.g., invalid username, server error, etc.)
@@ -328,11 +328,47 @@ forgotPassword: function () {
 
         const url = new URL(location.href);
         const token = url.searchParams.get('token');
-
-        if (inNewPassword.getValue() !== inNewPassword2.getValue()) {
-            sap.m.MessageToast.show('Passwords doesn\'t match!');
-        } else if (!inNewPassword.getValue()) {
+        if (!inNewPassword.getValue()) {
             sap.m.MessageToast.show('Please provide a password');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Please provide a password');
+        } 
+        else if (!inNewPassword2.getValue()) {
+            sap.m.MessageToast.show('Please provide a repeat password');
+            inNewPassword2.setValueState('Error');
+            inNewPassword2.setValueStateText('Please provide a repeat password');
+        } 
+        else if (inNewPassword.getValue().length < 12 || inNewPassword.getValue().length > 16) {
+            sap.m.MessageToast.show('Password must be between 12 and 16 characters');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Password must be between 12 and 16 characters');
+        } 
+        else if (!/[A-Z]/.test(inNewPassword.getValue())) {
+            sap.m.MessageToast.show('Password must contain at least one uppercase letter');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Password must contain at least one uppercase letter');
+        } 
+        else if (!/[a-z]/.test(inNewPassword.getValue())) {
+            sap.m.MessageToast.show('Password must contain at least one lowercase letter');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Password must contain at least one lowercase letter');
+        } 
+        else if (!/\d/.test(inNewPassword.getValue())) {
+            sap.m.MessageToast.show('Password must contain at least one number');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Password must contain at least one number');
+        } 
+        else if (!/[!@#$%^&*]/.test(inNewPassword.getValue())) {
+            sap.m.MessageToast.show('Password must contain at least one special character');
+            inNewPassword.setValueState('Error');
+            inNewPassword.setValueStateText('Password must contain at least one special character');
+        } 
+        else if (inNewPassword.getValue() !== inNewPassword2.getValue()) {
+            sap.m.MessageToast.show('Passwords doesn\'t match');
+            inNewPassword.setValueState('Error');
+            inNewPassword2.setValueState('Error');
+            inNewPassword.setValueStateText('Passwords doesn\'t match');
+            inNewPassword2.setValueStateText('Passwords doesn\'t match');
         } else {
             oApp.setBusy(true);
             $.ajax({

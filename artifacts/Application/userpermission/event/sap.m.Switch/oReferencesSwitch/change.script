@@ -1,0 +1,22 @@
+
+// var bState = oReferencesSwitch.getState();
+
+//     if(bState == true){
+//     oAirports.setVisible(true);
+//     oAirlines.setVisible(true);
+//     oGlobalRegion.setVisible(true);
+//     oCountry.setVisible(true);
+//     oRegion.setVisible(true);
+//     oProvince.setVisible(true);
+//     oState.setVisible(true);
+//     oCity.setVisible(true);
+//     }else{
+//     oAirports.setVisible(false);
+//     oAirlines.setVisible(false);
+//     oGlobalRegion.setVisible(false);
+//     oCountry.setVisible(false);
+//     oRegion.setVisible(false);
+//     oProvince.setVisible(false);
+//     oState.setVisible(false);
+//     oCity.setVisible(false);
+//     }

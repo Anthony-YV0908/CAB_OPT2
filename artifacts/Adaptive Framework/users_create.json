@@ -44,7 +44,8 @@
 				"requiredFieldsToast": "Please fill in all the required fields",
 				"title": "User Creation",
 				"subTitle": "Create a user",
-				"avatarBackgroundColor": "Accent7"
+				"avatarBackgroundColor": "Accent7",
+				"textUnique": ""
 			},
 			"form": {
 				"enableCompact": true,
@@ -236,7 +237,9 @@
 				"name": "FirstName",
 				"text": "First Name",
 				"fieldPos": 1,
-				"required": true
+				"required": true,
+				"mask": "",
+				"placeholder": "e.g. Juan"
 			},
 			{
 				"inputFormatter": "",
@@ -244,7 +247,8 @@
 				"visible": true,
 				"name": "MiddleName",
 				"text": "Middle Name",
-				"fieldPos": 2
+				"fieldPos": 2,
+				"placeholder": "e.g. Antonio"
 			},
 			{
 				"inputFormatter": "",
@@ -253,7 +257,8 @@
 				"name": "LastName",
 				"text": "Last Name",
 				"fieldPos": 3,
-				"required": true
+				"required": true,
+				"placeholder": "e.g. Dela Cruz"
 			},
 			{
 				"inputFormatter": "",
@@ -263,7 +268,8 @@
 				"text": "Suffix",
 				"fieldPos": 4,
 				"type": "SingleSelectScript",
-				"scriptSelect": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7"
+				"scriptSelect": "0c3bca9c-ba3e-4e89-9c65-44c13aca49f7",
+				"placeholder": "e.g. Jr."
 			},
 			{
 				"inputFormatter": "",
@@ -274,7 +280,8 @@
 				"fieldPos": 5,
 				"inputType": "Number",
 				"mask": "+63 999 999 9999",
-				"required": true
+				"required": true,
+				"placeholder": "e.g. +63 912 345 6789"
 			},
 			{
 				"inputFormatter": "",
@@ -283,7 +290,8 @@
 				"name": "EmailAddress",
 				"text": "Email Address",
 				"fieldPos": 6,
-				"required": true
+				"required": true,
+				"placeholder": "e.g. example@noreply.com"
 			},
 			{
 				"inputFormatter": "",
@@ -360,7 +368,8 @@
 				"text": "Password",
 				"fieldPos": 14,
 				"required": true,
-				"inputType": "Password"
+				"inputType": "Password",
+				"placeholder": "Password must be contain uppercase & lowercase letter, number, and special character"
 			}
 		],
 		"fieldsRun": [
@@ -389,7 +398,7 @@
 	"scriptSel": null,
 	"scriptRun": null,
 	"tableid": null,
-	"ver": "24.11.28.1536",
+	"ver": "24.12.20.1414",
 	"disabled": false,
 	"appType": "A",
 	"application": "planet9_adaptive_edit",

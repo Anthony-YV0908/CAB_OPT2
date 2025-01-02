@@ -1,0 +1,27 @@
+{
+	"id": "c5f6cd50-b7f9-4fbc-9bb2-64f1aba26c52",
+	"createdAt": "2024-12-19T06:31:35.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
+			"name": "roles_permissions",
+			"contextname": "roles_permissions"
+		}
+	],
+	"apis": [],
+	"name": "GetRolePermission",
+	"ver": "24.12.19.1442",
+	"description": null,
+	"folder": "Permissions",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

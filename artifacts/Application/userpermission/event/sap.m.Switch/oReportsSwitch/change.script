@@ -1,0 +1,12 @@
+
+// var bState = oReportsSwitch.getState();
+
+//     if(bState == true){
+//     oRFlightSchedule.setVisible(true);
+//     oScheduleByAirline.setVisible(true);
+//     oOtpReports.setVisible(true);
+//     }else{
+//     oRFlightSchedule.setVisible(false);
+//     oScheduleByAirline.setVisible(false);
+//     oOtpReports.setVisible(false);
+//     }

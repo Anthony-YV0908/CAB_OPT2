@@ -7,7 +7,7 @@
 	},
 	"name": "CAB_OTP2",
 	"description": null,
-	"ver": "24.11.26.1032",
+	"ver": "25.01.02.1430",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -58,8 +58,50 @@
 	],
 	"api": [
 		{
+			"id": "e23ea176-b23b-44a7-ae03-38f39ded9f75",
+			"name": "airportcode",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "e14d35f7-72fa-4d4d-bd5f-783e10ee97d4",
+			"name": "roles",
+			"description": null,
+			"apiGroup": null
+		},
+		{
 			"id": "d265ea8b-d4db-452d-87ec-fc3f2526fcb1",
 			"name": "CABServerside",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "b491797d-5d3a-49dc-9594-5088f6c76803",
+			"name": "sub_modules",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "a8b2e070-e919-4326-b2d3-56bb6bc1c175",
+			"name": "airport",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "a602d420-b315-4b84-9eea-4b48e2b7411e",
+			"name": "tbl_user",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "a420158c-5320-49c7-8eed-f8e57e1cb64b",
+			"name": "roles_permissions",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "624da188-e4a1-4c40-a7d5-ed72b5247c8f",
+			"name": "rolepermission",
 			"description": null,
 			"apiGroup": null
 		},
@@ -68,19 +110,62 @@
 			"name": "userEndpoint",
 			"description": null,
 			"apiGroup": null
+		},
+		{
+			"id": "59df968b-9d90-45e4-a6a1-ab0aa8e403d6",
+			"name": "parent_module",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "33411e9a-8cfd-40d5-9bb0-2229fd62ed27",
+			"name": "getUserRole",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "2d162dca-f470-4d0f-bdf2-8db9921c0507",
+			"name": "getUserBeforeUpdate",
+			"description": null,
+			"apiGroup": null
 		}
 	],
 	"odataSource": [],
 	"odataMock": [],
 	"dictionary": [
 		{
+			"id": "b8724737-9734-4c3e-ac3e-7e118e1dc124",
+			"name": "airportcode",
+			"description": null
+		},
+		{
+			"id": "b479ff85-0c6a-4358-9efc-8d96d5a11580",
+			"name": "sub_modules",
+			"description": null
+		},
+		{
+			"id": "9d25a706-b00e-457a-abaa-05d64fabfa64",
+			"name": "airport",
+			"description": null
+		},
+		{
 			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
-			"name": "userroles",
+			"name": "roles",
 			"description": null
 		},
 		{
 			"id": "84510a0b-3683-40bb-82cf-76932b18e146",
 			"name": "userpermission",
+			"description": null
+		},
+		{
+			"id": "43e9903d-c064-4da7-b211-3888091cdf6d",
+			"name": "parent_module",
+			"description": null
+		},
+		{
+			"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
+			"name": "roles_permissions",
 			"description": null
 		},
 		{
@@ -121,13 +206,33 @@
 			"description": null
 		},
 		{
+			"id": "c5f6cd50-b7f9-4fbc-9bb2-64f1aba26c52",
+			"name": "GetRolePermission",
+			"description": null
+		},
+		{
+			"id": "b5384509-10a5-4338-8fd8-882601afec6a",
+			"name": "getUserRole",
+			"description": null
+		},
+		{
 			"id": "b33acbf4-695f-4f90-9eb1-db3a1f37d79d",
 			"name": "airportcode",
 			"description": null
 		},
 		{
+			"id": "a60d4eba-0458-4425-8882-e4e8aba0a842",
+			"name": "RolePermission",
+			"description": null
+		},
+		{
 			"id": "9fb0013d-050f-43ff-948d-8444d9e97f28",
 			"name": "airport_ph",
+			"description": null
+		},
+		{
+			"id": "8daf8b6c-1519-4881-987e-4dbfc2a4abe6",
+			"name": "DeleteRolePermission",
 			"description": null
 		},
 		{
@@ -143,6 +248,11 @@
 		{
 			"id": "424a9744-3fbd-4605-a2e5-29df4c20a5cc",
 			"name": "daily_otp_archive",
+			"description": null
+		},
+		{
+			"id": "219016df-d5f5-4060-b859-3dce817217e0",
+			"name": "getUserIdBeforeUpdate",
 			"description": null
 		},
 		{
@@ -172,6 +282,18 @@
 	"pdf": [],
 	"rulesengine": [],
 	"reports": [
+		{
+			"id": "ba46ea64-86f0-47ca-b452-19cdcebdd560",
+			"name": "role_create",
+			"description": "",
+			"application": "planet9_adaptive_edit"
+		},
+		{
+			"id": "7dfd2fe3-7d45-4358-8219-1b88b8f81371",
+			"name": "role_listing",
+			"description": "",
+			"application": "planet9_adaptive_list"
+		},
 		{
 			"id": "4e75b415-4da9-484d-bf4c-009e9f1761b5",
 			"name": "users_create",
@@ -220,6 +342,11 @@
 		{
 			"id": "cbad87ae-d00a-4a73-a47b-8167ebcb82a2",
 			"name": "user_connectors_scripts",
+			"description": null
+		},
+		{
+			"id": "619f385e-51eb-408a-af88-76c4a8fdf210",
+			"name": "roles",
 			"description": null
 		}
 	],

@@ -38,7 +38,21 @@
 			"description": "",
 			"parameters": [],
 			"headers": [],
-			"responses": [],
+			"responses": [
+				{
+					"id": "74bf8bd5-92f1-40d5-ef05-be99f8652ef4",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "f96704c8-329a-4ca3-9e1e-21d14d0a59e8",
+							"name": "Get",
+							"objectType": "object"
+						}
+					]
+				}
+			],
 			"content": [
 				{
 					"objectType": "object",
@@ -465,7 +479,7 @@
 	"documentation": [],
 	"name": "userEndpoint",
 	"endpoint": "http://localhost:8080/api/functions/User",
-	"ver": "24.11.28.1328",
+	"ver": "24.12.16.1341",
 	"version": null,
 	"description": null,
 	"mediaType": null,

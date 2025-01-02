@@ -1,0 +1,10 @@
+
+// var bState = oUtilitiesSwitch.getState();
+
+//     if(bState == true){
+//     oMonthlyOTPSys.setVisible(true);
+//     oMonthlyOTPAirlines.setVisible(true);
+//     }else{
+//     oMonthlyOTPSys.setVisible(false);
+//     oMonthlyOTPAirlines.setVisible(false);
+//     }

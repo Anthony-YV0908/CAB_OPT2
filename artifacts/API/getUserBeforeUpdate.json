@@ -1,0 +1,229 @@
+{
+	"id": "2d162dca-f470-4d0f-bdf2-8db9921c0507",
+	"createdAt": "2024-12-16T08:01:11.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "d977c3b9-8106-4911-aa75-9d2878f03ffd",
+			"method": "POST",
+			"path": "/GetRole",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "6928eaee-d666-4f55-eda4-3624d4123915",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "6596e7ba-be89-4cce-8d45-f00921afd503",
+							"name": "UserInfo",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "id"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "219016df-d5f5-4060-b859-3dce817217e0"
+		}
+	],
+	"definitions": [
+		{
+			"id": "185c6219-8b33-4a29-bbda-acd35ff59a08",
+			"name": "id",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1fc54f92-7ca7-4003-a68d-cfdbc6b6f021",
+					"name": "UserId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "bf8bae04-0fbb-46a3-ff32-1c66733a6be2",
+			"name": "UserInfo",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "8c70c44b-0db4-4013-b40b-4341e57b76de",
+					"name": "UserId",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "9b5a05e0-765e-4417-f113-ac7ce8bd9f58",
+					"name": "FirstName",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "78fdf6b2-ccc2-4dc1-fd0c-70ce9d3ab7b6",
+					"name": "MiddleName",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "70e7787c-5b8e-486f-f914-b30f3f7a5689",
+					"name": "LastName",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b5600356-ecbd-49a8-c584-4da98304b61c",
+					"name": "Suffix",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "54a2b1dc-b1a8-48f9-b2bf-e054ff6a074d",
+					"name": "UserName",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "0270c67a-3157-4667-e87c-381ddf08f046",
+					"name": "UserRole",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "getUserBeforeUpdate",
+	"endpoint": "/api/serverscript/getuserbeforeupdate",
+	"ver": "25.01.02.1410",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

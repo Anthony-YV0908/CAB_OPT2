@@ -1,0 +1,27 @@
+{
+	"id": "8daf8b6c-1519-4881-987e-4dbfc2a4abe6",
+	"createdAt": "2024-12-15T16:01:39.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "3cc991ae-61a0-46cb-a8f0-1354bc72eaf6",
+			"name": "roles_permissions",
+			"contextname": "roles_permissions"
+		}
+	],
+	"apis": [],
+	"name": "DeleteRolePermission",
+	"ver": "24.12.16.0020",
+	"description": null,
+	"folder": "Permissions",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "54188af2-e71b-4723-b530-2188ceaffa22",
+	"package": "146c0edc-139e-4d84-9511-c28139a2520f"
+}

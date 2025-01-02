@@ -1,0 +1,4 @@
+inNewPassword.setValue();
+inNewPassword2.setValueState();
+formLogin.setVisible(true);
+formNewPassord.setVisible(false);

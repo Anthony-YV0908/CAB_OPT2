@@ -4,10 +4,16 @@
 	"createdBy": "admin",
 	"globalScripts": [],
 	"externalModules": [],
-	"entitySets": [],
+	"entitySets": [
+		{
+			"id": "89b11540-a223-41eb-b70e-1acff05ee4bb",
+			"name": "roles",
+			"contextname": "roles"
+		}
+	],
 	"apis": [],
 	"name": "UserRoles",
-	"ver": "24.11.26.1311",
+	"ver": "24.12.18.1401",
 	"description": null,
 	"folder": "",
 	"content": "file:///content.js",

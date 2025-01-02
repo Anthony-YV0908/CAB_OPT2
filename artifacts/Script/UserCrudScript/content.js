@@ -190,7 +190,7 @@ async function processList() {
 
 async function processGet() {
 
-    return await entities.tbl_user.findOne({ id: req.body.id });;
+    return await entities.tbl_user.findOne({ id: req.body.id });
 
 }
 
@@ -268,6 +268,7 @@ async function processSave(id){
         const middleName = req.body.MiddleName;
         const lastName = req.body.LastName;
         const email = req.body.EmailAddress;
+        const password = req.body.Password
     if (!email.includes('@')) {
         throw new Error("Email must contain @");
     }
@@ -287,7 +288,7 @@ async function processSave(id){
     const nameRegex = /^[A-Za-z\s]*$/;
     // Check if firstName, middleName, or lastName are valid (allowing spaces and empty values)
     if (firstName && !nameRegex.test(firstName)) {
-        throw new Error('First name should only contain letters and spaces');
+        throw new Error ('First name should only contain letters and spaces');
     }
 
     if (middleName && !nameRegex.test(middleName)) {
@@ -296,6 +297,30 @@ async function processSave(id){
 
     if (lastName && !nameRegex.test(lastName)) {
         throw new Error('Last name should only contain letters and spaces');
+    }
+    // Validate password length (12-16 characters)
+    if (password.length < 12 || password.length > 16) {
+        throw new Error('Password must be between 12 and 16 characters');
+    }
+
+    // Check if password contains at least one uppercase letter
+    if (!/[A-Z]/.test(password)) {
+        throw new Error('Password must contain at least one uppercase letter');
+    }
+
+    // Check if password contains at least one lowercase letter
+    if (!/[a-z]/.test(password)) {
+        throw new Error('Password must contain at least one lowercase letter');
+    }
+
+    // Check if password contains at least one number
+    if (!/\d/.test(password)) {
+        throw new Error('Password must contain at least one number');
+    }
+
+    // Check if password contains at least one special character
+    if (!/[!@#$%^&*]/.test(password)) {
+        throw new Error('Password must contain at least one special character (!, @, #, $, %, etc.)');
     }
 
   
@@ -349,12 +374,12 @@ try {
     req.body.UserId = response.data.user.id; //put the core user id response to table database user id
     req.body.Password = response.data.user.password;
     await entities.tbl_user.save(req.body); // table database
-    console.log("User updated:", response.data);
+    // console.log("User updated:", response.data);
   } else {
     response = await apis.Save(saveUserOpts); // core api
     req.body.UserId = response.data.user.id; //put the core user id response to table database user id
     await entities.tbl_user.save(req.body); // table database
-    console.log("New user created:", response.data);
+    // console.log("New user created:", response.data);
   }
   // Handle the response or perform any additional actions
 } catch (error) {
